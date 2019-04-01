@@ -1,0 +1,37 @@
+bootstrap:
+  version: 4.3.1
+  css:
+    base: 
+      bootstrap/css/bootstrap.min.css: { weight: 0 }
+  js:
+    bootstrap/js/bootstrap.bundle.min.js: {}
+  dependencies:
+    - core/jquery
+
+popper-cdn:
+  version: 1.12.9
+  remote: //cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/
+  js:
+    //cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js: {}
+  license:
+    name: The MIT License (MIT)
+    url: //github.com/FezVrasta/popper.js/blob/master/LICENSE.md
+    gpl-compatible: true
+  dependencies:
+    - core/jquery
+
+bootstrap-cdn:
+  version: 4.3.1
+  remote: //maxcdn.bootstrapcdn.com/bootstrap/4.3.1
+  css:
+    base:
+      //stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css: { weight: 0 }
+  js:
+    //stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js: {}
+  license:
+    name: The MIT License (MIT)
+    url: //github.com/twbs/bootstrap/blob/master/LICENSE
+    gpl-compatible: true
+  dependencies:
+    - core/jquery
+    - portcullis/popper-cdn
