@@ -1,3 +1,11 @@
+global-styling:
+  version: VERSION
+  css:
+    base:
+      css/base/elements.css: { weight: 1 }
+      css/base/layout.css: { weight: 100 }
+      css/base/typography.css: {}
+
 bootstrap:
   version: 4.3.1
   css:
