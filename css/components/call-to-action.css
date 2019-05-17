@@ -1,0 +1,20 @@
+/**
+ * @file
+ * Portcullis call-to-action styles
+ */
+.container-fluid .call-to-action {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.call-to-action h2.title {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.call-to-action h5 {
+  font-weight: 400;
+}
+@media (max-width: 575px) {
+  .call-to-action h2.title {
+    font-size: 48px;
+  }
+}
