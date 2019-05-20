@@ -1,0 +1,23 @@
+/**
+ * @file
+ * Portcullis articles carousel styles
+ */
+.pc-carousel-articles .pc-carousel-item {
+  margin: 0 15px 15px;
+}
+.view-articles-grid .pc-carousel-item .article-meta {
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.view-articles-grid .pc-carousel-item .article-meta .article-tags {
+  margin-right: 10px;
+}
+.view-articles-grid .pc-carousel-item .views-field-title {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 25px;
+}
+.region--dark-typography .view-articles-grid .pc-carousel-item .views-field-title a {
+  color: #2a2a2a;
+}

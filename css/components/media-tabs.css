@@ -1,0 +1,16 @@
+/**
+ * @file
+ * Portcullis media tabs styles
+ */
+.field--pc-media-tabs-block .nav-pills {
+  margin-bottom: 45px;
+}
+.pc-media-title {
+  margin-bottom: 25px;
+}
+.pc-media-title h3 {
+  font-size: 50px;
+}
+.pc-media-body {
+  margin-bottom: 15px;
+}

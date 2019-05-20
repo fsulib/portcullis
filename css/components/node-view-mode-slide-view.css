@@ -1,0 +1,8 @@
+/**
+ * @file
+ * Portcullis slide view styles
+ */
+.node--view-mode-pc-slide-view .node__title {
+  margin-bottom: 30px;
+}
+

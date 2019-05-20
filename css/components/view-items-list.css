@@ -1,0 +1,87 @@
+/**
+ * @file
+ * Portcullis promoted items list views styles
+ */
+.view-items-list .views-row:first-child {
+  margin-top: 10px;
+}
+.view-items-list .views-row {
+  margin-top: 50px;
+}
+.view-items-list .views-field-title a {
+  margin-bottom: 0;
+}
+.view-items-list .views-field-title a:hover {
+  text-decoration: none;
+}
+.region--dark-typography .view-items-list .views-field-title a:hover,
+.region--dark-typography .view-items-list .views-field-title a:focus {
+  color: #575757;
+}
+.view-items-list .views-field-title h5 {
+  margin-top: 0;
+}
+.region--light-typography .view-items-list .views-field-title a {
+  color: #ffffff;
+}
+.view-items-list .views-field-created {
+  font-size: 12px;
+  color: #666666;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.region--light-typography.region--colored-background .view-items-list .views-field-created {
+  color: #ffffff;
+}
+.view-items-list .views-field-view-node a {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0 0 3px;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1;
+  border-bottom-width: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin: 10px 0;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.headings-wide-spacing-enabled .view-items-list .views-field-view-node a {
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+.view-items-list .views-field-view-node a:after {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  content: "\f105";
+  padding-left: 8px;
+}
+.view-items-list .views-field-view-node a:hover,
+.view-items-list .views-field-view-node a:focus {
+  color: #575757;
+  border-bottom-color: transparent;
+  background-color: transparent;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .view-items-list__body {
+    padding: 5px 10px 0 0;
+  }
+}
+@media (max-width: 767px) {
+  .view-items-list--bordered .view-items-list__body {
+    padding: 15px 15px 5px;
+  }
+}
+@media (max-width: 575px) {
+  .view-items-list .col-sm-6 .views-field-title h5 {
+    margin-top: 20px;
+  }
+}

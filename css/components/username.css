@@ -1,0 +1,22 @@
+/**
+ * @file
+ * Portcullis username styles
+ */
+a.username {
+  text-decoration: none;
+}
+
+/* User profile page */
+.profile .field--name-user-picture {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.profile .field--name-user-picture ~ div {
+  margin-left: 105px;
+}
+.profile .field--name-field-pc-full-name {
+  font-size: 18px;
+  color: #424242;
+  font-weight: 600;
+}
