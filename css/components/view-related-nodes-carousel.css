@@ -1,0 +1,23 @@
+/**
+ * @file
+ * Portcullis related nodes carousel styles
+ */
+.pc-carousel-related-nodes .pc-carousel-item {
+  margin: 15px;
+}
+@media (max-width: 991px) {
+  .mt-carousel-related-nodes .mt-carousel-item {
+    margin: 8px;
+  } 
+}
+
+/* overlay */
+.view-products-grid .pc-carousel-item > .overlay-container {
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}

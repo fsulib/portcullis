@@ -1,0 +1,32 @@
+/**
+ * @file
+ * Portcullis showcases grid views styles
+ */
+.view-showcases-grid .views-row {
+  margin: 0 0 15px;
+  position: relative;
+}
+.headings-wide-spacing-enabled .view-showcases-grid .views-field-title h5 {
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+.view-showcases-grid .views-field-title h5 a:hover {
+  text-decoration: none;
+}
+.region--light-typography .view-showcases-grid .views-field-title h5 a {
+  color: #ffffff;
+}
+.region--light-typography .view-showcases-grid .views-field-title h5 a:hover {
+  color: #ffffff;
+}
+
+/* overlay */
+.view-showcases-grid .views-row > .overlay-container {
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  top: -15px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
