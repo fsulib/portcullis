@@ -1,0 +1,9 @@
+/**
+ * @file
+ * Visual styles for Portcullis slider revolution boxed width.
+ */
+@media (max-width: 575px) {
+  .view-pc-slideshow-boxed-width {
+    margin: 0 -15px;
+  }
+}
