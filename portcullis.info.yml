@@ -2,7 +2,21 @@ name: Portcullis
 type: theme
 base theme: classy
 description: 'A Bootstrap 4 Drupal 8 theme built for digital repositories.'
+version: '0.0.1'
 core: 8.x
+libraries:
+  - portcullis/global-styling
+  - portcullis/messages
+  - portcullis/tooltip
+  - portcullis/local-stylesheets
+  - portcullis/in-page-navigation
+  - portcullis/fontawesome-css
+libraries-override:
+  classy/base:
+    css:
+      component:
+        css/components/breadcrumb.css: false
+        css/components/pager.css: false
 regions:
   slideout: 'Slideout'
   header_top_highlighted_first: 'Header Top Highlighted First'
