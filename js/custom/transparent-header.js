@@ -9,12 +9,12 @@
       }
 
       if ($('header.header').length > 0) {
-        var header_color = $(".header-container.js-transparent-header header.header").css("background-color").replace(")", "," + drupalSettings.catalogplus.transparentHeader.transparentHeaderOpacity + ")").replace("rgb", "rgba");
+        var header_color = $(".header-container.js-transparent-header header.header").css("background-color").replace(")", "," + drupalSettings.portcullis.transparentHeader.transparentHeaderOpacity + ")").replace("rgb", "rgba");
         $(".header-container.js-transparent-header header.header").css("background-color", header_color);
       }
 
       if ($('.header-top').length > 0) {
-        var header_top_color = $(".header-container.js-transparent-header .header-top").css("background-color").replace(")", "," + drupalSettings.catalogplus.transparentHeader.transparentHeaderOpacity + ")").replace("rgb", "rgba");
+        var header_top_color = $(".header-container.js-transparent-header .header-top").css("background-color").replace(")", "," + drupalSettings.portcullis.transparentHeader.transparentHeaderOpacity + ")").replace("rgb", "rgba");
         $(".header-container.js-transparent-header .header-top").css("background-color", header_top_color);
       }
     }

@@ -6,7 +6,7 @@
       var toolbarHeight = parseInt($(context).find('body').css('paddingTop')) || 0;
       $(context).find('body').scrollspy({
         target: ".in-page-navigation-container",
-        offset: drupalSettings.catalogplus.inPageNavigation.inPageNavigationOffset + toolbarHeight + 1
+        offset: drupalSettings.portcullis.inPageNavigation.inPageNavigationOffset + toolbarHeight + 1
       });
     }
   };

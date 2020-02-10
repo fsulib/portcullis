@@ -7,7 +7,7 @@
         e.preventDefault();
         $('html, body').animate({
           //scrollTop: $($(this).attr("href")).offset().top
-          scrollTop: $(anchorDestination).offset().top - drupalSettings.catalogplus.inPageNavigation.inPageNavigationOffset - adminHeight
+          scrollTop: $(anchorDestination).offset().top - drupalSettings.portcullis.inPageNavigation.inPageNavigationOffset - adminHeight
         }, 1000);
         if (history.pushState) {
           history.pushState(null, null, anchorDestination);
