@@ -1,7 +1,8 @@
 (function ($, Drupal, drupalSettings) {
-  Drupal.behaviors.mtToolTip = {
+  Drupal.behaviors.pcToolTip = {
     attach: function (context, settings) {
-      $(context).find('[data-toggle="tooltip"]').once('mtToolTipInit').tooltip();
+      var fixTooltip = $.fn.tooltip.noConflict();
+      $.fn.tlp = fixTooltip;
     }
   };
 })(jQuery, Drupal, drupalSettings);
