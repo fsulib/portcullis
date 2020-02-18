@@ -1,0 +1,35 @@
+/*Global changes*/
+a {
+  color: #b82222;
+  text-decoration: underline;
+}
+
+/*Layout Styles for Projects*/
+body.page-node-type-project h1.page-title{
+  margin: 0;
+}
+
+body.page-node-type-project div.layout--twocol-section--75-25
+div.layout__region--second div.block-content-edit-link {
+  height: 100%;
+}
+
+body.page-node-type-project div.layout--twocol-section--75-25
+div.layout__region--second div.content {
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  padding-right: 5px;
+}
+
+body.page-node-type-project .block-field-blocknodeprojectfield-doi {
+  float: left;
+  border-right: 1px solid black;
+  padding: 0 10px 0 0;
+  margin-right: 20px;
+}
+
+body.page-node-type-project .block-field-blocknodeprojectbody {
+  margin-top: 20px;
+}

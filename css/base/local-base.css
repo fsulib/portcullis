@@ -1,0 +1,26 @@
+/*LDbase Customizations*/ 
+h1 {
+  font-size: 34px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 26px;
+}
+h4 {
+  font-size: 22px;
+}
+h5 {
+  font-size: 18px;
+}
+h6 {
+  font-size: 14px;
+}
+
+@media (min-width: 1200px) {
+  .col-12 h2.title {
+    text-align: left;
+    margin: 0;
+  }
+}

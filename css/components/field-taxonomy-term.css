@@ -4,7 +4,7 @@
  */
 .field--entity-reference-target-type-taxonomy-term,
 .field--entity-reference-target-type-taxonomy-term.field__item {
-  margin: 20px 0;
+  margin: 20px 0 0 0;
   position: relative;
   padding-left: 30px;
   padding-top: 8px;
@@ -65,7 +65,7 @@
 .field--entity-reference-target-type-taxonomy-term .field__item {
   display: inline-block;
   vertical-align: top;
-  margin: 0 2px 5px 0;
+  margin: 2px 2px 0 0;
 }
 .field--entity-reference-target-type-taxonomy-term.field--label-inline .field__item {
   margin: 3px 2px 3px 0;
