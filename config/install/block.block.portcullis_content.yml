@@ -8,7 +8,7 @@ dependencies:
 _core:
   default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
 id: portcullis_content
-theme: portcullis_content
+theme: portcullis
 region: content
 weight: 0
 provider: null
