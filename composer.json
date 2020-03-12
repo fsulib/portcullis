@@ -1,7 +1,7 @@
 {
   "name": "fsulib/portcullis",
   "description": "A Drupal 8 theme for Digital Repositories",
-  "type": "drupal-theme",
+  "type": "drupal-theme-custom",
   "keywords": ["Drupal"],
   "homepage": "https://github.com/fsulib/portcullis",
   "license": "GPL-2.0+",
