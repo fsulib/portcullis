@@ -1,2 +1,2 @@
 # Portcullis
-A Bootstrap 4 Drupal 8 theme built for digital repositories.
+A Drupal 8 theme built for digital repositories using Bootstrap 4.
