@@ -22,6 +22,31 @@ body.page-node-type-project h1.page-title{
   margin: 0;
 }
 
+body.page-node-type-project div.block-content-edit-link {
+  margin-bottom: 20px;
+}
+
+body.page-node-type-project div.block-content-edit-link a:hover {
+  background-color: black;
+}
+
+body.page-node-type-project div.block-content-edit-link a {
+  visibility: hidden;
+  font-size: 0;
+  text-decoration: none;
+}
+
+body.page-node-type-project div.block-content-edit-link a::before {
+  content: "Edit this Project";
+  visibility: visible;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border: 1px solid #b82222;
+  padding: 10px;
+  border-radius: 5px;
+}
+
 body.page-node-type-project div.layout--twocol-section--75-25
 div.layout__region--second div.block-content-edit-link {
   height: 100%;
@@ -43,6 +68,15 @@ body.page-node-type-project .block-field-blocknodeprojectfield-doi {
   margin-right: 20px;
 }
 
-body.page-node-type-project .block-field-blocknodeprojectbody {
+body.page-node-type-project .block-field-blocknodeprojectbody div.text-formatted {
+  margin-top: 20px;
+  float: left;
+}
+
+body.page-node-type-project .field--type-daterange {
+  margin-top: 20px;
+}
+
+body.page-node-type-project .field--type-link {
   margin-top: 20px;
 }
