@@ -26,10 +26,6 @@ body.page-node-type-project div.block-content-edit-link {
   margin-bottom: 20px;
 }
 
-body.page-node-type-project div.block-content-edit-link a:hover {
-  background-color: black;
-}
-
 body.page-node-type-project div.block-content-edit-link a {
   visibility: hidden;
   font-size: 0;
