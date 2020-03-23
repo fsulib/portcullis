@@ -136,7 +136,8 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   border-color: #636363;
-  color: #636363;
+  color: #b82222;
+  font-weight: 600;
 }
 a.button:hover,
 a.button:focus,
@@ -300,7 +301,7 @@ input.form-date:focus,
 input.form-time:focus,
 textarea:focus,
 select:focus {
-  border-color: #636363;
+  border-color: #414141;
 }
 
 /* components: content front page background */

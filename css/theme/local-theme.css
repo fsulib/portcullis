@@ -23,7 +23,7 @@ body.page-node-type-project h1.page-title{
 }
 
 body.page-node-type-project div.block-content-edit-link {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 body.page-node-type-project div.block-content-edit-link a {
@@ -36,11 +36,10 @@ body.page-node-type-project div.block-content-edit-link a::before {
   content: "Edit this Project";
   visibility: visible;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 600;
   text-decoration: none;
-  border: 1px solid #b82222;
-  padding: 10px;
-  border-radius: 5px;
+  border: 2px solid #636363;
+  padding: 10px 25px;
 }
 
 body.page-node-type-project div.layout--twocol-section--75-25
