@@ -20,20 +20,13 @@ textarea,
 select {
   padding: 10px 15px;
   outline: none;
-  border: none;
-  -webkit-appearance: none;
+  border: 2px solid #cbcbcb;
   width: 100%;
-  border-width: 2px;
-  border-style: solid;
-  border-color: #efefef;
-  background-color: #efefef;
+  background-color: white;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
   font-weight: 400;
-  -webkit-transition: border-color 0.2s linear;
-  -o-transition: border-color 0.2s linear;
-  transition: border-color 0.2s linear;
 }
 input[type=search] {
   -webkit-box-sizing: border-box;
