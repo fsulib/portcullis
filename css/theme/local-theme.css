@@ -17,13 +17,18 @@ a {
   color: #dadada;
 }
 
+.field--type-daterange, .field--type-link, 
+.field--type-entity-reference-revisions {
+  margin-top: 10px;
+}
+
+div.block-content-edit-link {
+  margin-bottom: 30px;
+}
+
 /*Layout Styles for Projects*/
 body.page-node-type-project h1.page-title{
   margin: 0;
-}
-
-body.page-node-type-project div.block-content-edit-link {
-  margin-bottom: 30px;
 }
 
 body.page-node-type-project div.block-content-edit-link a {
@@ -68,10 +73,23 @@ body.page-node-type-project .block-field-blocknodeprojectbody div.text-formatted
   float: left;
 }
 
-body.page-node-type-project .field--type-daterange {
-  margin-top: 20px;
+/*Layout Styles for Datasets*/
+body.page-node-type-dataset h1.page-title{
+  margin: 0;
 }
 
-body.page-node-type-project .field--type-link {
-  margin-top: 20px;
+body.page-node-type-dataset div.block-content-edit-link a {
+  visibility: hidden;
+  font-size: 0;
+  text-decoration: none;
+}
+
+body.page-node-type-dataset div.block-content-edit-link a::before {
+  content: "Edit this Dataset";
+  visibility: visible;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid #636363;
+  padding: 10px 25px;
 }
