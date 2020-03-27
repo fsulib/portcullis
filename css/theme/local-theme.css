@@ -114,3 +114,24 @@ body.page-node-type-document div.block-content-edit-link a::before {
   border: 2px solid #636363;
   padding: 10px 25px;
 }
+
+/*Layout Styles for Code*/
+body.page-node-type-code h1.page-title{
+  margin: 0;
+}
+
+body.page-node-type-code div.block-content-edit-link a {
+  visibility: hidden;
+  font-size: 0;
+  text-decoration: none;
+}
+
+body.page-node-type-code div.block-content-edit-link a::before {
+  content: "Edit this Code";
+  visibility: visible;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid #636363;
+  padding: 10px 25px;
+}
