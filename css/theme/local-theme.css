@@ -135,3 +135,10 @@ body.page-node-type-code div.block-content-edit-link a::before {
   border: 2px solid #636363;
   padding: 10px 25px;
 }
+
+/* Layout styles for user dashboard */
+div.eva-person-user-profile div.views-row {
+  border: 1px solid #cdcdcd;
+  padding: 15px;
+}
+
