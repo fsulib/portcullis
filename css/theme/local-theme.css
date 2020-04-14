@@ -56,6 +56,24 @@ body.page-node-type-project .block-field-blocknodeprojectbody div.text-formatted
   float: left;
 }
 
+body.page-node-type-project div.view-project-latest-datasets {
+  margin-top: 30px;
+  border-top: 1px solid #dedede;
+}
+
+body.page-node-type-project div.view-project-latest-datasets div.views-row {
+  padding-bottom: 10px;
+}
+
+body.page-node-type-project div.view-project-latest-documents {
+  margin-top: 30px;
+  border-top: 1px solid #dedede;
+}
+
+body.page-node-type-project div.view-project-latest-documents div.views-row {
+  padding-bottom: 10px;
+}
+
 /*Layout Styles for Datasets*/
 body.page-node-type-dataset h1.page-title{
   margin: 0;
