@@ -27,20 +27,7 @@ div.block-content-edit-link {
   margin-bottom: 30px;
 }
 
-/*Layout Styles for Projects*/
-body.page-node-type-project h1.page-title{
-  margin: 0;
-}
-
-body.page-node-type-project div.block-content-edit-link a {
-  visibility: hidden;
-  font-size: 0;
-  text-decoration: none;
-}
-
-body.page-node-type-project div.block-content-edit-link a::before {
-  content: "Edit this Project";
-  visibility: visible;
+div.block-content-edit-link a.ldbase-button {
   font-size: 16px;
   font-weight: 600;
   text-decoration: none;
@@ -48,18 +35,13 @@ body.page-node-type-project div.block-content-edit-link a::before {
   padding: 10px 25px;
 }
 
-body.page-node-type-project div.layout--twocol-section--75-25
-div.layout__region--second div.block-content-edit-link {
-  height: 100%;
+div.block-content-edit-link a.ldbase-button:hover {
+  background-color: #efefef;
 }
 
-body.page-node-type-project div.layout--twocol-section--75-25
-div.layout__region--second div.content {
-  height: 100%;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: flex-end;
-  padding-right: 5px;
+/*Layout Styles for Projects*/
+body.page-node-type-project h1.page-title{
+  margin: 0;
 }
 
 body.page-node-type-project .block-field-blocknodeprojectfield-doi {
@@ -79,62 +61,14 @@ body.page-node-type-dataset h1.page-title{
   margin: 0;
 }
 
-body.page-node-type-dataset div.block-content-edit-link a {
-  visibility: hidden;
-  font-size: 0;
-  text-decoration: none;
-}
-
-body.page-node-type-dataset div.block-content-edit-link a::before {
-  content: "Edit this Dataset";
-  visibility: visible;
-  font-size: 16px;
-  font-weight: 600;
-  text-decoration: none;
-  border: 2px solid #636363;
-  padding: 10px 25px;
-}
-
 /*Layout Styles for Documents*/
 body.page-node-type-document h1.page-title{
   margin: 0;
 }
 
-body.page-node-type-document div.block-content-edit-link a {
-  visibility: hidden;
-  font-size: 0;
-  text-decoration: none;
-}
-
-body.page-node-type-document div.block-content-edit-link a::before {
-  content: "Edit this Document";
-  visibility: visible;
-  font-size: 16px;
-  font-weight: 600;
-  text-decoration: none;
-  border: 2px solid #636363;
-  padding: 10px 25px;
-}
-
 /*Layout Styles for Code*/
 body.page-node-type-code h1.page-title{
   margin: 0;
-}
-
-body.page-node-type-code div.block-content-edit-link a {
-  visibility: hidden;
-  font-size: 0;
-  text-decoration: none;
-}
-
-body.page-node-type-code div.block-content-edit-link a::before {
-  content: "Edit this Code";
-  visibility: visible;
-  font-size: 16px;
-  font-weight: 600;
-  text-decoration: none;
-  border: 2px solid #636363;
-  padding: 10px 25px;
 }
 
 /* Layout styles for user dashboard */
