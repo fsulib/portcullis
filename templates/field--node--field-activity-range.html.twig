@@ -41,20 +41,16 @@
     <div{{ attributes.addClass(classes, 'field__items') }}>
       {% for item in items %}
         <div{{ item.attributes.addClass('field__item') }}>
-          {% set begin_date = item.content.field_activity_range.0.start_date["#attributes"]["datetime"] %}
-          {% set finish_date = item.content.field_activity_range.0.end_date["#attributes"]["datetime"] %}
-          {{ begin_date | date('U') | format_date('custom', 'F d, Y') }} to
-          {{ finish_date | date('U') | format_date('custom', 'F d, Y') }}
+        {{ item.content.start_date["#text"] }} to 
+        {{ item.content.end_date["#text"] }}
         </div>
       {% endfor %}
     </div>
   {% else %}
     {% for item in items %}
       <div{{ attributes.addClass(classes, 'field__item') }}>
-        {% set begin_date = item.content.field_activity_range.0.start_date["#attributes"]["datetime"] %}
-        {% set finish_date = item.content.field_activity_range.0.end_date["#attributes"]["datetime"] %}
-        {{ begin_date | date('U') | format_date('custom', 'F d, Y') }} to
-        {{ finish_date | date('U') | format_date('custom', 'F d, Y') }}
+        {{ item.content.start_date["#text"] }} to 
+        {{ item.content.end_date["#text"] }}
       </div>
     {% endfor %}
   {% endif %}
@@ -66,10 +62,8 @@
     {% endif %}
     {% for item in items %}
       <div{{ item.attributes.addClass('field__item') }}>
-        {% set begin_date = item.content.field_activity_range.0.start_date["#attributes"]["datetime"] %}
-        {% set finish_date = item.content.field_activity_range.0.end_date["#attributes"]["datetime"] %}
-        {{ begin_date | date('U') | format_date('custom', 'F d, Y') }} to
-        {{ finish_date | date('U') | format_date('custom', 'F d, Y') }}
+        {{ item.content.start_date["#text"] }} to 
+        {{ item.content.end_date["#text"] }}
       </div>
     {% endfor %}
     {% if multiple %}
