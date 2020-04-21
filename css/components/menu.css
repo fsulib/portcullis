@@ -203,7 +203,7 @@ ul.menu li.menu-item--expanded > a:hover:before {
 }
 .header-container .col-12 ul.menu > li:last-child > a,
 .header-container .col-12 ul.menu > li:last-child > span {
-  padding-right: 0;
+  /*padding-right: 0;*/
 }
 .headings-wide-spacing-enabled .header-container ul.menu li a,
 .headings-wide-spacing-enabled .header-container ul.menu li > span  {
