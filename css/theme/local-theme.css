@@ -52,8 +52,8 @@ body.page-node-type-project .block-field-blocknodeprojectfield-doi {
 }
 
 body.page-node-type-project .block-field-blocknodeprojectbody div.text-formatted {
-  margin-top: 20px;
-  float: left;
+  padding: 20px 0;
+  clear: both;
 }
 
 body.page-node-type-project div.view-project-latest-datasets {
