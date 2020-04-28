@@ -39,6 +39,7 @@ table tr td {
   font-size: 15px;
   font-weight: 400;
   color: #6c6c6c;
+  max-width: 500px;
 }
 table tr:first-child td {
   border-top-width: 1px;
