@@ -39,6 +39,28 @@ div.block-content-edit-link a.ldbase-button:hover {
   background-color: #efefef;
 }
 
+/* Top search styles */
+div#block-ldbaseminimalobjectsearchlinkblock {
+  padding: 5px 0 10px 0;
+  max-width: 400px;
+}
+
+div#block-ldbaseminimalobjectsearchlinkblock input#edit-keys {
+  border-radius: 15px;
+  padding-left: 45px;
+}
+
+div#block-ldbaseminimalobjectsearchlinkblock .fa-search {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+}
+
+/* Top account menu styles */
+nav#block-portcullis-account-menu {
+  padding-top: 14px;
+}
+
 /*Layout Styles for Projects*/
 body.page-node-type-project h1.page-title{
   margin: 0;
