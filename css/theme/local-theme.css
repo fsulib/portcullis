@@ -53,7 +53,7 @@ div#block-ldbaseminimalobjectsearchlinkblock input#edit-keys {
 div#block-ldbaseminimalobjectsearchlinkblock .fa-search {
   position: absolute;
   top: 20px;
-  left: 25px;
+  margin-left: 0.5em;
 }
 
 /* Top account menu styles */
