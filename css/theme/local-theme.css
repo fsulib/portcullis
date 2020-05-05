@@ -4,6 +4,15 @@ a {
   text-decoration: underline;
 }
 
+input.form-text, input.form-tel, 
+input.form-email, input.form-url, 
+input.form-search, input.form-file, 
+input.form-number, input.form-color, 
+input.form-date, input.form-time, 
+textarea, select {
+  color: #222222;
+}
+
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #dadada;
   opacity: 1; /* Firefox */
@@ -37,6 +46,29 @@ div.block-content-edit-link a.ldbase-button {
 
 div.block-content-edit-link a.ldbase-button:hover {
   background-color: #efefef;
+}
+
+/* Global Webform changes */
+
+.choices__list .choices__item--choice {
+  color: #111111;
+}
+
+.choices__list--multiple .choices__item {
+  background-color: #222222;
+  border: 1px solid black;
+  font-size: 14px;
+}
+
+.choices__list--multiple .choices__item.is-highlighted {
+  background-color: #b82222;
+  border: 1px solid black;
+  font-size: 14px;
+}
+
+.choices[data-type*="select-multiple"] .choices__button, 
+.choices[data-type*="text"] .choices__button {
+  border-left: 1px solid white;
 }
 
 /* Top search styles */
