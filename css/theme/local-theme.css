@@ -1,6 +1,6 @@
 /*Global changes*/
 a {
-  color: #b82222;
+  color: #671e30;
   text-decoration: underline;
 }
 
@@ -72,6 +72,10 @@ div.block-content-edit-link a.ldbase-button:hover {
 }
 
 /* Top search styles */
+.region--dark-background {
+    background-color: #671e30;
+}
+
 div#block-ldbaseminimalobjectsearchlinkblock {
   padding: 5px 0 10px 0;
   max-width: 400px;
@@ -79,13 +83,21 @@ div#block-ldbaseminimalobjectsearchlinkblock {
 
 div#block-ldbaseminimalobjectsearchlinkblock input#edit-keys {
   border-radius: 15px;
-  padding-left: 45px;
+  padding: 3px 10px 3px 50px;
+  background: white;
+  font-size: 20px;
+  border-color: #cdcdcd;
 }
 
+div#block-ldbaseminimalobjectsearchlinkblock input#edit-keys::placeholder {
+  color: #666;
+}
+    
 div#block-ldbaseminimalobjectsearchlinkblock .fa-search {
   position: absolute;
   top: 20px;
   margin-left: 0.5em;
+  color: #333333;
 }
 
 /* Top account menu styles */
