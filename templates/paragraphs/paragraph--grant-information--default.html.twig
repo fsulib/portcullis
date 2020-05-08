@@ -52,12 +52,18 @@
     {% block content %}
     
       <div class="field__label">
-        {{ content.field_funding_agency['#title'] }} /
-        {{ content.field_grant_number['#title'] }}
+        {{ content.field_funding_agency['#title'] }}
+
+        {% if content.field_grant_number['#title'] %}
+          / {{ content.field_grant_number['#title'] }}
+        {% endif %}
       </div>    
       <div class="field__items">
-        {{ content.field_funding_agency.0 }} /
-        {{ content.field_grant_number.0 }}
+        {{ content.field_funding_agency.0 }}
+        
+        {% if content.field_grant_number.0 %}
+          / {{ content.field_grant_number.0 }}
+        {% endif %}
       </div>
      
     {% endblock %}
