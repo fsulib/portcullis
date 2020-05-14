@@ -105,6 +105,47 @@ nav#block-portcullis-account-menu {
   padding-top: 14px;
 }
 
+/* Home Page Banner styles */
+.path-frontpage .banner {
+  background-image: url(../../../../../modules/custom/ldbase_content/images/ldbase-home-banner.jpg);
+}
+
+.path-frontpage .banner.region--white-background:after {
+  background-color: transparent; 
+}
+
+/* Home page login block styles */
+
+.path-frontpage div#block-userlogin {
+  width: 400px;
+  float: right;
+  background-color: rgba(230, 230, 230, 0.8);
+  padding: 0 20px;
+  margin: 20px 0;
+  border-radius: 15px;
+}
+
+.path-frontpage div#block-userlogin a {
+  text-decoration: none;
+}
+
+.path-frontpage div#block-userlogin a:hover,
+.path-frontpage div#block-userlogin a:focus
+{
+  text-decoration: underline;
+}
+
+.path-frontpage div#block-userlogin ul {
+  list-style-type: none;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 420px) {
+  .path-frontpage div#block-userlogin {
+    width: 95%;      
+  }
+}
+
 /*Layout Styles for Projects*/
 body.page-node-type-project h1.page-title{
   margin: 0;
