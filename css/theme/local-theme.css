@@ -146,6 +146,11 @@ nav#block-portcullis-account-menu {
   }
 }
 
+/* Home page content bottom styles */
+.path-frontpage .content-bottom__container div.views-row {
+  padding-left: 10px;
+}
+
 /*Layout Styles for Projects*/
 body.page-node-type-project h1.page-title{
   margin: 0;
