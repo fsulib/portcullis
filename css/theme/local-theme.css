@@ -27,21 +27,21 @@ textarea, select {
 }
 
 .field--type-daterange, .field--type-link, 
-.field--type-entity-reference-revisions {
+.field--type-entity-reference-revisions,
+.field--type-list-string, .field--type-address,
+.field--type-entity-reference {
   margin-top: 10px;
 }
 
-div.block-content-edit-link {
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
-
 div.block-content-edit-link a.ldbase-button {
+  display: inline-block;
   font-size: 16px;
   font-weight: 600;
   text-decoration: none;
   border: 2px solid #636363;
   padding: 10px 25px;
+  margin-top:20px;
+  margin-bottom: 30px;
 }
 
 div.block-content-edit-link a.ldbase-button:hover {
@@ -157,10 +157,10 @@ body.page-node-type-project h1.page-title{
 }
 
 body.page-node-type-project .block-field-blocknodeprojectfield-doi {
-  float: left;
   border-right: 1px solid black;
   padding: 0 10px 0 0;
   margin-right: 20px;
+  display: inline-block;
 }
 
 body.page-node-type-project .block-field-blocknodeprojectbody div.text-formatted {
@@ -189,6 +189,18 @@ body.page-node-type-project div.view-project-latest-documents div.views-row {
 /*Layout Styles for Datasets*/
 body.page-node-type-dataset h1.page-title{
   margin: 0;
+}
+
+body.page-node-type-dataset .block-field-blocknodedatasetfield-doi {
+  border-right: 1px solid black;
+  padding: 0 10px 0 0;
+  margin-right: 20px;
+  display: inline-block;
+}
+
+body.page-node-type-dataset .block-field-blocknodedatasetbody div.text-formatted {
+  padding: 20px 0;
+  clear: both;
 }
 
 /*Layout Styles for Documents*/
