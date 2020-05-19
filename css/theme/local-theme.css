@@ -208,6 +208,18 @@ body.page-node-type-document h1.page-title{
   margin: 0;
 }
 
+body.page-node-type-document .block-field-blocknodedocumentfield-doi {
+  border-right: 1px solid black;
+  padding: 0 10px 0 0;
+  margin-right: 20px;
+  display: inline-block;
+}
+
+body.page-node-type-document .block-field-blocknodedocumentbody div.text-formatted {
+  padding: 20px 0;
+  clear: both;
+}
+
 /*Layout Styles for Code*/
 body.page-node-type-code h1.page-title{
   margin: 0;
@@ -219,3 +231,7 @@ div.eva-person-user-profile div.views-row {
   padding: 15px;
 }
 
+/* Layout styles for Advanced Search */
+.path-advanced-search .form-item.form-type-textfield {
+  width: 100%;
+}
