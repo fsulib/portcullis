@@ -798,6 +798,10 @@ local-stylesheets:
       css/components/local-components.css: { weight: 100 }
     theme:
       css/theme/local-theme.css: { weight: 150 }
+  js:
+    js/custom/local-theme.js: {}
+  dependencies:
+    - core/jquery
 
 #####################
 #   Color Schemes   #
