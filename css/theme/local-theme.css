@@ -48,6 +48,14 @@ div.block-content-edit-link a.ldbase-button:hover {
   background-color: #efefef;
 }
 
+header.three-columns div.col-12 {
+  padding: 0;
+}
+
+div#block-portcullis-breadcrumbs nav.breadcrumb {
+  padding: 0 20px; 
+}
+
 /* Global Webform changes */
 
 .choices__list .choices__item--choice {

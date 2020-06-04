@@ -281,7 +281,7 @@ function portcullis_preprocess_page(&$variables) {
       $variables['header_layout_columns_class'] = 'three-columns';
       $variables['header_first_grid_class'] = 'col-lg-4 col-md-8 order-md-1';
       $variables['header_second_grid_class'] = 'col-lg-7 order-lg-1 col-12 order-md-3';
-      $variables['header_third_grid_class'] = 'col-lg-1 col-md-4 order-md-2';
+      $variables['header_third_grid_class'] = 'col-12';
     } else {
       $variables['header_layout_columns_class'] = 'two-columns';
       $variables['header_first_grid_class'] = 'col-lg-4';

@@ -177,15 +177,6 @@
             {# header__container #}
             <div class="clearfix header__container">
               <div class="row">
-                {% if page.header_third %}
-                  <div class="{{ header_third_grid_class }}">
-                    {# header-third #}
-                    <div class="clearfix header__section header-third">
-                      {{ page.header_third }}
-                    </div>
-                    {# EOF:header-third #}
-                  </div>
-                {% endif %}
                 {% if page.header_first %}
                   <div class="{{ header_first_grid_class }}">
                     {# header-first #}
@@ -204,10 +195,21 @@
                     {# EOF:header-second #}
                   </div>
                 {% endif %}
-              </div>
+              </div>           
             </div>
-            {# EOF: header__container #}
+            {# EOF: header__container #} 
           </div>
+          
+          {% if page.header_third %}
+            <div class="{{ header_third_grid_class }}">
+              {# header-third #}
+              <div class="clearfix header__section header-third">
+                {{ page.header_third }}
+              </div>
+              {# EOF:header-third #}
+            </div>
+          {% endif %}
+          
         </header>
         {# EOF: header #}
       {% endif %}
