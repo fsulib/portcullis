@@ -255,12 +255,12 @@ div#project-tree-view-wrapper ul {
 
 li.project-tree-view-item-current > a {
   text-decoration: none;
-  color: red;
+  color: #671e30;
   font-weight: bolder;
 }
 
 li.project-tree-view-item-current > strong {
   text-decoration: none;
-  color: red;
+  color: #671e30;
   font-weight: bolder;
 }
