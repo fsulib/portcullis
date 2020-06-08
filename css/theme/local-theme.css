@@ -243,3 +243,16 @@ div.eva-person-user-profile div.views-row {
 .path-advanced-search .form-item.form-type-textfield {
   width: 100%;
 }
+
+/* Styling for Project View block */
+div#project-tree-view-wrapper {
+  font-size: 10px;
+}
+div#project-tree-view-wrapper ul {
+  padding-left: 15px;
+}
+div#project-tree-view-wrapper li.project-tree-view-item-current a {
+  color: #555555;
+  font-weight: bold;
+  text-decoration: none;
+}
