@@ -247,20 +247,23 @@ div.eva-person-user-profile div.views-row {
 /* Styling for Project View block */
 div#project-tree-view-wrapper {
   font-size: 10px;
+  font-weight: bolder;
+  color: #671e30;
+}
+
+div#project-tree-view-wrapper a {
+  text-decoration: none;
+}
+
+div#project-tree-view-wrapper a:hover {
+  text-decoration: underline;
 }
 
 div#project-tree-view-wrapper ul {
   padding-left: 15px;
+  list-style-type: circle;
 }
 
 li.project-tree-view-item-current > a {
-  text-decoration: none;
-  color: #671e30;
-  font-weight: bolder;
-}
-
-li.project-tree-view-item-current > strong {
-  text-decoration: none;
-  color: #671e30;
-  font-weight: bolder;
+  color: #2a2a2a;
 }
