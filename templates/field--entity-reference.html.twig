@@ -55,8 +55,15 @@
     {% if multiple %}
       <div class="field__items">
     {% endif %}
+    {% set count = 1 %}
+    {% set number_of_items = items | length %}
     {% for item in items %}
-      <div{{ item.attributes.addClass('field__item') }}>{{ item.content }}</div>
+      {% if count == number_of_items %}
+        {{ item.content }}
+      {% else %}
+        {{ item.content }}{{ ',' }}
+      {% endif %}
+      {% set count = count + 1 %}
     {% endfor %}
     {% if multiple %}
       </div>

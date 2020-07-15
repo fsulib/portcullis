@@ -37,7 +37,7 @@
  * @ingroup themeable
  */
 #}
-<p class="address" translate="no">
+<div class="address" translate="no">
   {% if given_name or family_name or additional_name %}
     {{ given_name }} {{ family_name }} {{ additional_name }}<br>
   {% endif %}
@@ -60,4 +60,4 @@
     {{ administrative_area.name }},
   {% endif %}
   {{ country.name }}
-</p>
+</div>

@@ -30,7 +30,7 @@ textarea, select {
 .field--type-entity-reference-revisions,
 .field--type-list-string, .field--type-address,
 .field--type-entity-reference {
-  margin-top: 10px;
+  
 }
 
 div.block-content-edit-link a.ldbase-button {
