@@ -79,6 +79,23 @@ div#block-portcullis-breadcrumbs nav.breadcrumb {
   border-left: 1px solid white;
 }
 
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background-color: #222;
+  border: 1px solid #000;
+  color: white;
+  border-radius: 12px;
+  padding: 2px 10px;
+} 
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  color: #ddd;
+  margin-right: 4px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover {
+  color: #aaa;
+}
+
 /* Top search styles */
 .region--dark-background {
     background-color: #671e30;
