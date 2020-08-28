@@ -295,7 +295,14 @@ body.page-node-type-code .block-field-blocknodecodefield-doi {
 div.eva-person-user-profile div.views-row {
   border: 1px solid #cdcdcd;
   padding: 15px;
+  float: left;
+  width: 100%;
 }
+
+div.eva-person-user-profile div.views-field-field-thumbnail {
+  float: right;
+}
+
 
 /* Layout styles for Advanced Search */
 .path-advanced-search .form-item.form-type-textfield {
