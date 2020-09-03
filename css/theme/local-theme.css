@@ -292,6 +292,26 @@ body.page-node-type-code .block-field-blocknodecodefield-doi {
 }
 
 /* Layout styles for user dashboard */
+body.path-user h1.page-title {
+  display: none;
+}
+
+div.user-project-list div.views-row {
+  border: 1px solid #cdcdcd;
+  padding: 10px 15px;
+}
+
+div.user-project-list .font-awesome-icon {
+  float: left;
+  position: relative;
+  font-size: 18px;
+}
+
+div.user-project-list .ldbase-profile-project-link {
+  margin-left: 30px;
+  margin-top: 0px;
+}
+
 div.eva-person-user-profile div.views-row {
   border: 1px solid #cdcdcd;
   padding: 15px;
