@@ -324,10 +324,17 @@ div.eva-person-user-profile div.views-field-field-thumbnail {
 }
 
 
-/* Layout styles for Advanced Search */
+/* Layout styles for search page */
 .path-search .form-item.form-type-textfield {
   width: 100%;
+  margin: 0.5em;
 }
+
+div.region-sidebar-first div.block-facet--links {
+  padding: 0;
+}
+
+
 
 /* Styling for Project View block */
 div#project-tree-view-wrapper {
