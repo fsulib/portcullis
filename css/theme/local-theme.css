@@ -329,6 +329,10 @@ div.eva-person-user-profile div.views-field-field-thumbnail {
   float: none;
 }
 
+#block-searchfacetparticipantageminimum, #block-searchfacetparticipantagemaximum {
+  padding: 0;
+}
+
 .path-search .form-item.form-type-textfield {
   width: 100%;
   margin: 0.5em;
