@@ -325,6 +325,10 @@ div.eva-person-user-profile div.views-field-field-thumbnail {
 
 
 /* Layout styles for search page */
+#views-exposed-form-search-page-1 > div > div.js-form-item.form-item.js-form-type-search-api-autocomplete.form-type-search-api-autocomplete {
+  float: none;
+}
+
 .path-search .form-item.form-type-textfield {
   width: 100%;
   margin: 0.5em;
