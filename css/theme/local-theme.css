@@ -379,6 +379,9 @@ li.project-tree-view-item-current > a {
 }
 
 /* Styling for Social Media Buttons */
+div#block-socialmediablock {
+  padding: 0;
+}
 .resp-sharing-button__link,
 .resp-sharing-button__icon {
   display: inline-block
