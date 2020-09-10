@@ -325,6 +325,23 @@ div.eva-person-user-profile div.views-field-field-thumbnail {
 
 
 /* Layout styles for search page */
+div.view-search {
+  margin-top: -1em;
+}
+
+div.view-search div.view-header {
+  margin-bottom: 1em;
+}
+
+div.view-search div.form-item {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+div.view-search div#edit-actions {
+  margin-top: -1em;
+}
+
 #views-exposed-form-search-page-1 > div > div.js-form-item.form-item.js-form-type-search-api-autocomplete.form-type-search-api-autocomplete {
   float: none;
 }
