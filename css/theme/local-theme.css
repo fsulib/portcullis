@@ -260,6 +260,15 @@ body.page-node-type-dataset .block-field-blocknodedatasetbody div.text-formatted
   clear: both;
 }
 
+body.page-node-type-dataset div.view-project-latest-documents {
+  margin-top: 30px;
+  border-top: 1px solid #dedede;
+}
+
+body.page-node-type-dataset div.view-project-latest-documents div.views-row {
+  padding-bottom: 10px;
+}
+
 /*Layout Styles for Documents*/
 body.page-node-type-document h1.page-title{
   margin: 0;
@@ -289,6 +298,11 @@ body.page-node-type-code .block-field-blocknodecodefield-doi {
   margin-right: 20px;
   display: inline-block;
   float: left;  
+}
+
+/*Layout Styles for Persons*/
+body.page-node-type-person div.field--name-field-thumbnail {
+  float: right;
 }
 
 /* Layout styles for user dashboard */
