@@ -305,6 +305,16 @@ body.page-node-type-person div.field--name-field-thumbnail {
   float: right;
 }
 
+div.view-person-project-contributions div.views-row {
+  border: 1px solid #cdcdcd;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+}
+
+div.view-person-project-contributions div.views-field-title a {
+  display: inline;
+}
+
 /* Layout styles for user dashboard */
 body.path-user h1.page-title {
   display: none;
