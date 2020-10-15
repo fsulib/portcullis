@@ -366,10 +366,18 @@ div.view-search div#edit-actions {
   margin-top: -1em;
 }
 
-#views-exposed-form-search-page-1 > div > div.js-form-item.form-item.js-form-type-search-api-autocomplete.form-type-search-api-autocomplete {
+#views-exposed-form-search-page-1 > div 
+> div.js-form-item.form-item.js-form-type-search-api-autocomplete.form-type-search-api-autocomplete {
   float: none;
 }
 
+#views-exposed-form-search-page-1 > div
+> div.form-item-search-api-fulltext-1,
+#views-exposed-form-search-page-1 > div
+> div.form-item-search-api-fulltext-2
+{
+  display: none;    
+}
 #block-searchfacetparticipantageminimum, #block-searchfacetparticipantagemaximum {
   padding: 0;
 }
