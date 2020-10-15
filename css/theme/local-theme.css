@@ -104,25 +104,35 @@ div#block-portcullis-breadcrumbs nav.breadcrumb {
 div#block-ldbaseminimalobjectsearchlinkblock {
   padding: 5px 0 10px 0;
   max-width: 400px;
+  display: block;
 }
 
 div#block-ldbaseminimalobjectsearchlinkblock input#edit-keys {
-  border-radius: 15px;
-  padding: 3px 10px 3px 50px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 3px 10px 3px 15px;
   background: white;
   font-size: 20px;
   border-color: #cdcdcd;
+  float: left;
+  width: 70%;
+  margin-top: 10px;
+}
+
+div#block-ldbaseminimalobjectsearchlinkblock input.global-search-submit-button {
+  padding: 14px 30px 14px 30px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: black;
+  border: 2px solid rgba(200, 200, 200, .5);
+}
+
+div#block-ldbaseminimalobjectsearchlinkblock input.global-search-submit-button:hover {
+  background-color: white;
 }
 
 div#block-ldbaseminimalobjectsearchlinkblock input#edit-keys::placeholder {
   color: #666;
-}
-    
-div#block-ldbaseminimalobjectsearchlinkblock .fa-search {
-  position: absolute;
-  top: 20px;
-  margin-left: 0.5em;
-  color: #333333;
 }
 
 /* Top account menu styles */
