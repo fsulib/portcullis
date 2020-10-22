@@ -414,13 +414,17 @@ div.region-sidebar-first div.block-facet--links {
   margin: 0;
 }
 
-.facet-pills__pill__link {
+.facet-pills__pill {
+  margin-top: 5px;
+}
+
+.facet-pills__pill__link, .facet-pills__pill__link::after, .facet-pills__pill__link:hover, .facet-pills__pill__link:visited {
   background-color: #222;
   color: #FFF;
 }
 
-.facet-pills__pill__link::after {
-  color: #FFF;
+#block-activefacetpillsblock {
+  padding: 0;
 }
 
 /* Styling for Project View block */
