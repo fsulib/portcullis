@@ -418,9 +418,15 @@ div.region-sidebar-first div.block-facet--links {
   margin-top: 5px;
 }
 
-.facet-pills__pill__link, .facet-pills__pill__link::after, .facet-pills__pill__link:hover, .facet-pills__pill__link:visited {
+.facet-pills__pill__link, .facet-pills__pill__link:hover, .facet-pills__pill__link:visited {
   background-color: #222;
   color: #FFF;
+  padding: 5px 25px 5px 10px;
+}
+
+.facet-pills__pill__link::after{
+  color: #FFF;
+  right: 0.6em;
 }
 
 #block-activefacetpillsblock {
