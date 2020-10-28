@@ -673,3 +673,48 @@ div#block-socialmediablock {
   background-color: #3a80c1;
   border-color: #3a80c1;
 }
+
+/* Project Tasks Menu */
+nav#block-projecttasks-2 h2#block-projecttasks-2-menu {
+  border: none;
+}
+
+nav#block-projecttasks-2 ul.menu li {
+  float: left;
+  border: 2px solid black;
+  padding-right: 20px;
+  margin-right: 10px;
+}
+
+nav#block-projecttasks-2 ul.menu li:hover {
+  background-color: #ededed;
+}
+
+nav#block-projecttasks-2 ul.menu li a {
+  font-weight: 500;
+  color: #671e30;
+}
+
+nav#block-projecttasks-2 ul.menu li a:before {
+  content: none;
+}
+
+nav#block-projecttasks-2 ul.menu li.menu-item--expanded ul {
+  display: none;
+  position: absolute;
+  clear: both;
+  background-color: white;
+  padding: 0;
+  border: 1px solid #ccc;
+  min-width: 180px;
+}
+
+nav#block-projecttasks-2 ul.menu li.menu-item--expanded ul.menu li {
+  border: none;
+  width: 100%;
+}
+
+nav#block-projecttasks-2 ul.menu li.menu-item--expanded:hover > ul {
+  display: block;
+  z-index: 9999;  
+}
