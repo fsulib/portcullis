@@ -11,4 +11,6 @@ jQuery(document).ready(function($) {
       $(".display-advanced-search").text('Go to Advanced Search');
     }
   });
+  
+  $(".deactivate-link").removeAttr("href");
 });

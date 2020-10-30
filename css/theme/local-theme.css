@@ -718,3 +718,138 @@ nav#block-projecttasks-2 ul.menu li.menu-item--expanded:hover > ul {
   display: block;
   z-index: 9999;  
 }
+
+/* Dataset Tasks Menu */
+nav#block-datasettasks h2#block-datasettasks-menu {
+  border: none;
+}
+
+nav#block-datasettasks ul.menu li {
+  float: left;
+  border: 2px solid black;
+  padding-right: 20px;
+  margin-right: 10px;
+}
+
+nav#block-datasettasks ul.menu li:hover {
+  background-color: #ededed;
+}
+
+nav#block-datasettasks ul.menu li a {
+  font-weight: 500;
+  color: #671e30;
+}
+
+nav#block-datasettasks ul.menu li a:before {
+  content: none;
+}
+
+nav#block-datasettasks ul.menu li.menu-item--expanded ul {
+  display: none;
+  position: absolute;
+  clear: both;
+  background-color: white;
+  padding: 0;
+  border: 1px solid #ccc;
+  min-width: 180px;
+}
+
+nav#block-datasettasks ul.menu li.menu-item--expanded ul.menu li {
+  border: none;
+  width: 100%;
+}
+
+nav#block-datasettasks ul.menu li.menu-item--expanded:hover > ul {
+  display: block;
+  z-index: 9999;  
+}
+
+/* Code Tasks Menu */
+nav#block-codetasks h2#block-codetasks-menu {
+  border: none;
+}
+
+nav#block-codetasks ul.menu li {
+  float: left;
+  border: 2px solid black;
+  padding-right: 20px;
+  margin-right: 10px;
+}
+
+nav#block-codetasks ul.menu li:hover {
+  background-color: #ededed;
+}
+
+nav#block-codetasks ul.menu li a {
+  font-weight: 500;
+  color: #671e30;
+}
+
+nav#block-codetasks ul.menu li a:before {
+  content: none;
+}
+
+nav#block-codetasks ul.menu li.menu-item--expanded ul {
+  display: none;
+  position: absolute;
+  clear: both;
+  background-color: white;
+  padding: 0;
+  border: 1px solid #ccc;
+  min-width: 180px;
+}
+
+nav#block-codetasks ul.menu li.menu-item--expanded ul.menu li {
+  border: none;
+  width: 100%;
+}
+
+nav#block-codetasks ul.menu li.menu-item--expanded:hover > ul {
+  display: block;
+  z-index: 9999;  
+}
+
+/* Document Tasks Menu */
+nav#block-documenttasks h2#block-documenttasks-menu {
+  border: none;
+}
+
+nav#block-documenttasks ul.menu li {
+  float: left;
+  border: 2px solid black;
+  padding-right: 20px;
+  margin-right: 10px;
+}
+
+nav#block-documenttasks ul.menu li:hover {
+  background-color: #ededed;
+}
+
+nav#block-documenttasks ul.menu li a {
+  font-weight: 500;
+  color: #671e30;
+}
+
+nav#block-documenttasks ul.menu li a:before {
+  content: none;
+}
+
+nav#block-documenttasks ul.menu li.menu-item--expanded ul {
+  display: none;
+  position: absolute;
+  clear: both;
+  background-color: white;
+  padding: 0;
+  border: 1px solid #ccc;
+  min-width: 180px;
+}
+
+nav#block-documenttasks ul.menu li.menu-item--expanded ul.menu li {
+  border: none;
+  width: 100%;
+}
+
+nav#block-documenttasks ul.menu li.menu-item--expanded:hover > ul {
+  display: block;
+  z-index: 9999;  
+}
