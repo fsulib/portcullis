@@ -544,11 +544,18 @@ div#project-tree-view-wrapper a:hover {
 
 div#project-tree-view-wrapper ul {
   padding-left: 15px;
-  list-style-type: circle;
+  list-style-type: none;
+}
+
+li.project-tree-view-item-current:before {
+  content: "\25BA \0020";
+  padding-right: 0;
+  color: #2a2a2a;
 }
 
 li.project-tree-view-item-current > a {
   color: #2a2a2a;
+  font-size: 110%;
 }
 
 /* Styling for Social Media Buttons */
@@ -675,6 +682,10 @@ div#block-socialmediablock {
 }
 
 /* Project Tasks Menu */
+h2#block-projecttasks-2-menu {
+  display: none;
+}
+
 nav#block-projecttasks-2 h2#block-projecttasks-2-menu {
   border: none;
 }
@@ -720,6 +731,10 @@ nav#block-projecttasks-2 ul.menu li.menu-item--expanded:hover > ul {
 }
 
 /* Dataset Tasks Menu */
+h2#block-datasettasks-menu {
+  display: none;
+}
+
 nav#block-datasettasks h2#block-datasettasks-menu {
   border: none;
 }
@@ -765,6 +780,10 @@ nav#block-datasettasks ul.menu li.menu-item--expanded:hover > ul {
 }
 
 /* Code Tasks Menu */
+h2#block-codetasks-menu {
+  display: none;
+}
+
 nav#block-codetasks h2#block-codetasks-menu {
   border: none;
 }
@@ -810,6 +829,10 @@ nav#block-codetasks ul.menu li.menu-item--expanded:hover > ul {
 }
 
 /* Document Tasks Menu */
+h2#block-documenttasks-menu {
+  display: none;
+}
+
 nav#block-documenttasks h2#block-documenttasks-menu {
   border: none;
 }
