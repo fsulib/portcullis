@@ -35,13 +35,13 @@ textarea, select {
 
 a.ldbase-button {
   display: inline-block;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   text-decoration: none;
   border: 2px solid #636363;
-  padding: 10px 25px;
+  padding: 6px 15px;
   margin-top:20px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 a.ldbase-button:hover {
@@ -204,7 +204,7 @@ div.block-content-delete-link {
   background-color: white;
   border: 2px solid #636363;
   font-size: 13px;
-  font-weight: bold;
+  font-weight: 500;
   color: #671e30;
 }
 
@@ -549,13 +549,12 @@ div#project-tree-view-wrapper ul {
 
 li.project-tree-view-item-current:before {
   content: "\25BA \0020";
-  padding-right: 0;
+  padding-left: 0;
   color: #2a2a2a;
 }
 
 li.project-tree-view-item-current > a {
-  color: #2a2a2a;
-  font-size: 110%;
+  color: #dc143c;
 }
 
 /* Styling for Social Media Buttons */

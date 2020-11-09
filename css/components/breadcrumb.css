@@ -64,6 +64,11 @@
 .breadcrumb__item a {
   text-decoration: none;
 }
+
+.breadcrumb__item a:hover {
+  text-decoration: underline;
+}
+
 .region--light-typography .breadcrumb__item {
   color: #ffffff;
 }
