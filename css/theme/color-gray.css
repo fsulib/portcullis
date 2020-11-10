@@ -137,7 +137,7 @@ input[type="reset"],
 input[type="button"] {
   border-color: #636363;
   color: #671e30;
-  font-weight: 600;
+  font-weight: 500;
 }
 a.button:hover,
 a.button:focus,

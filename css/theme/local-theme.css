@@ -35,11 +35,11 @@ textarea, select {
 
 a.ldbase-button {
   display: inline-block;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 85%;
+  font-weight: 500;
   text-decoration: none;
   border: 2px solid #636363;
-  padding: 6px 15px;
+  padding: 4px 14px;
   margin-top:20px;
   margin-bottom: 15px;
 }
@@ -551,6 +551,7 @@ li.project-tree-view-item-current:before {
   content: "\25BA \0020";
   padding-left: 0;
   color: #2a2a2a;
+  margin-left: -13px;
 }
 
 li.project-tree-view-item-current > a {
@@ -692,7 +693,7 @@ nav#block-projecttasks-2 h2#block-projecttasks-2-menu {
 nav#block-projecttasks-2 ul.menu li {
   float: left;
   border: 2px solid black;
-  padding-right: 20px;
+  padding-right: 16px;
   margin-right: 10px;
 }
 
@@ -703,6 +704,8 @@ nav#block-projecttasks-2 ul.menu li:hover {
 nav#block-projecttasks-2 ul.menu li a {
   font-weight: 500;
   color: #671e30;
+  font-size: 85%;
+  padding: 5px 0 6px 16px;
 }
 
 nav#block-projecttasks-2 ul.menu li a:before {
@@ -741,7 +744,7 @@ nav#block-datasettasks h2#block-datasettasks-menu {
 nav#block-datasettasks ul.menu li {
   float: left;
   border: 2px solid black;
-  padding-right: 20px;
+  padding-right: 16px;
   margin-right: 10px;
 }
 
@@ -752,6 +755,8 @@ nav#block-datasettasks ul.menu li:hover {
 nav#block-datasettasks ul.menu li a {
   font-weight: 500;
   color: #671e30;
+  font-size: 85%;
+  padding: 5px 0 6px 16px;
 }
 
 nav#block-datasettasks ul.menu li a:before {
@@ -790,7 +795,7 @@ nav#block-codetasks h2#block-codetasks-menu {
 nav#block-codetasks ul.menu li {
   float: left;
   border: 2px solid black;
-  padding-right: 20px;
+  padding-right: 16px;
   margin-right: 10px;
 }
 
@@ -801,6 +806,8 @@ nav#block-codetasks ul.menu li:hover {
 nav#block-codetasks ul.menu li a {
   font-weight: 500;
   color: #671e30;
+  font-size: 85%;
+  padding: 5px 0 6px 16px;
 }
 
 nav#block-codetasks ul.menu li a:before {
@@ -839,7 +846,7 @@ nav#block-documenttasks h2#block-documenttasks-menu {
 nav#block-documenttasks ul.menu li {
   float: left;
   border: 2px solid black;
-  padding-right: 20px;
+  padding-right: 16px;
   margin-right: 10px;
 }
 
@@ -850,6 +857,8 @@ nav#block-documenttasks ul.menu li:hover {
 nav#block-documenttasks ul.menu li a {
   font-weight: 500;
   color: #671e30;
+  font-size: 85%;
+  padding: 5px 0 6px 16px;
 }
 
 nav#block-documenttasks ul.menu li a:before {
