@@ -11,6 +11,11 @@ jQuery(document).ready(function($) {
       $(".display-advanced-search").text('Go to Advanced Search');
     }
   });
-  
+
+  if($("input[name=search_api_fulltext_1]").val() || $("input[name=search_api_fulltext_2]").val()) {
+    $(".form-item-search-api-fulltext-1").show();
+    $(".form-item-search-api-fulltext-2").show();
+  }
+
   $(".deactivate-link").removeAttr("href");
 });
