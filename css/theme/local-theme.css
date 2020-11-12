@@ -452,6 +452,25 @@ div.eva-person-user-profile div.views-field-field-thumbnail {
   float: right;
 }
 
+.col-12 .view-my-messages > .more-link a {
+  font-weight: 500;
+  float: left;
+  color: #671e30;
+  padding: 10px 20px;
+}
+
+/* Layout styles for Mailbox page */
+
+div.view-my-messages div.form-item-field-message-status-value:before {
+  content: "Filter by Message Status";
+  font-weight: 500;
+}
+
+div.view-my-messages .form--inline .form-actions {
+  float: left;
+  clear: none;
+  padding-top: 30px;
+}
 
 /* Layout styles for search page */
 div.view-search {

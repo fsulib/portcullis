@@ -96,8 +96,6 @@ select {
 /*webkit specific rules for select list*/
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   select {
-    background-image: url("../../images/angle-down-black.png");
-    background-image: linear-gradient(transparent, transparent), url("../../images/angle-down-black.svg");
     background-size: 20px 20px;
     background-repeat: no-repeat;
     background-position: 98.5% 50%;
