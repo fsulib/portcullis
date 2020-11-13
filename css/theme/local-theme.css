@@ -461,9 +461,8 @@ div.eva-person-user-profile div.views-field-field-thumbnail {
 
 /* Layout styles for Mailbox page */
 
-div.view-my-messages div.form-item-field-message-status-value:before {
-  content: "Filter by Message Status";
-  font-weight: 500;
+div.view-my-messages select {
+  margin-top: 0;
 }
 
 div.view-my-messages .form--inline .form-actions {
