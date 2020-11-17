@@ -241,7 +241,9 @@ body.page-node-type-project .block-field-blocknodeprojectfield-doi {
 }
 
 body.page-node-type-project .block-field-blocknodeprojectbody div.text-formatted {
-  padding: 20px 0;
+  background-color: #fcf9ee;
+  margin: 10px 0;
+  padding: 20px;
   clear: both;
 }
 
@@ -277,7 +279,9 @@ body.page-node-type-dataset .block-field-blocknodedatasetfield-doi {
 }
 
 body.page-node-type-dataset .block-field-blocknodedatasetbody div.text-formatted {
-  padding: 20px 0;
+  background-color: #fcf9ee;
+  margin: 10px 0; 
+  padding: 20px;
   clear: both;
 }
 
@@ -332,7 +336,9 @@ body.page-node-type-document .block-field-blocknodedocumentfield-doi {
 }
 
 body.page-node-type-document .block-field-blocknodedocumentbody div.text-formatted {
-  padding: 20px 0;
+  background-color: #fcf9ee;
+  margin: 10px 0; 
+  padding: 20px;
   clear: both;
 }
 
@@ -376,6 +382,13 @@ body.page-node-type-code .block-field-blocknodecodefield-doi {
   display: inline-block;
   float: left;  
 }
+
+body.page-node-type-code .block-field-blocknodecodebody div.text-formatted {
+  background-color: #fcf9ee;
+  margin: 10px 0;
+  padding: 20px;
+  clear: both;
+} 
 
 div.field--name-field-code-file div.field__item span.file a {
   font: bold 11px Arial;
