@@ -169,6 +169,10 @@ ul.menu li.menu-item--expanded > a:hover:before {
   float: none;
   z-index: 497;
 }
+.header-container ul.menu > li > ul > li {
+  padding: 0;
+}
+
 @media (min-width: 1200px) {
   .header-container .col-12 ul.menu > li {
     padding: 0 16px;
