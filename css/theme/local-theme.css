@@ -241,7 +241,8 @@ body.page-node-type-project .block-field-blocknodeprojectfield-doi {
 }
 
 body.page-node-type-project .block-field-blocknodeprojectbody div.text-formatted {
-  background-color: #fcf9ee;
+  background-color: rgb(249, 236, 190);
+  color: #111;
   margin: 10px 0;
   padding: 20px;
   clear: both;
@@ -279,7 +280,8 @@ body.page-node-type-dataset .block-field-blocknodedatasetfield-doi {
 }
 
 body.page-node-type-dataset .block-field-blocknodedatasetbody div.text-formatted {
-  background-color: #fcf9ee;
+  background-color: rgb(249, 236, 190);
+  color: #111;
   margin: 10px 0; 
   padding: 20px;
   clear: both;
@@ -336,7 +338,8 @@ body.page-node-type-document .block-field-blocknodedocumentfield-doi {
 }
 
 body.page-node-type-document .block-field-blocknodedocumentbody div.text-formatted {
-  background-color: #fcf9ee;
+  background-color: rgb(249, 236, 190);
+  color: #111;
   margin: 10px 0; 
   padding: 20px;
   clear: both;
@@ -384,7 +387,8 @@ body.page-node-type-code .block-field-blocknodecodefield-doi {
 }
 
 body.page-node-type-code .block-field-blocknodecodebody div.text-formatted {
-  background-color: #fcf9ee;
+  background-color: rgb(249, 236, 190);
+  color: #111;
   margin: 10px 0;
   padding: 20px;
   clear: both;
