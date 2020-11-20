@@ -82,12 +82,16 @@
       <div{{ item.attributes.addClass('field__item') }}>
         {% if (from_month > 0) and (from_month < 13) and (from_year > 1900) %}
           {{ from_date | date('F Y') }}
+        {% elseif from_year > 1900 %}
+          {{ from_year }}
         {% else %}
           present
         {% endif %}
         to
         {% if (to_month > 0) and (to_month < 13) and (to_year > 1900) %}
           {{ to_date | date('F Y') }}
+        {% elseif to_year > 1900 %}
+          {{ to_year }}          
         {% else %}
           present
         {% endif %}
