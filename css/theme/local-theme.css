@@ -919,3 +919,8 @@ nav#block-documenttasks ul.menu li.menu-item--expanded:hover > ul {
   display: block;
   z-index: 9999;  
 }
+
+/* Subfooter Styles */
+p#subfooter-sponsor img, p#subfooter-sponsor span {
+  float: right;
+}

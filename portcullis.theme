@@ -504,8 +504,8 @@ function portcullis_preprocess_page(&$variables) {
   $variables['subfooter_layout_container'] = theme_get_setting('subfooter_layout_container');
 
   if($subfooter_second && $subfooter_first) {
-    $variables['subfooter_first_grid_class'] = 'col-lg-6';
-    $variables['subfooter_second_grid_class'] = 'col-lg-6';
+    $variables['subfooter_first_grid_class'] = 'col-lg-9';
+    $variables['subfooter_second_grid_class'] = 'col-lg-3';
   } elseif ($subfooter_second || $subfooter_first) {
     $variables['subfooter_second_grid_class'] = 'col-12 text-center';
     $variables['subfooter_first_grid_class'] = 'col-12 text-center';
