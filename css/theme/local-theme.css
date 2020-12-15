@@ -921,6 +921,10 @@ nav#block-documenttasks ul.menu li.menu-item--expanded:hover > ul {
 }
 
 /* Subfooter Styles */
-p#subfooter-sponsor img, p#subfooter-sponsor span {
+p#subfooter-disclaimer {
+  font-size: 90%;
+}
+
+p#subfooter-sponsor {
   float: right;
 }
