@@ -799,6 +799,34 @@ nav#block-projecttasks-2 ul.menu li.menu-item--expanded:hover > ul {
   z-index: 9999;  
 }
 
+/* Second Project Tasks Menu */
+
+nav.menu--second-project-tasks {
+  margin-top: 20px;
+}
+
+nav.menu--second-project-tasks ul.menu li {
+  float: left;
+  border: 2px solid black;
+  padding-right: 16px;
+  margin-right: 10px;
+}
+
+nav.menu--second-project-tasks ul.menu li:hover {
+  background-color: #ededed;
+}
+
+nav.menu--second-project-tasks ul.menu li a {
+  font-weight: 500;
+  color: #671e30;
+  font-size: 85%;
+  padding: 5px 0 6px 16px;
+}
+
+nav.menu--second-project-tasks ul.menu li a:before {
+  content: none;
+}
+
 /* Dataset Tasks Menu */
 h2#block-datasettasks-menu {
   display: none;
