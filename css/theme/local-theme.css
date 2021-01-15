@@ -878,6 +878,34 @@ nav#block-datasettasks ul.menu li.menu-item--expanded:hover > ul {
   z-index: 9999;  
 }
 
+/* Second Dataset Tasks Menu */
+
+nav.menu--second-dataset-tasks {
+  margin-top: 20px;
+}
+
+nav.menu--second-dataset-tasks ul.menu li {
+  float: left;
+  border: 2px solid black;
+  padding-right: 16px;
+  margin-right: 10px;
+}
+
+nav.menu--second-dataset-tasks ul.menu li:hover {
+  background-color: #ededed;
+}
+
+nav.menu--second-dataset-tasks ul.menu li a {
+  font-weight: 500;
+  color: #671e30;
+  font-size: 85%;
+  padding: 5px 0 6px 16px;
+}
+
+nav.menu--second-dataset-tasks ul.menu li a:before {
+  content: none;
+}
+
 /* Code Tasks Menu */
 h2#block-codetasks-menu {
   display: none;
