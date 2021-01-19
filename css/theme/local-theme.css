@@ -182,9 +182,27 @@ nav#block-portcullis-account-menu {
   }
 }
 
+/* Home page main content region styles */
+
+.path-frontpage div#main-content h1.page-title {
+  display: none;
+}
+
 /* Home page content bottom styles */
 .path-frontpage .content-bottom__container div.views-row {
-  padding-left: 10px;
+  padding-left: 20px;
+}
+
+.path-frontpage .content-bottom__container div.block-views {
+  border-bottom: 1px solid #636363;
+  border-left: 1px solid #636363;
+  border-right: 1px solid #636363;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.path-frontpage .content-bottom__container div.block-views h2 {
+  padding-left: 20px;
 }
 
 /* Content Tasks Section */

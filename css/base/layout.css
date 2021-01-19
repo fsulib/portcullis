@@ -222,7 +222,7 @@
 }
 .main-content__section,
 .sidebar__section {
-  padding: 10px 0 40px;
+  padding: 10px 0;
 }
 .path-contact .content-top:not(.region--no-paddings) ~ .main-content .main-content__section,
 .path-contact .content-top:not(.region--no-paddings) ~ .main-content .sidebar__section {

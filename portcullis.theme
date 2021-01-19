@@ -344,8 +344,8 @@ function portcullis_preprocess_page(&$variables) {
   $variables['content_bottom_layout_container'] = theme_get_setting('content_bottom_layout_container');
 
   if($content_bottom_second && $content_bottom_first) {
-    $variables['content_bottom_first_grid_class'] = 'col-lg-5';
-    $variables['content_bottom_second_grid_class'] = 'col-lg-5 ml-lg-auto';
+    $variables['content_bottom_first_grid_class'] = 'col-lg-6';
+    $variables['content_bottom_second_grid_class'] = 'col-lg-6 ml-lg-auto';
   } elseif ($content_bottom_second || $content_bottom_first) {
     $variables['content_bottom_first_grid_class'] = 'col-12';
     $variables['content_bottom_second_grid_class'] = 'col-12';
