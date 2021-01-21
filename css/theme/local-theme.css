@@ -96,6 +96,10 @@ div#block-portcullis-breadcrumbs nav.breadcrumb {
   color: #aaa;
 }
 
+.webform-multiple-table-responsive td > div > label.visually-hidden {
+  display: none;
+}
+
 /* Top search styles */
 .region--dark-background {
     background-color: #671e30;
