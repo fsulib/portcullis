@@ -561,12 +561,28 @@ div.view-search div#edit-actions {
 }
 
 #views-exposed-form-search-page-1 > div
+> div.form-item-search-api-fulltext,
+#views-exposed-form-search-page-1 > div
+> div.form-item-search-api-fulltext-1,
+#views-exposed-form-search-page-1 > div
+> div.form-item-search-api-fulltext-2
+{
+  width: 80%;    
+}
+
+#views-exposed-form-search-page-1 > div
 > div.form-item-search-api-fulltext-1,
 #views-exposed-form-search-page-1 > div
 > div.form-item-search-api-fulltext-2
 {
   display: none;    
 }
+
+#views-exposed-form-search-page-1 input#edit-submit-search {
+  float: right;
+  margin-right: 10px;
+}
+
 #block-searchfacetparticipantageminimum, #block-searchfacetparticipantagemaximum {
   padding: 0;
 }
