@@ -567,7 +567,7 @@ div.view-search div#edit-actions {
 #views-exposed-form-search-page-1 > div
 > div.form-item-search-api-fulltext-2
 {
-  width: 80%;    
+  width: 80%;
 }
 
 #views-exposed-form-search-page-1 > div
@@ -581,6 +581,7 @@ div.view-search div#edit-actions {
 #views-exposed-form-search-page-1 input#edit-submit-search {
   float: right;
   margin-right: 10px;
+  margin-bottom: 15px;
 }
 
 #block-searchfacetparticipantageminimum, #block-searchfacetparticipantagemaximum {
