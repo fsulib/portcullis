@@ -100,6 +100,10 @@ div#block-portcullis-breadcrumbs nav.breadcrumb {
   display: none;
 }
 
+.js-form-submit {
+  margin-left: 20px !important;
+}
+
 /* Top search styles */
 .region--dark-background {
     background-color: #671e30;
@@ -250,6 +254,16 @@ div.field--name-field-file-upload div.field__label
 }
 
 /*Layout Styles for Projects*/
+
+.js-form-item-title, .js-form-item-description, .js-form-item-related-persons,
+.js-form-item-related-organizations, .js-form-item-activity-range, .js-form-item-project-type,
+.js-form-item-schooling, .js-form-item-curricula, .js-form-item-time-method,
+.js-form-item-website, .js-form-item-grant-information, .js-form-item-doi, .js-form-item-published-flag
+{
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+}
+
 body.page-node-type-project h1.page-title{
   margin: 0;
 }
@@ -298,6 +312,17 @@ body.page-node-type-project div.view-project-latest-code div.views-row {
 }
 
 /*Layout Styles for Datasets*/
+
+.js-form-item-passed-id, .js-form-item-contributors, .js-form-item-host-organizations, 
+.js-form-item-participants, .js-form-item-special-populations, .js-form-item-constructs, 
+.js-form-item-assessment-name, .js-form-item-variable-types-in-dataset, .js-form-item-data-collection-locations, 
+.js-form-item-time-points, .js-form-item-data-collection-period, .js-form-item-publication-info,
+#edit-dataset-unique--wrapper, #edit-license, .js-form-item-doi, #edit-dataset-upload-or-external--wrapper
+{
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+}
+
 body.page-node-type-dataset h1.page-title{
   margin: 0;
 }
@@ -374,6 +399,13 @@ div.field--name-field-file-upload div.field__item span.file a:after {
 }
 
 /*Layout Styles for Documents*/
+
+.js-form-item-document-type, .js-form-item-authors
+{
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+}
+
 body.page-node-type-document h1.page-title{
   margin: 0;
 }
@@ -423,6 +455,13 @@ div.field--name-field-document-file div.field__item span.file a:after {
 }
 
 /*Layout Styles for Code*/
+
+.js-form-item-code-type
+{
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+}
+
 body.page-node-type-code h1.page-title{
   margin: 0;
 }
