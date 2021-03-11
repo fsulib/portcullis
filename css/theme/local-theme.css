@@ -1094,3 +1094,21 @@ p#subfooter-disclaimer {
 p#subfooter-sponsor {
   float: right;
 }
+
+/* Cookie Alert Styles */
+div.eu-cookie-compliance-message {
+  line-height: 13px;
+  padding: 10px 0px;
+}
+
+div.eu-cookie-compliance-message p {
+  font-weight: 200;
+}
+
+div.eu-cookie-compliance-message p span {
+  font-weight: 500;
+}
+
+div.eu-cookie-compliance-message a {
+  color: white;
+}
