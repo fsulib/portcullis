@@ -530,6 +530,11 @@ body.path-user h1.page-title {
   display: none;
 }
 
+body.path-user div.block-add-project-button {
+  float: left;
+  padding-right: 20px;
+}
+
 div.user-project-list div.views-row {
   border: 1px solid #cdcdcd;
   padding: 10px 15px;
