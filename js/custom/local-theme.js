@@ -18,4 +18,13 @@ jQuery(document).ready(function($) {
   }
 
   $(".deactivate-link").removeAttr("href");
+  
+  // Change http to https in production
+  var ldbase_download_url = $(".ldbase-file-download").attr('href');
+  const parsed_url = new URL(ldbase_download_url);
+  if(parsed_url.hostname === 'ldbase.org') {
+    parsed_url.protocol = 'https';
+    $(".ldbase-file-download").attr('href', parsed_url.href);
+  }
+
 });
