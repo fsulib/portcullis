@@ -323,7 +323,7 @@ function portcullis_preprocess_page(&$variables) {
     $variables['sidebar_first_grid_class'] = '';
     $variables['sidebar_second_grid_class'] = 'col-lg-3';
   } elseif ((!$sidebar_first && !$sidebar_second) && (isset($variables['node']) && !empty($variables['node']) && $variables['node'] instanceof \Drupal\node\NodeInterface) && ($variables['node']->getType() == 'page')) {
-    $variables['main_grid_class'] = 'col-12 col-xl-8 ml-xl-auto mr-xl-auto';
+    $variables['main_grid_class'] = 'col-12 ml-xl-auto mr-xl-auto';
     $variables['sidebar_first_grid_class'] = '';
     $variables['sidebar_second_grid_class'] = '';
   } elseif ((!$sidebar_first && !$sidebar_second) && (isset($variables['node']) && !empty($variables['node']) && $variables['node'] instanceof \Drupal\node\NodeInterface) && ($variables['node']->getType() == 'article')) {
@@ -331,7 +331,7 @@ function portcullis_preprocess_page(&$variables) {
     $variables['sidebar_first_grid_class'] = '';
     $variables['sidebar_second_grid_class'] = '';
   } elseif ((!$sidebar_first && !$sidebar_second) && (isset($variables['node']) && !empty($variables['node']) && $variables['node'] instanceof \Drupal\node\NodeInterface) && ($variables['node']->getType() == 'pc_showcase')) {
-    $variables['main_grid_class'] = 'col-12 col-xl-8 ml-xl-auto mr-xl-auto';
+    $variables['main_grid_class'] = 'col-12 ml-xl-auto mr-xl-auto';
     $variables['sidebar_first_grid_class'] = '';
     $variables['sidebar_second_grid_class'] = '';
   } else {
