@@ -1117,3 +1117,8 @@ div.eu-cookie-compliance-message p span {
 div.eu-cookie-compliance-message a {
   color: white;
 }
+
+/* Profile Form Styles */
+div.webform-multiple-table tr.even td {
+  background-color: #ededed;
+}
