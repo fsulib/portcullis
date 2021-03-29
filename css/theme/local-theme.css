@@ -253,6 +253,14 @@ div.field--name-field-file-upload div.field__label
   margin-right: 6px;
 }
 
+div.form-item-published-flag label.option {
+  font-weight: 600;
+}
+
+div.form-item-harmonized-dataset label.option {
+  font-weight: 600;
+}
+
 /*Layout Styles for Projects*/
 
 .js-form-item-title, .js-form-item-description, .js-form-item-related-persons,
@@ -345,6 +353,13 @@ body.page-node-type-dataset .block-field-blocknodedatasetbody div.text-formatted
   margin: 10px 0; 
   padding: 20px;
   clear: both;
+}
+
+fieldset#edit-dataset-upload-or-external--wrapper legend span,
+fieldset#edit-dataset-unique--wrapper legend span
+{
+  font-weight: 600;
+  color: #333;
 }
 
 body.page-node-type-dataset div.view-project-latest-documents {
@@ -476,6 +491,12 @@ body.page-node-type-code .block-field-blocknodecodefield-doi {
   margin-right: 20px;
   display: inline-block;
   float: left;  
+}
+
+fieldset#edit-code-upload-or-external--wrapper legend span
+{
+  font-weight: 600;
+  color: #333;
 }
 
 body.page-node-type-code .block-field-blocknodecodebody div.text-formatted {
