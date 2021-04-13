@@ -288,6 +288,31 @@ body.page-node-type-project .block-field-blocknodeprojectfield-doi {
   float: left;
 }
 
+body.page-node-type-project div.block-ldbase-citation-link-block {
+  float: left;
+  margin-bottom: 10px;
+}
+
+body.page-node-type-project div.block-download-all-files-link {
+  float:left;
+  margin-left: 10px;
+}
+
+.download-all-files-button {
+  font-size: 13px;
+  font-weight: 500;
+  color: #671e30;
+  text-decoration: none;
+  border: 2px solid #636363;
+  padding: 5px;
+}
+
+.download-all-files-button:hover {
+  text-decoration: none;
+  background: #eee;
+  color: #671e30;
+}
+
 body.page-node-type-project .block-field-blocknodeprojectbody div.text-formatted {
   background-color: rgb(249, 236, 190);
   color: #111;
