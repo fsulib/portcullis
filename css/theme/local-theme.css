@@ -372,6 +372,35 @@ body.page-node-type-dataset .block-field-blocknodedatasetfield-doi {
   float: left;
 }
 
+body.page-node-type-dataset div.block-ldbase-citation-link-block {
+  float: left;
+  margin-bottom: 10px;
+}
+
+body.page-node-type-dataset div.block-dataset-subscription-link {
+  float:left;
+  margin-left: 10px;
+}
+
+.dataset-subscription-button {
+  font-size: 13px;
+  font-weight: 500;
+  color: #671e30;
+  text-decoration: none;
+  border: 2px solid #636363;
+  padding: 5px;
+}
+
+.dataset-subscription-button:hover {
+  text-decoration: none;
+  background: #eee;
+  color: #671e30;
+}
+
+body.page-node-type-dataset .block-field-blocknodedatasetfield-dataset-upload-or-external {
+  clear: both;
+}
+
 body.page-node-type-dataset .block-field-blocknodedatasetbody div.text-formatted {
   background-color: rgb(249, 236, 190);
   color: #111;
