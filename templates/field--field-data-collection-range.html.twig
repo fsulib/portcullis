@@ -52,8 +52,8 @@
     'field__label',
     label_display == 'visually_hidden' ? 'visually-hidden',
   ]
-%} 
-        
+%}
+
 {% if label_hidden %}
   {% if multiple %}
     <div{{ attributes.addClass(classes, 'field__items') }}>
@@ -77,17 +77,25 @@
       {% set from_year = item.content['#paragraph'].field_from_year.value %}
       {% set from_date = '01-' ~ from_month ~ '-' ~ from_year %}
       {% set to_month = item.content['#paragraph'].field_to_month.value %}
-      {% set to_year = item.content['#paragraph'].field_to_year.value %}
+      {% set to_year = item.content['#paragraph'].field_to_year.value ?? 0 %}
       {% set to_date = '01-' ~ to_month ~ '-' ~ to_year %}
       <div{{ item.attributes.addClass('field__item') }}>
-        {% if (from_month > 0) and (from_month < 13) and (from_year > 1900) %}
-          {{ from_date | date('F Y') }}
+        {% if from_year is not empty %}
+          {% if (from_month > 0) and (from_month < 13) %}
+            {{ from_date | date('F Y') }}
+          {% else %}
+            {{ from_year }}
+          {% endif %}
         {% else %}
           present
         {% endif %}
         to
-        {% if (to_month > 0) and (to_month < 13) and (to_year > 1900) %}
-          {{ to_date | date('F Y') }}
+        {% if to_year is not empty %}
+          {% if (to_month > 0) and (to_month < 13) %}
+            {{ to_date | date('F Y') }}
+          {% else %}
+            {{ to_year }}
+          {% endif %}
         {% else %}
           present
         {% endif %}
