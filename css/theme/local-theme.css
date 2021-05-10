@@ -208,8 +208,9 @@ div.browse-link-row > div.link-block {
   text-align: center; padding: 15px 30px;
 }
 
-div.browse-link-row > div.link-block svg {
-  color: #671e30;
+div.browse-link-row > div.link-block img {
+  height: 48px;
+  width: 48px;
 }
 
 /* Home page main content region styles */
