@@ -204,11 +204,27 @@ body.user-logged-in div#content-top div.content-top__section {
 }
 
 /* Home page browse area */
-div.browse-link-row > div.link-block {
-  text-align: center; padding: 15px 30px;
+div.browse-link-row a.link-div {
+  text-decoration: none;
 }
 
-div.browse-link-row > div.link-block img {
+div.browse-link-row  a.link-div:hover {
+  color: #671e30;
+  background-color: #e6e6e6;
+}
+
+div.browse-link-row div.link-block {
+  width: 250px;
+  text-align: center;
+  padding: 15px 30px;
+}
+
+div.browse-link-row div.link-block h3.link-block-header {
+  color: #671e30;
+  text-decoration: none;
+}
+
+div.browse-link-row div.link-block img {
   height: 48px;
   width: 48px;
 }
