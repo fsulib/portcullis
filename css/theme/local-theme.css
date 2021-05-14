@@ -203,6 +203,16 @@ body.user-logged-in div#content-top div.content-top__section {
   padding: 55px 0 15px;
 }
 
+div.ldbase-home-page-user-block {
+  border: 2px solid #cdcdcd;
+}
+
+div.ldbase-home-page-user-block div.ldbase-user-info,
+div.ldbase-home-page-user-block div.ldbase-user-links
+{
+  padding: 15px;
+}
+
 /* Home page browse area */
 div.browse-link-row a.link-div {
   text-decoration: none;
