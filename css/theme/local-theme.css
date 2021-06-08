@@ -149,6 +149,16 @@ nav#block-portcullis-account-menu {
   padding-top: 14px;
 }
 
+/* Superfish menu overrides*/
+.header-container .sf-shadow.sf-menu.menu ul ul {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.header-container .sf-menu ul li a, .header-container .sf-menu ul li > span {
+  padding: 10px 1em 10px;
+}
+
 /* Home Page Banner styles */
 .path-frontpage .banner {
   background-image: url(../../../../../modules/custom/ldbase_content/images/ldbase-home-banner.jpg);
