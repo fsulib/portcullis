@@ -161,7 +161,7 @@ nav#block-portcullis-account-menu {
 
 /* Home Page Banner styles */
 .path-frontpage .banner {
-  background-image: url(../../../../../modules/custom/ldbase_content/images/ldbase-home-banner.jpg);
+  background-image: url(../../../../../modules/custom/ldbase_content/images/ldbase-home-banner-2.jpg);
 }
 
 .path-frontpage .banner.region--white-background:after {
@@ -173,7 +173,7 @@ nav#block-portcullis-account-menu {
 .path-frontpage div#block-userlogin {
   width: 400px;
   float: right;
-  background-color: rgba(230, 230, 230, 0.8);
+  background-color: rgba(230, 230, 230, 0.95);
   padding: 0 20px;
   margin: 20px 0;
   border-radius: 15px;
