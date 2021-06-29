@@ -272,6 +272,41 @@ div.browse-link-row div.link-block img {
   padding-left: 20px;
 }
 
+/* Landing page styles for navigation (i.e. page of Template links) */
+nav#block-mainnavigation-2 ul.menu li a::before,
+nav#block-mainnavigation-3 ul.menu li a::before {
+  content: none;
+}
+
+nav#block-mainnavigation-2 ul.menu,
+nav#block-mainnavigation-3 ul.menu {
+  list-style: disc;
+  padding-inline-start: 40px;
+}
+
+nav#block-mainnavigation-2 ul.menu li,
+nav#block-mainnavigation-3 ul.menu li {
+  list-style: disc;
+}
+
+nav#block-mainnavigation-2 ul.menu li a,
+nav#block-mainnavigation-3 ul.menu li a {
+  color: #671e30;
+  text-decoration: underline;
+  font-size: inherit;
+  padding: 0px;
+  line-height: inherit;
+}
+
+nav#block-mainnavigation-2 ul.menu li a:hover,
+nav#block-mainnavigation-2 ul.menu li a:focus,
+nav#block-mainnavigation-3 ul.menu li a:hover,
+nav#block-mainnavigation-3 ul.menu li a:focus {
+  color: #464646;
+}
+
+
+
 /* Content Tasks Section */
 div.block-content-edit-link {
   float: left;
