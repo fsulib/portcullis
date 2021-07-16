@@ -56,6 +56,11 @@ div#block-portcullis-breadcrumbs nav.breadcrumb {
   padding: 0 20px;
 }
 
+/* Views footer to center Viewing page N of NN */
+div.view-footer {
+  text-align: center;
+}
+
 /* Global Webform changes */
 
 .choices__list .choices__item--choice {
