@@ -925,12 +925,28 @@ div.region-sidebar-first div.block-facet--links {
   padding: 0;
 }
 
+div.facets-widget-links {
+  margin-bottom: 1em;
+}
+
+div.facets-widget-links ul {
+  margin-block-end: 0;
+}
+
 a.facets-soft-limit-link {
   font-weight: bold;
+  padding-left: 40px;
 }
 
 li.facet-item a.is-active {
   font-weight: bold;
+}
+
+li.facets-reset {
+  display: block;
+  margin-top: -20px;
+  margin-left: -20px;
+  padding-bottom: 10px;
 }
 
 /* Styling for Project View block */
