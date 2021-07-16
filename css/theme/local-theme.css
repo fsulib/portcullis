@@ -234,9 +234,9 @@ div.browse-link-row  a.link-div:hover {
 }
 
 div.browse-link-row div.link-block {
-  width: 250px;
+  width: 200px;
   text-align: center;
-  padding: 15px 30px;
+  padding: 15px;
 }
 
 div.browse-link-row div.link-block h3.link-block-header {
@@ -274,23 +274,27 @@ div.browse-link-row div.link-block img {
 
 /* Landing page styles for navigation (i.e. page of Template links) */
 nav#block-mainnavigation-2 ul.menu li a::before,
-nav#block-mainnavigation-3 ul.menu li a::before {
+nav#block-mainnavigation-3 ul.menu li a::before,
+nav#block-mainnavigation-4 ul.menu li a::before {
   content: none;
 }
 
 nav#block-mainnavigation-2 ul.menu,
-nav#block-mainnavigation-3 ul.menu {
+nav#block-mainnavigation-3 ul.menu,
+nav#block-mainnavigation-4 ul.menu {
   list-style: disc;
   padding-inline-start: 40px;
 }
 
 nav#block-mainnavigation-2 ul.menu li,
-nav#block-mainnavigation-3 ul.menu li {
+nav#block-mainnavigation-3 ul.menu li,
+nav#block-mainnavigation-4 ul.menu li {
   list-style: disc;
 }
 
 nav#block-mainnavigation-2 ul.menu li a,
-nav#block-mainnavigation-3 ul.menu li a {
+nav#block-mainnavigation-3 ul.menu li a,
+nav#block-mainnavigation-4 ul.menu li a {
   color: #671e30;
   text-decoration: underline;
   font-size: inherit;
@@ -301,7 +305,9 @@ nav#block-mainnavigation-3 ul.menu li a {
 nav#block-mainnavigation-2 ul.menu li a:hover,
 nav#block-mainnavigation-2 ul.menu li a:focus,
 nav#block-mainnavigation-3 ul.menu li a:hover,
-nav#block-mainnavigation-3 ul.menu li a:focus {
+nav#block-mainnavigation-3 ul.menu li a:focus,
+nav#block-mainnavigation-4 ul.menu li a:hover,
+nav#block-mainnavigation-4 ul.menu li a:focus {
   color: #464646;
 }
 
