@@ -1373,6 +1373,11 @@ nav#block-documenttasks ul.menu li.menu-item--expanded:hover > ul {
   z-index: 9999;
 }
 
+/* browse vocabulary list styles */
+div.view-vocabulary-lists div.view-header h2 {
+  margin-top: -0.75em;
+}
+
 /* Subfooter Styles */
 p#subfooter-disclaimer {
   font-size: 90%;
