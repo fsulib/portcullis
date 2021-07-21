@@ -57,7 +57,7 @@ div#block-portcullis-breadcrumbs nav.breadcrumb {
 }
 
 /* Views footer to center Viewing page N of NN */
-div.view-footer {
+div.view-footer div.ldbase-view-current-page {
   text-align: center;
 }
 
@@ -1385,6 +1385,13 @@ p#subfooter-disclaimer {
 
 p#subfooter-sponsor {
   float: right;
+}
+
+p#subfooter-disclaimer a:hover,
+p#subfooter-disclaimer a:focus,
+p#subfooter-sponsor a:hover,
+p#subfooter-sponsor a:focus {
+  text-decoration: underline;
 }
 
 /* Cookie Alert Styles */
