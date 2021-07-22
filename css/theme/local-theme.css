@@ -164,6 +164,10 @@ nav#block-portcullis-account-menu {
   padding: 10px 1em 10px;
 }
 
+div.region-header div#block-mainnavigation ul#superfish-main {
+  padding-top: 15px;
+}
+
 /* Home Page Banner styles */
 .path-frontpage .banner {
   background-image: url(../../../../../modules/custom/ldbase_content/images/ldbase-home-banner-2.jpg);
