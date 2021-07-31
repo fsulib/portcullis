@@ -4,6 +4,10 @@ a {
   text-decoration: underline;
 }
 
+a:focus, input:focus {
+  outline: 4px solid orange;
+}
+
 input.form-text, input.form-tel,
 input.form-email, input.form-url,
 input.form-search, input.form-file,
