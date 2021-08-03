@@ -461,6 +461,11 @@ body.page-node-type-project div.view-project-latest-code div.views-row {
   padding-bottom: 10px;
 }
 
+body.page-node-type-dataset div.ldbase-subtree-container {
+  margin-top: 30px;
+  border-top: 1px solid #dedede;
+}
+
 /*Layout Styles for Datasets*/
 
 .js-form-item-passed-id, .js-form-item-contributors, .js-form-item-host-organizations,
