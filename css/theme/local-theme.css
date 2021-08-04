@@ -60,6 +60,10 @@ div#block-portcullis-breadcrumbs nav.breadcrumb {
   padding: 0 20px;
 }
 
+pre.ldbase {
+  max-height: fit-content;
+}
+
 /* Views footer to center Viewing page N of NN */
 div.view-footer div.ldbase-view-current-page {
   text-align: center;
