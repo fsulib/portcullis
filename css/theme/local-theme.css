@@ -4,7 +4,7 @@ a {
   text-decoration: underline;
 }
 
-a:focus, input:focus {
+a:focus, input:focus, button:focus {
   outline: 4px solid orange;
 }
 
@@ -1142,7 +1142,6 @@ nav#block-projecttasks-2 h2#block-projecttasks-2-menu {
 nav#block-projecttasks-2 ul.menu li {
   float: left;
   border: 2px solid black;
-  padding-right: 16px;
   margin-right: 10px;
 }
 
@@ -1154,7 +1153,7 @@ nav#block-projecttasks-2 ul.menu li a {
   font-weight: 500;
   color: #671e30;
   font-size: 85%;
-  padding: 5px 0 6px 16px;
+  padding: 5px 16px 6px;
 }
 
 nav#block-projecttasks-2 ul.menu li a:before {
@@ -1190,7 +1189,6 @@ nav.menu--second-project-tasks {
 nav.menu--second-project-tasks ul.menu li {
   float: left;
   border: 2px solid black;
-  padding-right: 16px;
   margin-right: 10px;
 }
 
@@ -1202,7 +1200,7 @@ nav.menu--second-project-tasks ul.menu li a {
   font-weight: 500;
   color: #671e30;
   font-size: 85%;
-  padding: 5px 0 6px 16px;
+  padding: 5px 16px 6px;
 }
 
 nav.menu--second-project-tasks ul.menu li a:before {
@@ -1221,7 +1219,6 @@ nav#block-datasettasks h2#block-datasettasks-menu {
 nav#block-datasettasks ul.menu li {
   float: left;
   border: 2px solid black;
-  padding-right: 16px;
   margin-right: 10px;
 }
 
@@ -1233,7 +1230,7 @@ nav#block-datasettasks ul.menu li a {
   font-weight: 500;
   color: #671e30;
   font-size: 85%;
-  padding: 5px 0 6px 16px;
+  padding: 5px 16px 6px;
 }
 
 nav#block-datasettasks ul.menu li a:before {
@@ -1269,7 +1266,6 @@ nav.menu--second-dataset-tasks {
 nav.menu--second-dataset-tasks ul.menu li {
   float: left;
   border: 2px solid black;
-  padding-right: 16px;
   margin-right: 10px;
 }
 
@@ -1281,7 +1277,7 @@ nav.menu--second-dataset-tasks ul.menu li a {
   font-weight: 500;
   color: #671e30;
   font-size: 85%;
-  padding: 5px 0 6px 16px;
+  padding: 5px 16px 6px;
 }
 
 nav.menu--second-dataset-tasks ul.menu li a:before {
@@ -1300,7 +1296,6 @@ nav#block-codetasks h2#block-codetasks-menu {
 nav#block-codetasks ul.menu li {
   float: left;
   border: 2px solid black;
-  padding-right: 16px;
   margin-right: 10px;
 }
 
@@ -1312,7 +1307,7 @@ nav#block-codetasks ul.menu li a {
   font-weight: 500;
   color: #671e30;
   font-size: 85%;
-  padding: 5px 0 6px 16px;
+  padding: 5px 16px 6px;
 }
 
 nav#block-codetasks ul.menu li a:before {
@@ -1351,7 +1346,6 @@ nav#block-documenttasks h2#block-documenttasks-menu {
 nav#block-documenttasks ul.menu li {
   float: left;
   border: 2px solid black;
-  padding-right: 16px;
   margin-right: 10px;
 }
 
@@ -1363,7 +1357,7 @@ nav#block-documenttasks ul.menu li a {
   font-weight: 500;
   color: #671e30;
   font-size: 85%;
-  padding: 5px 0 6px 16px;
+  padding: 5px 16px 6px;
 }
 
 nav#block-documenttasks ul.menu li a:before {
