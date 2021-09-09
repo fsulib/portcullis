@@ -844,6 +844,10 @@ div.eva-person-user-profile div.views-field-field-thumbnail {
   padding: 10px 20px;
 }
 
+a.message-status-unread {
+  font-weight: bold;
+}
+
 /* Layout styles for Mailbox page */
 
 div.view-my-messages select {
