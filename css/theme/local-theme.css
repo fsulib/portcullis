@@ -907,8 +907,13 @@ div.view-search div#edit-actions {
   margin-bottom: 15px;
 }
 
-#block-searchfacetparticipantageminimum, #block-searchfacetparticipantagemaximum {
+#block-searchfacetparticipantageminimum,
+#block-searchfacetparticipantagemaximum {
   padding: 0;
+}
+
+#block-ldbasenewsearchlink {
+  padding: 0 0 20px 0;
 }
 
 .path-search .form-item.form-type-textfield {
