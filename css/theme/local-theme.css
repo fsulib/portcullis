@@ -64,6 +64,13 @@ pre.ldbase {
   max-height: fit-content;
 }
 
+ul.ui-autocomplete li.ui-menu-item {
+  font-size: 20px;
+  line-height: 2em;
+  background-color: #eaeaea;
+  border: 3px dashed orange;
+}
+
 /* Views footer to center Viewing page N of NN */
 div.view-footer div.ldbase-view-current-page {
   text-align: center;
