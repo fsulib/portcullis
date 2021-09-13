@@ -1008,14 +1008,14 @@ div#project-tree-view-wrapper a:hover {
 
 div#project-tree-view-wrapper ul {
   padding-left: 15px;
-  list-style-type: none;
+  list-style-type: circle;
 }
 
 li.project-tree-view-item-current:before {
   content: "\25BA \0020";
   padding-left: 0;
   color: #2a2a2a;
-  margin-left: -13px;
+  margin-left: -16px;
 }
 
 li.project-tree-view-item-current > a {
