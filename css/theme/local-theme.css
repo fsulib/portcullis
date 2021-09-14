@@ -385,6 +385,12 @@ div.form-item-harmonized-dataset label.option {
   font-weight: 600;
 }
 
+.webform-multiple-table td input[type="image"] {
+  border: 2px solid #671e30;
+  opacity: 1;
+  margin-right: 10px;
+}
+
 /*Layout Styles for Projects*/
 
 .js-form-item-title, .js-form-item-description, .js-form-item-related-persons,
