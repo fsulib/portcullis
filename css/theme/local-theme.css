@@ -487,6 +487,12 @@ div#project-admins-form-description {
   font-size: 16px;
 }
 
+form.webform-submission-ldbase-contact-form-form div.form-item-subject input:read-only {
+  background-color: #555555;
+  color: #ffffff;
+  font-weight: bold;;
+}
+
 /*Layout Styles for Datasets*/
 
 .js-form-item-passed-id, .js-form-item-contributors, .js-form-item-host-organizations,
