@@ -285,9 +285,20 @@ div.browse-link-row div.link-block img {
 }
 
 .path-frontpage .view-ldbase-news .ldbase-news-image {
-  float: right;
   margin-bottom: 20px;
-  margin-left: 30px;
+}
+
+@media screen and (min-width: 420px) {
+  .path-frontpage .view-ldbase-news .ldbase-news-image {
+    float: right;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 823px) {
+  .slick__slide {
+    margin: 0 10px;
+  }
 }
 
 .path-frontpage .view-ldbase-news .ldbase-news-body {
