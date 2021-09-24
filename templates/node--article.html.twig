@@ -153,6 +153,7 @@
   <div class="node__main-content-section">
     {{ content|without('comment', 'links', 'field_pc_banner_image') }}
   </div>
+  {#
   {% if author_picture or node.Owner.field_pc_full_name.value or node.Owner.field_pc_signature.value %}
     <div class="node__user-info clearfix">
       {% if author_picture %}
@@ -174,6 +175,7 @@
       {% endif %}
     </div>
   {% endif %}
+  #}
   {{ content.links }}
   {{ content.comment }}
 {% endblock %}
