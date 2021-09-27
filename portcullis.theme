@@ -279,13 +279,13 @@ function portcullis_preprocess_page(&$variables) {
   } else if ($header_first && $header) {
     if ($header_third) {
       $variables['header_layout_columns_class'] = 'three-columns';
-      $variables['header_first_grid_class'] = 'col-lg-4 col-md-8 order-md-1';
-      $variables['header_second_grid_class'] = 'col-lg-7 order-lg-1 col-12 order-md-3';
+      $variables['header_first_grid_class'] = 'col-lg-3 col-md-8 order-md-1';
+      $variables['header_second_grid_class'] = 'col-lg-8 order-lg-1 col-12 order-md-3';
       $variables['header_third_grid_class'] = 'col-12';
     } else {
       $variables['header_layout_columns_class'] = 'two-columns';
-      $variables['header_first_grid_class'] = 'col-lg-4';
-      $variables['header_second_grid_class'] = 'col-lg-8';
+      $variables['header_first_grid_class'] = 'col-lg-3';
+      $variables['header_second_grid_class'] = 'col-lg-9';
     }
   } else {
     $variables['header_layout_columns_class'] = 'one-column';
