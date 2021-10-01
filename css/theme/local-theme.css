@@ -284,6 +284,10 @@ div.browse-link-row div.link-block img {
   padding: 50px 0px;
 }
 
+.view-ldbase-news .view-header {
+  border-top: 1px solid #000000;
+}
+
 .path-frontpage .view-ldbase-news .ldbase-news-image {
   margin-bottom: 20px;
 }
