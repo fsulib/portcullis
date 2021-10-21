@@ -996,23 +996,38 @@ div.region-sidebar-first div.block-facet--links {
   margin: 0;
 }
 
-.facet-pills__pill {
-  margin-top: 5px;
+#block-facetsummary {
+  padding: 0;
 }
 
-.facet-pills__pill__link, .facet-pills__pill__link:hover, .facet-pills__pill__link:visited {
+#block-facetsummary ul {
+  list-style: none;
+  list-style-image: none;
+  padding: 0;
+}
+
+li.facet-summary-item--facet {
+  display: inline-block;
+  margin: 5px 5px 0 0;
+}
+
+li.facet-summary-item--facet span.facet-item__value {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+li.facet-summary-item--facet a, li.facet-summary-item--facet a:hover, li.facet-summary-item--facet a:visited {
   background-color: #222;
   color: #FFF;
-  padding: 5px 25px 5px 10px;
+  display: block;
+  padding: 5px 15px 5px 15px;
+  text-decoration: none;
+  border-radius: 15px;
 }
 
-.facet-pills__pill__link::after{
-  color: #FFF;
-  right: 0.6em;
-}
-
-#block-activefacetpillsblock {
-  padding: 0;
+li.facet-summary-item--facet a::after {
+  padding-left: 10px;
+  content: "✕";
 }
 
 div.facets-widget-links {
