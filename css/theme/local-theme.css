@@ -309,7 +309,8 @@ div.browse-link-row div.link-block img {
   padding-top: 15px;
 }
 
-.path-frontpage .view-ldbase-news .slick-slide .slide__content span.field-content a {
+.path-frontpage .view-ldbase-news .slick-slide .slide__content span.field-content a,
+.path-frontpage .view-ldbase-news .slick .slide__description span.field-content a {
   font-size: 25px;
   font-weight: 400;
   line-height: 1.2;
