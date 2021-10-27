@@ -75,10 +75,10 @@
     {% for item in items %}
       {% set from_month = item.content['#paragraph'].field_from_month.value %}
       {% set from_year = item.content['#paragraph'].field_from_year.value %}
-      {% set from_date = from_month|default('01') ~ '-01-' ~ from_year|default('1900') %}
+      {% set from_date = '01-' ~ from_month|default('01') ~ '-' ~ from_year|default('1900') %}
       {% set to_month = item.content['#paragraph'].field_to_month.value %}
       {% set to_year = item.content['#paragraph'].field_to_year.value %}
-      {% set to_date = to_month|default('01') ~ '-01-' ~ to_year|default('1900') %}
+      {% set to_date = '01-' ~ to_month|default('01') ~ '-' ~ to_year|default('1900') %}
 
       <div{{ item.attributes.addClass('field__item') }}>
         {% if from_year is not empty %}
