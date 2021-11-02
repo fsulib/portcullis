@@ -78,6 +78,10 @@ div.view-footer div.ldbase-view-current-page {
 
 /* Global Webform changes */
 
+.form-type-password {
+  max-width: 33em;
+}
+
 .choices__list .choices__item--choice {
   color: #111111;
 }
