@@ -78,7 +78,8 @@ div.view-footer div.ldbase-view-current-page {
 
 /* Global Webform changes */
 
-.form-type-password {
+.form-item-ldbase-password-pass1,
+.form-item-ldbase-password-pass2 {
   max-width: 33em;
 }
 
