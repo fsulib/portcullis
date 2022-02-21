@@ -990,7 +990,8 @@ div.region-sidebar-first div.block-facet--links {
   padding: 0;
 }
 
-#block-portcullis-content > div > div > div > div.view-content > div.views-row {
+#block-portcullis-content > div > div > div > div.view-content > div.views-row,
+div.view-search-ldbase-resources div.view-content > div.views-row {
   background: #ebebeb;
   margin-bottom: 1em;
   padding: 1em;
