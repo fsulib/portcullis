@@ -1093,6 +1093,11 @@ li.project-tree-view-item-current > a {
   color: #dc143c;
 }
 
+li.project-tree-view-item-link {
+  line-height: 110%;
+  padding: 10px 0 0 0;
+}
+
 /* Styling for Social Media Buttons */
 div#block-socialmediablock {
   padding: 0;
