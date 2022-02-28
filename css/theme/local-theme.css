@@ -74,6 +74,7 @@ ul.ui-autocomplete li.ui-menu-item {
 /* Views footer to center Viewing page N of NN */
 div.view-footer div.ldbase-view-current-page {
   text-align: center;
+  padding: 0 0 20px 0;
 }
 
 /* Global Webform changes */
