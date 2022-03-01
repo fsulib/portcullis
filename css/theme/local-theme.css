@@ -191,7 +191,34 @@ div.region-header div#block-mainnavigation ul#superfish-main {
 
 /* Home Page Banner styles */
 .path-frontpage .banner {
-  background-image: url(../../../../../modules/custom/ldbase_content/images/ldbase-home-banner-2.jpg);
+  background: url(../../../../../modules/custom/ldbase_content/images/ldbase-home-banner-2.jpg);
+}
+
+div#ldbase-hero-overlay-text {
+  color: #000;
+  float: left;
+  max-width: 500px;
+  background-color: rgba(230, 230, 230, 0.95);
+  padding: 0 20px;
+  margin: 20px 0;
+  border-radius: 15px;;
+}
+
+div#ldbase-hero-overlay-text h2 {
+  color: #000;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+div#ldbase-hero-overlay-text h2 span.spell-it-out {
+  font-size: 150%;
+  font-weight: 900;
+  color: #671e30;
+}
+
+div#block-bannertext div.content {
+  color: white;
+
 }
 
 .path-frontpage .banner.region--white-background:after {
