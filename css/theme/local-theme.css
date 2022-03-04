@@ -204,6 +204,11 @@ div#ldbase-hero-overlay-text {
   border-radius: 15px;;
 }
 
+div#block-ldbasebannertextoverlayblock {
+  max-width: 500px;
+  display: inline-block;
+}
+
 div#ldbase-hero-overlay-text h2 {
   color: #000;
   font-weight: 600;
