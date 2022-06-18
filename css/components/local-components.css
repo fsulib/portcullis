@@ -2,4 +2,19 @@
  * @file
  * Use this CSS file to override components CSS rules
  */
+a.button,
+.button>a,
+button.button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
 
+
+a.button.button--hover-style-2:before,
+.button.button--hover-style-2>a:before {
+  border-radius: 10px;
+}

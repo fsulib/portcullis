@@ -1,4 +1,8 @@
 /*Global changes*/
+a[id] {
+  scroll-margin-top: 155px;
+}
+
 a {
   color: #671e30;
   text-decoration: underline;
@@ -39,11 +43,13 @@ textarea, select {
 
 a.ldbase-button {
   display: inline-block;
-  font-size: 85%;
+  font-size: 15px;
   font-weight: 500;
+  line-height: 1;
   text-decoration: none;
+  border-radius: 7px;
   border: 2px solid #636363;
-  padding: 4px 14px;
+  padding: 10px 20px 10px;
   margin-top:20px;
   margin-bottom: 15px;
 }
@@ -156,7 +162,9 @@ div#block-ldbaseminimalobjectsearchlinkblock input#edit-keys {
 div#block-ldbaseminimalobjectsearchlinkblock input.global-search-submit-button {
   padding: 15px 14px 15px 14px;
   border-top-right-radius: 15px;
+  border-top-left-radius: 0px;
   border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 0px;
   background-color: black;
   border: 2px solid rgba(200, 200, 200, .5);
   font-size: 95%;
@@ -410,8 +418,6 @@ nav#block-mainnavigation-4 ul.menu li a:focus {
   color: #464646;
 }
 
-
-
 /* Content Tasks Section */
 div.block-content-edit-link {
   float: left;
@@ -425,7 +431,7 @@ div.block-content-delete-link {
 
 }
 
-#open-citation-modal {
+/*#open-citation-modal {
   background-color: white;
   border: 2px solid #636363;
   font-size: 13px;
@@ -435,6 +441,14 @@ div.block-content-delete-link {
 
 #open-citation-modal:hover {
   background-color: #eeeeee;
+}*/
+
+.citation-modal-icon {
+  background-image: url(../../images/arrow-up-right-from-square-solid.svg);
+  padding-left: 20px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  max-height: 16px;
 }
 
 /* Node Analytics Block */
@@ -503,7 +517,15 @@ body.page-node-type-project div.block-download-all-files-link {
   margin-left: 10px;
 }
 
-.download-all-files-button {
+.download-all-files-icon {
+  background-image: url(../../images/small-download-solid.svg);
+  padding-left: 20px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  max-height: 16px;
+}
+
+/*.download-all-files-button {
   font-size: 13px;
   font-weight: 500;
   color: #671e30;
@@ -516,7 +538,7 @@ body.page-node-type-project div.block-download-all-files-link {
   text-decoration: none;
   background: #eee;
   color: #671e30;
-}
+}*/
 
 body.page-node-type-project .block-field-blocknodeprojectbody div.text-formatted {
   background-color: rgb(249, 236, 190);
@@ -602,7 +624,7 @@ body.page-node-type-dataset div.block-dataset-subscription-link {
   margin-left: 10px;
 }
 
-.dataset-subscription-button {
+/*.dataset-subscription-button {
   font-size: 13px;
   font-weight: 500;
   color: #671e30;
@@ -615,6 +637,20 @@ body.page-node-type-dataset div.block-dataset-subscription-link {
   text-decoration: none;
   background: #eee;
   color: #671e30;
+}*/
+.subscription-icon {
+  padding-left: 20px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  max-height: 16px;
+}
+
+.start-subscription-icon {
+  background-image: url(../../images/small-bell-regular.svg);
+}
+
+.stop-subscription-icon {
+  background-image: url(../../images/small-bell-slash-regular.svg);
 }
 
 body.page-node-type-dataset .block-field-blocknodedatasetfield-dataset-upload-or-external {
@@ -981,6 +1017,10 @@ div.view-search div#edit-actions {
   float: none;
 }
 
+input#edit-submit-search {
+  float: left !important;
+}
+
 #views-exposed-form-search-page-1 > div
 > div.form-item-search-api-fulltext,
 #views-exposed-form-search-page-1 > div
@@ -1029,7 +1069,7 @@ div.view-search-ldbase-resources div.view-content > div.views-row {
   margin-bottom: 1em;
   padding: 1em;
   border: 1px solid #cdcdcd;
-  border-radius: 10px;
+  border-radius: 7px;
 }
 
 #block-portcullis-content > div > div > div > div.view-content > div.views-row h3 {
@@ -1270,6 +1310,7 @@ nav#block-projecttasks-2 h2#block-projecttasks-2-menu {
 nav#block-projecttasks-2 ul.menu li {
   float: left;
   border: 2px solid black;
+  border-radius: 7px;
   margin-right: 10px;
 }
 
@@ -1295,6 +1336,7 @@ nav#block-projecttasks-2 ul.menu li.menu-item--expanded ul {
   background-color: white;
   padding: 0;
   border: 1px solid #ccc;
+  border-radius: 7px;
   min-width: 180px;
 }
 
@@ -1318,6 +1360,7 @@ nav.menu--second-project-tasks ul.menu li {
   float: left;
   border: 2px solid black;
   margin-right: 10px;
+  border-radius: 7px;
 }
 
 nav.menu--second-project-tasks ul.menu li:hover {
@@ -1348,6 +1391,7 @@ nav#block-datasettasks ul.menu li {
   float: left;
   border: 2px solid black;
   margin-right: 10px;
+  border-radius: 7px;
 }
 
 nav#block-datasettasks ul.menu li:hover {
@@ -1395,6 +1439,7 @@ nav.menu--second-dataset-tasks ul.menu li {
   float: left;
   border: 2px solid black;
   margin-right: 10px;
+  border-radius: 7px;
 }
 
 nav.menu--second-dataset-tasks ul.menu li:hover {
@@ -1425,6 +1470,7 @@ nav#block-codetasks ul.menu li {
   float: left;
   border: 2px solid black;
   margin-right: 10px;
+  border-radius: 7px;
 }
 
 nav#block-codetasks ul.menu li:hover {
@@ -1462,6 +1508,34 @@ nav#block-codetasks ul.menu li.menu-item--expanded:hover > ul {
   z-index: 9999;
 }
 
+/* Second Code Tasks Menu */
+
+nav.menu--second-code-tasks {
+  margin-top: 20px;
+}
+
+nav.menu--second-code-tasks ul.menu li {
+  float: left;
+  border: 2px solid black;
+  margin-right: 10px;
+  border-radius: 7px;
+}
+
+nav.menu--second-code-tasks ul.menu li:hover {
+  background-color: #ededed;
+}
+
+nav.menu--second-code-tasks ul.menu li a {
+  font-weight: 500;
+  color: #671e30;
+  font-size: 85%;
+  padding: 5px 16px 6px;
+}
+
+nav.menu--second-code-tasks ul.menu li a:before {
+  content: none;
+}
+
 /* Document Tasks Menu */
 h2#block-documenttasks-menu {
   display: none;
@@ -1475,6 +1549,7 @@ nav#block-documenttasks ul.menu li {
   float: left;
   border: 2px solid black;
   margin-right: 10px;
+  border-radius: 7px;
 }
 
 nav#block-documenttasks ul.menu li:hover {
@@ -1510,6 +1585,34 @@ nav#block-documenttasks ul.menu li.menu-item--expanded ul.menu li {
 nav#block-documenttasks ul.menu li.menu-item--expanded:hover > ul {
   display: block;
   z-index: 9999;
+}
+
+/* Second Document Tasks Menu */
+
+nav.menu--second-document-tasks {
+  margin-top: 20px;
+}
+
+nav.menu--second-document-tasks ul.menu li {
+  float: left;
+  border: 2px solid black;
+  margin-right: 10px;
+  border-radius: 7px;
+}
+
+nav.menu--second-document-tasks ul.menu li:hover {
+  background-color: #ededed;
+}
+
+nav.menu--second-document-tasks ul.menu li a {
+  font-weight: 500;
+  color: #671e30;
+  font-size: 85%;
+  padding: 5px 16px 6px;
+}
+
+nav.menu--second-document-tasks ul.menu li a:before {
+  content: none;
 }
 
 /* browse vocabulary list styles */
