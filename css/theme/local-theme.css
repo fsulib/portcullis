@@ -115,7 +115,6 @@ div.view-footer div.ldbase-view-current-page {
   background-color: #222;
   border: 1px solid #000;
   color: white;
-  border-radius: 12px;
   padding: 2px 10px;
 }
 
@@ -525,21 +524,6 @@ body.page-node-type-project div.block-download-all-files-link {
   max-height: 16px;
 }
 
-/*.download-all-files-button {
-  font-size: 13px;
-  font-weight: 500;
-  color: #671e30;
-  text-decoration: none;
-  border: 2px solid #636363;
-  padding: 5px;
-}
-
-.download-all-files-button:hover {
-  text-decoration: none;
-  background: #eee;
-  color: #671e30;
-}*/
-
 body.page-node-type-project .block-field-blocknodeprojectbody div.text-formatted {
   background-color: rgb(249, 236, 190);
   color: #111;
@@ -624,20 +608,6 @@ body.page-node-type-dataset div.block-dataset-subscription-link {
   margin-left: 10px;
 }
 
-/*.dataset-subscription-button {
-  font-size: 13px;
-  font-weight: 500;
-  color: #671e30;
-  text-decoration: none;
-  border: 2px solid #636363;
-  padding: 5px;
-}
-
-.dataset-subscription-button:hover {
-  text-decoration: none;
-  background: #eee;
-  color: #671e30;
-}*/
 .subscription-icon {
   padding-left: 20px;
   background-repeat: no-repeat;
@@ -1069,7 +1039,7 @@ div.view-search-ldbase-resources div.view-content > div.views-row {
   margin-bottom: 1em;
   padding: 1em;
   border: 1px solid #cdcdcd;
-  border-radius: 7px;
+  border-radius: 4px;
 }
 
 #block-portcullis-content > div > div > div > div.view-content > div.views-row h3 {
@@ -1102,7 +1072,7 @@ li.facet-summary-item--facet a, li.facet-summary-item--facet a:hover, li.facet-s
   display: block;
   padding: 5px 15px 5px 15px;
   text-decoration: none;
-  border-radius: 15px;
+  border-radius: 4px;
 }
 
 li.facet-summary-item--facet a::after {
