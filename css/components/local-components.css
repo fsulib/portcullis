@@ -18,3 +18,15 @@ a.button.button--hover-style-2:before,
 .button.button--hover-style-2>a:before {
   border-radius: 10px;
 }
+
+/**
+* overrides action-button class from classy theme
+*/
+.button-action:before {
+  margin-left: 0em;
+  /* LTR */
+  padding-right: 0em;
+  /* LTR */
+  content: "";
+  font-weight: 900;
+}
