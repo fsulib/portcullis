@@ -1324,6 +1324,7 @@ nav#block-projecttasks-2 ul.menu li.menu-item--expanded:hover > ul {
 
 nav.menu--second-project-tasks {
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 nav.menu--second-project-tasks ul.menu li {
@@ -1362,11 +1363,19 @@ span#view-existing-records-icon {
 }
 
 div#viewgranted-embargoes-link {
-  padding-bottom: 15px;;
+  padding-bottom: 15px;
 }
 
 span#view-granted-embargoes-icon {
   background-image: url(../../images/unlock-keyhole-solid.svg);
+  padding-left: 20px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  max-height: 16px;
+}
+
+div.ldbase-contact-link-icon {
+  background-image: url(../../images/comment-dots-regular.svg);
   padding-left: 20px;
   background-repeat: no-repeat;
   background-position: left center;
