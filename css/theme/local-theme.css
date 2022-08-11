@@ -447,12 +447,46 @@ div.block-content-delete-link {
   padding-left: 20px;
   background-repeat: no-repeat;
   background-position: left center;
-  max-height: 16px;
+  max-height: 32px;
 }
 
 /* Node Analytics Block */
 div.block-node-analytics-block br {
   display: none;
+}
+
+/* Action menu style */
+nav#block-ldbasetools {
+  margin-top: -50px;
+}
+
+nav#block-ldbasetools ul.menu li a,
+nav#block-ldbasetools ul.menu li > span {
+  color: #671e30;
+  font-size: 16px;
+  padding: 4px 0 4px 20px;
+  text-decoration: underline;
+}
+
+nav#block-ldbasetools ul.menu li a:hover {
+  color: #464646;
+}
+
+/* Styles for flagging links*/
+div.action-flag a {
+  background-image: url(../../images/small-bookmark-plus.svg);
+    padding-left: 20px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    max-height: 32px;
+}
+
+div.action-unflag a {
+  background-image: url(../../images/small-bookmark-dash.svg);
+  padding-left: 20px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  max-height: 32px;
 }
 
 /* Styles for all objects */
@@ -499,7 +533,7 @@ body.page-node-type-project .block-field-blocknodeprojectfield-project-logo {
 }
 
 body.page-node-type-project .block-field-blocknodeprojectfield-doi {
-  border-right: 1px solid black;
+  /*border-right: 1px solid black;*/
   padding: 0 10px 0 0;
   margin-right: 20px;
   display: inline-block;
@@ -521,7 +555,7 @@ body.page-node-type-project div.block-download-all-files-link {
   padding-left: 20px;
   background-repeat: no-repeat;
   background-position: left center;
-  max-height: 16px;
+  max-height: 32px;
 }
 
 body.page-node-type-project .block-field-blocknodeprojectbody div.text-formatted {
@@ -591,7 +625,7 @@ body.page-node-type-dataset h1.page-title{
 }
 
 body.page-node-type-dataset .block-field-blocknodedatasetfield-doi {
-  border-right: 1px solid black;
+  /*border-right: 1px solid black;*/
   padding: 0 10px 0 0;
   margin-right: 20px;
   display: inline-block;
@@ -617,10 +651,18 @@ body.page-node-type-dataset div.block-dataset-subscription-link {
 
 .start-subscription-icon {
   background-image: url(../../images/small-bell-regular.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
 }
 
 .stop-subscription-icon {
   background-image: url(../../images/small-bell-slash-regular.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+nav.menu--ldbase-tools ul.menu li > a:before {
+  content: '';
 }
 
 body.page-node-type-dataset .block-field-blocknodedatasetfield-dataset-upload-or-external {
@@ -784,7 +826,7 @@ body.page-node-type-document h1.page-title{
 }
 
 body.page-node-type-document .block-field-blocknodedocumentfield-doi {
-  border-right: 1px solid black;
+  /*border-right: 1px solid black;*/
   padding: 0 10px 0 0;
   margin-right: 20px;
   display: inline-block;
@@ -840,7 +882,7 @@ body.page-node-type-code h1.page-title{
 }
 
 body.page-node-type-code .block-field-blocknodecodefield-doi {
-  border-right: 1px solid black;
+  /*border-right: 1px solid black;*/
   padding: 0 10px 0 0;
   margin-right: 20px;
   display: inline-block;
@@ -1374,12 +1416,13 @@ span#view-granted-embargoes-icon {
   max-height: 16px;
 }
 
-div.ldbase-contact-link-icon {
+div.ldbase-contact-link-icon,
+a.ldbase-contact-link-icon {
   background-image: url(../../images/comment-dots-regular.svg);
   padding-left: 20px;
   background-repeat: no-repeat;
   background-position: left center;
-  max-height: 16px;
+  max-height: 32px;
 }
 
 /* Dataset Tasks Menu */
