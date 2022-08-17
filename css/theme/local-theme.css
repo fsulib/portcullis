@@ -457,7 +457,9 @@ div.block-node-analytics-block br {
 
 /* Action menu style */
 nav#block-ldbasetools {
-  margin-top: -50px;
+  margin-top: 0px;
+  border-top: 2px solid;
+  padding-top: 15px;
 }
 
 nav#block-ldbasetools ul.menu li a,
