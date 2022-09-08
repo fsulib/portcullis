@@ -111,6 +111,20 @@ div.view-footer div.ldbase-view-current-page {
   border-left: 1px solid white;
 }
 
+.select2-container--default .select2-selection--multiple {
+  border: 2px solid #cbcbcb;
+  border-radius: 0px;
+}
+
+.select2-container--default .select2-selection--multiple:hover {
+  border: 2px solid #414141;
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+  border: 2px solid #414141;
+}
+
+
 .select2-container--default .select2-selection--multiple .select2-selection__choice {
   background-color: #222;
   border: 1px solid #000;
@@ -520,7 +534,7 @@ div.form-item-harmonized-dataset label.option {
 .js-form-item-title, .js-form-item-description, .js-form-item-related-persons,
 .js-form-item-related-organizations, .js-form-item-activity-range, .js-form-item-project-type,
 .js-form-item-schooling, .js-form-item-curricula, .js-form-item-time-method,
-.js-form-item-website, .js-form-item-grant-information, .js-form-item-doi, .js-form-item-published-flag
+.js-form-item-website, .js-form-item-grant-information, .js-form-item-doi
 {
   border-top: 1px solid #ccc;
   padding-top: 15px;
