@@ -161,8 +161,8 @@ div#block-ldbaseminimalobjectsearchlinkblock {
 }
 
 div#block-ldbaseminimalobjectsearchlinkblock input#edit-keys {
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
   padding: 3px 10px 3px 15px;
   background: white;
   font-size: 20px;
@@ -174,9 +174,9 @@ div#block-ldbaseminimalobjectsearchlinkblock input#edit-keys {
 
 div#block-ldbaseminimalobjectsearchlinkblock input.global-search-submit-button {
   padding: 15px 14px 15px 14px;
-  border-top-right-radius: 15px;
+  border-top-right-radius: 0px;
   border-top-left-radius: 0px;
-  border-bottom-right-radius: 15px;
+  border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
   background-color: black;
   border: 2px solid rgba(200, 200, 200, .5);
