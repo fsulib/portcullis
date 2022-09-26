@@ -536,6 +536,10 @@ div.flag-anon-message a {
   text-decoration: underline;
 }
 
+.views-field.views-field-flag-ldbase-favorites {
+  float: right;
+}
+
 /* Styles for all objects */
 div.field--name-field-file-version-description div.field__label,
 div.field--name-field-file-format div.field__label,
