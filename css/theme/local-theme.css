@@ -497,10 +497,10 @@ nav#block-ldbasetools ul.menu li a:hover {
 /* Styles for flagging links*/
 div.action-flag a {
   background-image: url(../../images/small-bookmark-plus.svg);
-    padding-left: 20px;
-    background-repeat: no-repeat;
-    background-position: left center;
-    max-height: 32px;
+  padding-left: 20px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  max-height: 32px;
 }
 
 div.action-unflag a {
@@ -509,6 +509,31 @@ div.action-unflag a {
   background-repeat: no-repeat;
   background-position: left center;
   max-height: 32px;
+}
+
+.flag-anon-message .label {
+  background-image: url(../../images/small-bookmark-plus.svg);
+  padding-left: 20px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  max-height: 32px;
+  color: #671e30;
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+  margin-top: -16px;
+}
+
+.ui-dialog .ui-dialog-titlebar-close:before {
+  content: 'X';
+}
+
+div.flag-anon-message a {
+  color: #671e30;
+  font-size: 16px;
+  text-decoration: underline;
 }
 
 /* Styles for all objects */
