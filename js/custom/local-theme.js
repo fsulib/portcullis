@@ -2,7 +2,7 @@
 
   Drupal.behaviors.portcullis = {
     attach: function (context, settings) {
-
+      // toggle simple and advanced search fields
       $(context).find(".display-advanced-search").on().click(function () {
         $(".form-item-search-api-fulltext-1").toggle();
         $(".form-item-search-api-fulltext-2").toggle();
@@ -16,10 +16,14 @@
         }
       });
 
+      // after advanced search, show advanced fields and change link to new search
       if ($("input[name=search_api_fulltext_1]").val() || $("input[name=search_api_fulltext_2]").val()) {
+        var newSearchUrl = "/search?search_api_fulltext=";
         $(".form-item-search-api-fulltext-1").show();
         $(".form-item-search-api-fulltext-2").show();
-        $(".display-advanced-search").css('display','none');
+        $(".display-advanced-search").text('Start New Search');
+        $(".display-advanced-search").attr('href', newSearchUrl);
+        $(".display-advanced-search").off('click');
       }
 
     }
