@@ -58,6 +58,14 @@ a.ldbase-button:hover {
   background-color: #efefef;
 }
 
+.messages--status {
+  color: #000;
+}
+
+.messages--warning {
+  color: #000;
+}
+
 header.three-columns div.col-12 {
   padding: 0;
 }
