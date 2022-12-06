@@ -18,6 +18,9 @@ libraries-override:
       component:
         css/components/breadcrumb.css: false
         css/components/pager.css: false
+  facets/soft-limit:
+    js:
+      js/soft-limit.js: js/custom/facets-override/soft-limit.js
 regions:
   slideout: 'Slideout'
   header_top_highlighted_first: 'Header Top Highlighted First'
