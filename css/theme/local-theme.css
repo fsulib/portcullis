@@ -1147,14 +1147,15 @@ div.view-search-ldbase-resources div.view-content > div.views-row {
   margin: 0;
 }
 
-#block-facetsummary {
+div.block-facets-summary {
   padding: 0;
 }
 
-#block-facetsummary ul {
+div.block-facets-summary ul {
   list-style: none;
   list-style-image: none;
   padding: 0;
+  padding-inline-start: 0;
 }
 
 li.facet-summary-item--facet {
