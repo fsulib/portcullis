@@ -389,6 +389,10 @@ div.browse-link-row div.link-block img {
   line-height: 1.2;
 }
 
+.path-frontpage .slick-arrow::before {
+  opacity: 1;
+}
+
 .path-frontpage .slick-arrow:active,
 .path-frontpage .slick-arrow:focus {
   outline: 8px solid orange;
