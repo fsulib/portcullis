@@ -389,6 +389,13 @@ div.browse-link-row div.link-block img {
   line-height: 1.2;
 }
 
+.path-frontpage .slick-arrow:active,
+.path-frontpage .slick-arrow:focus {
+  outline: 8px solid orange;
+  border-radius: 0px;
+  padding-top: 4px;
+}
+
 /* Home page content bottom styles */
 .path-frontpage .content-bottom__container div.views-row {
   padding-left: 20px;
@@ -1764,4 +1771,15 @@ div.eu-cookie-compliance-message a {
 /* Profile Form Styles */
 div.webform-multiple-table tr.even td {
   background-color: #ededed;
+}
+
+/* Layout Paragraph Overrides */
+div.paragraph--type--section-using-layout-paragraphs .layout--twocol-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+div.paragraph--type--section-using-layout-paragraphs .layout--twocol-section .layout__region {
+  flex: 0 1 49%;
 }
