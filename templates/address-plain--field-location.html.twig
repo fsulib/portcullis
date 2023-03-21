@@ -37,6 +37,7 @@
  * @ingroup themeable
  */
 #}
+
 <div class="address" translate="no">
   {% if given_name or family_name or additional_name %}
     {{ given_name }} {{ family_name }} {{ additional_name }}<br>
@@ -53,8 +54,14 @@
   {% if dependent_locality.name %}
     {{ dependent_locality.name }},
   {% endif %}
-  {% if locality %}
-    {{ locality }},
+  {%  if locality is iterable %}
+    {% if locality.code %}
+      {{ locality.code }},
+    {% endif %}
+  {% else %}
+    {% if locality|length > 0 %}
+      {{ locality }},
+    {% endif %}
   {% endif %}
   {% if administrative_area.name %}
     {{ administrative_area.name }},
