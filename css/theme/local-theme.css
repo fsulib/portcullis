@@ -418,28 +418,43 @@ div.browse-link-row div.link-block img {
 }
 
 /* Landing page styles for navigation (i.e. page of Template links) */
+nav#block-dataexports ul.menu li > span {
+  font-size: 17px;
+  font-weight: bold;
+  padding-left: 0px;
+}
+
 nav#block-mainnavigation-2 ul.menu li a::before,
 nav#block-mainnavigation-3 ul.menu li a::before,
-nav#block-mainnavigation-4 ul.menu li a::before {
+nav#block-mainnavigation-4 ul.menu li a::before,
+nav#block-dataexports ul.menu li a::before {
   content: none;
 }
 
 nav#block-mainnavigation-2 ul.menu,
 nav#block-mainnavigation-3 ul.menu,
-nav#block-mainnavigation-4 ul.menu {
+nav#block-mainnavigation-4 ul.menu,
+nav#block-dataexports ul.menu {
   list-style: disc;
   padding-inline-start: 40px;
 }
 
 nav#block-mainnavigation-2 ul.menu li,
 nav#block-mainnavigation-3 ul.menu li,
-nav#block-mainnavigation-4 ul.menu li {
+nav#block-mainnavigation-4 ul.menu li,
+nav#block-dataexports ul.menu li {
   list-style: disc;
+}
+
+nav#block-dataexports ul.menu li.menu-item--expanded {
+  list-style: none;
+  padding-inline-start: 0px;
 }
 
 nav#block-mainnavigation-2 ul.menu li a,
 nav#block-mainnavigation-3 ul.menu li a,
-nav#block-mainnavigation-4 ul.menu li a {
+nav#block-mainnavigation-4 ul.menu li a,
+nav#block-dataexports ul.menu li a {
   color: #671e30;
   text-decoration: underline;
   font-size: inherit;
@@ -455,6 +470,8 @@ nav#block-mainnavigation-4 ul.menu li a:hover,
 nav#block-mainnavigation-4 ul.menu li a:focus {
   color: #464646;
 }
+
+
 
 /* Content Tasks Section */
 div.block-content-edit-link {
