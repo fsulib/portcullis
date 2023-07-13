@@ -798,32 +798,13 @@ body.page-node-type-dataset div.view-project-latest-code div.views-row {
   padding-bottom: 10px;
 }
 
-div.field--name-field-file-upload div.field__item span.file a {
-  font: bold 11px Arial;
-  text-decoration: none;
-  background-color: #EEEEEE;
-  color: #333333;
-  padding: 2px 6px 2px 6px;
-  border-top: 1px solid #CCCCCC;
-  border-right: 1px solid #333333;
-  border-bottom: 1px solid #333333;
-  border-left: 1px solid #CCCCCC;
-}
-
-div.field--name-field-file-upload div.field__item span.file a:hover {
-  text-decoration: none;
-  background-color: #444;
-  color: #fff;
-  padding: 2px 6px 2px 6px;
-  border-top: 1px solid #333;
-  border-right: 1px solid #CCC;
-  border-bottom: 1px solid #CCC;
-  border-left: 1px solid #333;
-}
-
-div.field--name-field-file-upload div.field__item span.file a:after {
-  padding-left: 10px;
-  content: "▼";
+a.ldbase-file-download {
+  background-image: url(../../images/small-download-solid.svg);
+  margin-left: 5px;
+  padding-left: 25px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  max-height: 32px;
 }
 
 /* no trailing colon on unique data field label*/
@@ -928,34 +909,6 @@ body.page-node-type-document .block-field-blocknodedocumentbody div.text-formatt
   clear: both;
 }
 
-div.field--name-field-document-file div.field__item span.file a {
-  font: bold 11px Arial;
-  text-decoration: none;
-  background-color: #EEEEEE;
-  color: #333333;
-  padding: 2px 6px 2px 6px;
-  border-top: 1px solid #CCCCCC;
-  border-right: 1px solid #333333;
-  border-bottom: 1px solid #333333;
-  border-left: 1px solid #CCCCCC;
-}
-
-div.field--name-field-document-file div.field__item span.file a:hover {
-  text-decoration: none;
-  background-color: #444;
-  color: #fff;
-  padding: 2px 6px 2px 6px;
-  border-top: 1px solid #333;
-  border-right: 1px solid #CCC;
-  border-bottom: 1px solid #CCC;
-  border-left: 1px solid #333;
-}
-
-div.field--name-field-document-file div.field__item span.file a:after {
-  padding-left: 10px;
-  content: "▼";
-}
-
 /*Layout Styles for Code*/
 
 .js-form-item-code-type
@@ -988,34 +941,6 @@ body.page-node-type-code .block-field-blocknodecodebody div.text-formatted {
   margin: 10px 0;
   padding: 20px;
   clear: both;
-}
-
-div.field--name-field-code-file div.field__item span.file a {
-  font: bold 11px Arial;
-  text-decoration: none;
-  background-color: #EEEEEE;
-  color: #333333;
-  padding: 2px 6px 2px 6px;
-  border-top: 1px solid #CCCCCC;
-  border-right: 1px solid #333333;
-  border-bottom: 1px solid #333333;
-  border-left: 1px solid #CCCCCC;
-}
-
-div.field--name-field-code-file div.field__item span.file a:hover {
-  text-decoration: none;
-  background-color: #444;
-  color: #fff;
-  padding: 2px 6px 2px 6px;
-  border-top: 1px solid #333;
-  border-right: 1px solid #CCC;
-  border-bottom: 1px solid #CCC;
-  border-left: 1px solid #333;
-}
-
-div.field--name-field-code-file div.field__item span.file a:after {
-  padding-left: 10px;
-  content: "▼";
 }
 
 /*Layout Styles for Persons*/
