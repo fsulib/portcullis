@@ -530,6 +530,38 @@ nav#block-ldbasetools ul.menu li a:hover {
   color: #464646;
 }
 
+/* FCRR Admin menu */
+
+nav#block-fcrradmintasks {
+  margin-top: -50px;
+  margin-left: -15px;
+  padding-left: 15px;
+}
+
+nav#block-fcrradmintasks h2#block-fcrradmintasks-menu {
+  font-size: 32px;
+  margin: 0px;
+  padding-bottom: 15px;
+  text-align: left;
+}
+
+nav#block-fcrradmintasks ul.menu li a:before {
+  content: none;
+}
+
+nav#block-fcrradmintasks ul.menu li a,
+nav#block-fcrradmintasks ul.menu li > span {
+  color: #671e30;
+  font-size: 16px;
+  padding: 4px 0 4px 20px;
+  text-decoration: underline;
+}
+
+nav#block-fcrradmintasks ul.menu li a:hover {
+  color: #464646;
+}
+
+
 /* Styles for flagging links*/
 div.action-flag a {
   background-image: url(../../images/small-bookmark-plus.svg);
