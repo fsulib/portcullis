@@ -336,9 +336,21 @@ div.browse-link-row div.link-block {
   padding: 15px;
 }
 
-div.browse-link-row div.link-block h3.link-block-header {
+div.browse-link-row div.link-block p.link-block-header {
   color: #671e30;
+  font-size: 22px;
+  line-height: 1.20;
+  margin-top: 20px;
+  min-height: 67px;
+  padding: 0;
   text-decoration: none;
+}
+
+
+@media screen and (max-width: 430px) {
+  div.browse-link-row div.link-block p.link-block-header {
+    min-height: 0px;
+  }
 }
 
 div.browse-link-row div.link-block img {
