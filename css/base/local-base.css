@@ -1,23 +1,27 @@
-/*LDbase Customizations*/ 
+/*LDbase Customizations*/
 h1 {
-  font-size: 34px;
-}
-h2 {
   font-size: 30px;
 }
-h3 {
+h2 {
   font-size: 26px;
 }
-h4 {
+h3 {
   font-size: 22px;
+}
+h4 {
+  font-size: 18px;
 }
 h5 {
   margin-top: 5px;
   margin-bottom: 15px;
-  font-size: 18px;
+  font-size: 16px;
 }
 h6 {
   font-size: 14px;
+}
+
+h4.title, h2.title, nav > h2, .block-search > h2 {
+  text-transform: inherit;
 }
 
 @media (min-width: 1200px) {
