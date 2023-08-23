@@ -1774,6 +1774,12 @@ div.paragraph--type--section-using-layout-paragraphs .layout--twocol-section .la
   flex: 0 1 49%;
 }
 
+@media only screen and (max-width: 420px) {
+  div.paragraph--type--section-using-layout-paragraphs .layout--twocol-section .layout__region {
+    flex: 0 1 100%;
+  }
+}
+
 .paragraph--type--section-using-layout-paragraphs hr {
   border-top: 2px solid #ebebeb;
   margin: 10px 20px 10px 0px;
