@@ -1725,6 +1725,12 @@ div.view-vocabulary-lists div.view-header h2 {
 }
 
 /* Subfooter Styles */
+.subfooter__section ul.menu li a,
+.subfooter__section ul.menu li a:hover{
+  border-bottom: none;
+  text-decoration: underline;
+}
+
 p#subfooter-disclaimer {
   font-size: 90%;
 }
