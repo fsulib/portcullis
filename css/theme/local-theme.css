@@ -169,8 +169,7 @@ div#block-ldbaseminimalobjectsearchlinkblock {
 }
 
 div#block-ldbaseminimalobjectsearchlinkblock input#edit-keys {
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
+  border-radius: 0px;
   padding: 3px 10px 3px 15px;
   background: white;
   font-size: 20px;
@@ -178,6 +177,7 @@ div#block-ldbaseminimalobjectsearchlinkblock input#edit-keys {
   float: left;
   width: 70%;
   margin-top: 10px;
+  -webkit-appearance: none;
 }
 
 div#block-ldbaseminimalobjectsearchlinkblock input.global-search-submit-button {
