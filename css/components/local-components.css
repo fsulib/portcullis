@@ -30,3 +30,14 @@ a.button.button--hover-style-2:before,
   content: "";
   font-weight: 900;
 }
+
+/**
+ldbase default font size
+ */
+table tr th {
+  font-size: 15px;
+}
+
+label {
+  font-size: 15px;
+}
