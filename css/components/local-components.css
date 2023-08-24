@@ -41,3 +41,6 @@ table tr th {
 label {
   font-size: 15px;
 }
+.header-top-highlighted__section ul.menu:not(.sf-accordion) {
+  text-align: right;
+}
