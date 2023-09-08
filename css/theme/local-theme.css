@@ -1148,6 +1148,20 @@ div.view-search-ldbase-resources div.view-content > div.views-row {
   border-radius: 4px;
 }
 
+div.view-content > div.ldbase-search-result-row {
+  margin-bottom: 1em;
+  padding: 1em;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+div.view-content span.ldbase-search-result-row-type {
+  font-size: 18px;
+}
+
+div.view-content span.ldbase-search-result-row-title {
+  font-size: 20px;
+}
+
 #block-portcullis-content > div > div > div > div.view-content > div.views-row h3 {
   margin: 0;
 }
@@ -1192,12 +1206,14 @@ div.facets-widget-links {
 }
 
 div.facets-widget-links ul {
+  margin-block-start: 0;
   margin-block-end: 0;
+  list-style-type: none;
+  padding-inline-start: 0;;
 }
 
 a.facets-soft-limit-link {
   font-weight: bold;
-  padding-left: 40px;
 }
 
 li.facet-item a.is-active {
