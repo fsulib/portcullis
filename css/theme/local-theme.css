@@ -75,6 +75,10 @@ a.ldbase-button:hover {
   color: #000;
 }
 
+.header__container {
+  padding: 10px 0;
+}
+
 header.three-columns div.col-12 {
   padding: 0;
 }
@@ -1071,6 +1075,23 @@ div.view-my-messages .form--inline .form-actions {
 }
 
 /* Layout styles for search page */
+
+form#views-exposed-form-search-ldbase-resources-block-1 input.form-submit {
+  padding: 10px 35% 10px;
+  margin: 0 !important;
+  width: 100%;
+}
+
+form#views-exposed-form-search-ldbase-resources-block-1 div.form-item {
+  margin-right: 0px;
+}
+
+form#views-exposed-form-search-ldbase-resources-page-1 input.form-submit {
+  padding: 10px 119px 10px;
+  margin: 0 !important;
+}
+
+
 div.view-search {
   margin-top: -1em;
 }
