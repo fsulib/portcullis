@@ -1181,7 +1181,8 @@ div.view-content > div.ldbase-search-result-row {
 
 div.view-content span.ldbase-search-result-row-type {
   font-family: 'PT Serif', Georgia, Times, Times New Roman, Serif;
-  font-size: 24px;
+  font-size: 15px;
+  font-weight: bolder;
 }
 
 div.ldbase-search-result-row > div.search-view-full-item {
