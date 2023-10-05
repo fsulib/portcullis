@@ -1075,6 +1075,11 @@ div.view-my-messages .form--inline .form-actions {
 }
 
 /* Layout styles for search page */
+@media only screen and (min-width: 768px) {
+  body.path-search div.main-content__section {
+    margin-left: 50px;
+  }
+}
 
 form#views-exposed-form-search-ldbase-resources-block-1 input.form-submit {
   padding: 10px 35% 10px;
