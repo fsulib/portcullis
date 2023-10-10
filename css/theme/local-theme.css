@@ -1186,8 +1186,10 @@ div.view-content > div.ldbase-search-result-row {
 
 div.view-content span.ldbase-search-result-row-type {
   font-family: 'PT Serif', Georgia, Times, Times New Roman, Serif;
-  font-size: 15px;
-  font-weight: bolder;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.20;
+  color: #2a2a2a;
 }
 
 div.ldbase-search-result-row > div.search-view-full-item {
@@ -1206,6 +1208,11 @@ div.view-content span.ldbase-search-result-row-title {
 
 #block-portcullis-content > div > div > div > div.view-content > div.views-row h3 {
   margin: 0;
+}
+
+div.block-facet--links h2.title {
+  font-family: 'PT Serif', Georgia, Times, Times New Roman, Serif;
+  font-size: 18px;
 }
 
 div.block-facets-summary {
