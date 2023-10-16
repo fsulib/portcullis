@@ -13,10 +13,24 @@ input[type="button"] {
   border-radius: 10px;
 }
 
-
 a.button.button--hover-style-2:before,
 .button.button--hover-style-2>a:before {
   border-radius: 10px;
+}
+
+input.form-text,
+input.form-tel,
+input.form-email,
+input.form-url,
+input.form-search,
+input.form-file,
+input.form-number,
+input.form-color,
+input.form-date,
+input.form-time,
+textarea,
+select {
+  padding: 5px 15px;
 }
 
 /**
