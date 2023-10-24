@@ -1,4 +1,4 @@
-(function ($, Drupal, drupalSettings) {
+(function ($, Drupal, drupalSettings, once) {
   Drupal.behaviors.pcToolTip = {
     attach: function (context, settings) {
       if(typeof($.fn.tooltip) != 'undefined') {
@@ -7,4 +7,4 @@
       }
     }
   };
-})(jQuery, Drupal, drupalSettings);
+})(jQuery, Drupal, drupalSettings, once);

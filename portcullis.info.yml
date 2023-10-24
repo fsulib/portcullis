@@ -1,10 +1,11 @@
 name: Portcullis
 type: theme
 base theme: classy
+dependencies:
+  - classy:classy
 description: 'A Bootstrap 4 Drupal 8 theme built for digital repositories.'
 version: '0.0.1'
-core: 8.x
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^9 || ^10
 libraries:
   - portcullis/global-styling
   - portcullis/messages

@@ -1,4 +1,4 @@
-(function ($, Drupal) {
+(function ($, Drupal, once) {
   Drupal.behaviors.mtWaypointsFixedShareLinks = {
     attach: function (context, settings) {
       var inview = new Waypoint.Inview({
@@ -14,4 +14,4 @@
       });
     }
   };
-})(jQuery, Drupal);
+})(jQuery, Drupal, once);

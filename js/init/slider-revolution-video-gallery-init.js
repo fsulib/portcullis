@@ -1,9 +1,10 @@
-(function ($, Drupal, drupalSettings) {
+(function ($, Drupal, drupalSettings, once) {
   Drupal.behaviors.mtSliderRevolutionVideoGallery = {
     attach: function (context, settings) {
 
       if ($(".slider-revolution-video-gallery").length>0) {
-        $(context).find('.slider-revolution-video-gallery').once('mtSliderRevolutionVideoGalleryInit').show().each(function(index, item) {
+        //$(context).find('.slider-revolution-video-gallery').once('mtSliderRevolutionVideoGalleryInit').show().each(function(index, item) {
+        $(once('mtSliderRevolutionVideoGalleryInit', '.slider-revolution-video-gallery', context)).show().each(function(index, item) {
           $(this).revolution({
             sliderType:"standard",
             sliderLayout:"auto",
@@ -85,4 +86,4 @@
 
     }
   };
-})(jQuery, Drupal, drupalSettings);
+})(jQuery, Drupal, drupalSettings, once);

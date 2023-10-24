@@ -1,4 +1,4 @@
-(function ($, Drupal, drupalSettings) {
+(function ($, Drupal, drupalSettings, once) {
   Drupal.behaviors.mtflexsliderInPage = {
     attach: function (context, settings) {
 
@@ -6,7 +6,8 @@
       var $window = $(window),
       flexslider;
 
-      $(context).find('.in-page-images-slider').once('mtflexsliderInPageSliderInit').each(function() {
+      //$(context).find('.in-page-images-slider').once('mtflexsliderInPageSliderInit').each(function() {
+      $(once('mtflexsliderInPageSliderInit', '.in-page-images-slider', context).each(function() {
         $(this).flexslider({
           useCSS: false,
           animation: drupalSettings.catalogplus.flexsliderInPageInit.inPageSliderEffect,
@@ -59,4 +60,4 @@
 
     }
   };
-})(jQuery, Drupal, drupalSettings);
+})(jQuery, Drupal, drupalSettings, once);

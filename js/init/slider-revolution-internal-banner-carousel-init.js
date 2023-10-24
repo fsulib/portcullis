@@ -1,7 +1,8 @@
-(function ($, Drupal, drupalSettings) {
+(function ($, Drupal, drupalSettings, once) {
   Drupal.behaviors.mtSliderRevolutionInternalBannerCarousel = {
     attach: function (context, settings) {
-      $(context).find('.carousel-internal .rev_slider').once('mtSliderRevolutionInternalBannerCarouselInit').show().revolution({
+      //$(context).find('.carousel-internal .rev_slider').once('mtSliderRevolutionInternalBannerCarouselInit').show().revolution({
+      $(once('mtSliderRevolutionInternalBannerCarouselInit', '.carousel-internal .rev_slider', context)).show().revolution({
         sliderType:"carousel",
         sliderLayout:"auto",
         gridwidth: [1170,970,750,450],
@@ -68,10 +69,13 @@
         autoHeight:"off"
       });
 
-      $(context).find('.transparent-background').once('mtSliderRevolutionInternalBannerCarouselBG').css("backgroundColor", "rgba(0,0,0," + drupalSettings.catalogplus.slideshowBackgroundOpacity + ")");
-      $(context).find('.tp-caption--transparent-background .tp-caption__title').once('mtSliderRevolutionInternalBannerCarouselCaptionBG').css("backgroundColor", "rgba(0,0,0," + drupalSettings.catalogplus.slideshowCaptionOpacity + ")");
-      $(context).find('.tp-caption--transparent-background .tp-caption__text').once('mtSliderRevolutionInternalBannerCarouselCaptionBG').css("backgroundColor", "rgba(0,0,0," + drupalSettings.catalogplus.slideshowCaptionOpacity + ")");
+      //$(context).find('.transparent-background').once('mtSliderRevolutionInternalBannerCarouselBG').css("backgroundColor", "rgba(0,0,0," + drupalSettings.catalogplus.slideshowBackgroundOpacity + ")");
+      $(once('mtSliderRevolutionInternalBannerCarouselBG', '.transparent-background', context)).css("backgroundColor", "rgba(0,0,0," + drupalSettings.catalogplus.slideshowBackgroundOpacity + ")");
+      //$(context).find('.tp-caption--transparent-background .tp-caption__title').once('mtSliderRevolutionInternalBannerCarouselCaptionBG').css("backgroundColor", "rgba(0,0,0," + drupalSettings.catalogplus.slideshowCaptionOpacity + ")");
+      $(once('mtSliderRevolutionInternalBannerCarouselCaptionBG', '.tp-caption--transparent-background .tp-caption__title', context)).css("backgroundColor", "rgba(0,0,0," + drupalSettings.catalogplus.slideshowCaptionOpacity + ")");
+      //$(context).find('.tp-caption--transparent-background .tp-caption__text').once('mtSliderRevolutionInternalBannerCarouselCaptionBG').css("backgroundColor", "rgba(0,0,0," + drupalSettings.catalogplus.slideshowCaptionOpacity + ")");
+      $(once('mtSliderRevolutionInternalBannerCarouselCaptionBG', '.tp-caption--transparent-background .tp-caption__text', context)).css("backgroundColor", "rgba(0,0,0," + drupalSettings.catalogplus.slideshowCaptionOpacity + ")");
 
     }
   };
-})(jQuery, Drupal, drupalSettings);
+})(jQuery, Drupal, drupalSettings, once);

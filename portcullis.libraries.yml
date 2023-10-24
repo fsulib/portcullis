@@ -178,7 +178,7 @@ waypoints:
   dependencies:
     - core/jquery
     - core/drupal
-    - core/jquery.once
+    - core/once
 
 waypoints-sticky:
   version: 4.0.1
@@ -211,7 +211,7 @@ magnific-popup:
   dependencies:
     - core/jquery
     - core/drupal
-    - core/jquery.once
+    - core/once
 
 magnific-popup-field-image-init:
   version: VERSION
@@ -270,7 +270,7 @@ flexslider-in-page-init:
     - portcullis/flexslider-global
     - core/drupalSettings
     - core/drupal
-    - core/jquery.once
+    - core/once
 
 flexslider-nodes-slideshow:
   version: VERSION
@@ -282,7 +282,7 @@ flexslider-nodes-slideshow:
   dependencies:
     - portcullis/flexslider-global
     - core/drupal
-    - core/jquery.once
+    - core/once
 
 owl-carousel:
   version: 2.2.1
@@ -303,7 +303,7 @@ owl-carousel-global:
   dependencies:
     - portcullis/owl-carousel
     - core/drupal
-    - core/jquery.once
+    - core/once
 
 owl-carousel-articles-init:
   version: VERSION
@@ -342,7 +342,7 @@ slider-revolution:
   dependencies:
     - core/jquery
     - core/drupal
-    - core/jquery.once
+    - core/once
 
 slider-revolution-global:
   version: VERSION
@@ -422,7 +422,7 @@ typedjs:
   dependencies:
     - core/jquery
     - core/drupal
-    - core/jquery.once
+    - core/once
 
 typedjs-init:
   version: VERSION
@@ -524,7 +524,7 @@ google-maps-init:
     - core/jquery
     - core/drupalSettings
     - core/drupal
-    - core/jquery.once
+    - core/once
 
 imagesloaded:
   version: 3.2.0
@@ -578,7 +578,7 @@ tooltip:
   dependencies:
     - core/jquery
     - core/drupal
-    - core/jquery.once
+    - core/once
 
 node:
   version: VERSION

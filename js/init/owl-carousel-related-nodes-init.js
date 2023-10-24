@@ -1,7 +1,8 @@
-(function ($, Drupal, drupalSettings) {
+(function ($, Drupal, drupalSettings, once) {
   Drupal.behaviors.mtowlCarouselRelatedNodes = {
     attach: function (context, settings) {
-      $(context).find('.mt-carousel-related-nodes').once('mtowlCarouselRelatedNodesInit').each(function() {
+      //$(context).find('.mt-carousel-related-nodes').once('mtowlCarouselRelatedNodesInit').each(function() {
+      $(once('mtowlCarouselRelatedNodesInit', '.mt-carousel-related-nodes', context)).each(function() {
         $(this).owlCarousel({
           items: 2,
           responsive:{
@@ -34,4 +35,4 @@
       });
     }
   };
-})(jQuery, Drupal, drupalSettings);
+})(jQuery, Drupal, drupalSettings, once);

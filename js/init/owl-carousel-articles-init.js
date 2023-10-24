@@ -1,7 +1,8 @@
-(function ($, Drupal, drupalSettings) {
+(function ($, Drupal, drupalSettings, once) {
   Drupal.behaviors.mtOwlCarouselArticles = {
     attach: function (context, settings) {
-      $(context).find('.mt-carousel-articles').once('mtOwlCarouselArticlesInit').each(function() {
+     //$(context).find('.mt-carousel-articles').once('mtOwlCarouselArticlesInit').each(function() {
+      $(once('mtOwlCarouselArticlesInit', '.mt-carousel-articles', context)).each(function() {
         $(this).owlCarousel({
           items: 2,
           responsive:{
@@ -34,4 +35,4 @@
       });
     }
   };
-})(jQuery, Drupal, drupalSettings);
+})(jQuery, Drupal, drupalSettings, once);

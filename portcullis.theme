@@ -1001,11 +1001,11 @@ function portcullis_preprocess_node__article(&$variables) {
 
   // Count the words of article in order to calculate the reading time
   $node_content = $variables['content'];
-  $node_content = render($node_content);
+  $node_content = \Drupal::service('renderer')->render($node_content);
   $words = str_word_count(strip_tags($node_content));
   if (isset($variables['content']['comment'])) {
     $node_comments = $variables['content']['comment'];
-    $node_comments = render($node_comments);
+    $node_comments = \Drupal::service('renderer')->render($node_comments);
     $words = $words - str_word_count(strip_tags($node_comments));
   }
   $variables['minutes'] = floor($words / 275);
@@ -1145,7 +1145,7 @@ function portcullis_preprocess_field__block_content__pc_fancy_linked_images_bloc
         $file = File::load($fancy_image[0]['target_id']);
         $path = $file->getFileUri();
         $thumb_url = ImageStyle::load('pc_fli_image')->buildUrl($path);
-        $variables['items'][$key]['fancy_image_styled_url'] = file_url_transform_relative($thumb_url);
+        $variables['items'][$key]['fancy_image_styled_url'] = \Drupal::service('file_url_generator')->transformRelative($thumb_url);
       } else {
         $variables['items'][$key]['fancy_image_styled_url'] = "";
       }
@@ -1181,7 +1181,7 @@ function portcullis_preprocess_paragraph__pc_detailed_feature(&$variables) {
   if (!empty($background_image[0])) {
     $path = $background_image[0]->entity->getFileUri();
     $thumb_url = ImageStyle::load('pc_detailed_feature')->buildUrl($path);
-    $variables['field_pc_detailed_feature_image_styled_url'] = file_url_transform_relative($thumb_url);
+    $variables['field_pc_detailed_feature_image_styled_url'] = \Drupal::service('file_url_generator')->transformRelative($thumb_url);
   } else {
     $variables['field_pc_detailed_feature_image_styled_url'] = "";
   }
@@ -1210,10 +1210,10 @@ function portcullis_preprocess_field__block_content__pc_main_slideshow_block(&$v
         $path = $file->getFileUri();
         if (!empty($variables['element']['#object']->get('field_pc_main_slideshow_layout')->first()) && $variables['element']['#object']->get('field_pc_main_slideshow_layout')->first()->getValue()['value'] == "fullwidth") {
           $thumb_url = ImageStyle::load('pc_slideshow_full_width')->buildUrl($path);
-          $variables['items'][$key]['slide_image_url'] = file_url_transform_relative($thumb_url);
+          $variables['items'][$key]['slide_image_url'] = \Drupal::service('file_url_generator')->transformRelative($thumb_url);
         } else {
           $thumb_url = ImageStyle::load('pc_slideshow_fullscreen')->buildUrl($path);
-          $variables['items'][$key]['slide_image_url'] = file_url_transform_relative($thumb_url);
+          $variables['items'][$key]['slide_image_url'] = \Drupal::service('file_url_generator')->transformRelative($thumb_url);
         }
         $variables['items'][$key]['slide_image_alt'] = $slide_image[0]['alt'];
       } else {
@@ -1634,7 +1634,7 @@ function portcullis_preprocess_field__block_content__pc_media_tabs_block(&$varia
         $file = File::load($media_image[0]['target_id']);
         $path = $file->getFileUri();
         $thumb_url = ImageStyle::load('pc_media_tab_image')->buildUrl($path);
-        $variables['items'][$key]['media_image_styled_url'] = file_url_transform_relative($thumb_url);
+        $variables['items'][$key]['media_image_styled_url'] = \Drupal::service('file_url_generator')->transformRelative($thumb_url);
       } else {
         $variables['items'][$key]['media_image_styled_url'] = "";
       }

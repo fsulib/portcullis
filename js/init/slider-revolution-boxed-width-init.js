@@ -1,7 +1,8 @@
-(function ($, Drupal, drupalSettings) {
+(function ($, Drupal, drupalSettings, once) {
   Drupal.behaviors.mtSliderRevolutionBoxedWidth = {
     attach: function (context, settings) {
-      $(context).find('.slideshow-boxedwidth .rev_slider').once('mtSliderRevolutionBoxedWidthInit').each(function() {
+      //$(context).find('.slideshow-boxedwidth .rev_slider').once('mtSliderRevolutionBoxedWidthInit').each(function() {
+      $(once('mtSliderRevolutionBoxedWidthInit', '.slideshow-boxedwidth .rev_slider', context)).each(function() {
         if (drupalSettings.catalogplus.sliderRevolutionBoxedWidthInit.slideshowBoxedWidthNavigationStyle == "bullets") {
           var bulletsEnable = true,
           tabsEnable = false;
@@ -90,10 +91,13 @@
         $(this).show().revolution(settings);
       });
 
-      $(context).find('.transparent-background').once('mtSliderRevolutionBoxedWidthBG').css("backgroundColor", "rgba(0,0,0," + drupalSettings.catalogplus.slideshowBackgroundOpacity + ")");
-      $(context).find('.tp-caption--transparent-background .tp-caption__title').once('mtSliderRevolutionBoxedWidthCaptionBG').css("backgroundColor", "rgba(0,0,0," + drupalSettings.catalogplus.slideshowCaptionOpacity + ")");
-      $(context).find('.tp-caption--transparent-background .tp-caption__text').once('mtSliderRevolutionBoxedWidthCaptionBG').css("backgroundColor", "rgba(0,0,0," + drupalSettings.catalogplus.slideshowCaptionOpacity + ")");
+      //$(context).find('.transparent-background').once('mtSliderRevolutionBoxedWidthBG').css("backgroundColor", "rgba(0,0,0," + drupalSettings.catalogplus.slideshowBackgroundOpacity + ")");
+      $(once('mtSliderRevolutionBoxedWidthBG', '.transparent-background', context)).css("backgroundColor", "rgba(0,0,0," + drupalSettings.catalogplus.slideshowBackgroundOpacity + ")");
+      //$(context).find('.tp-caption--transparent-background .tp-caption__title').once('mtSliderRevolutionBoxedWidthCaptionBG').css("backgroundColor", "rgba(0,0,0," + drupalSettings.catalogplus.slideshowCaptionOpacity + ")");
+      $(once('mtSliderRevolutionBoxedWidthCaptionBG', '.tp-caption--transparent-background .tp-caption__title', context)).css("backgroundColor", "rgba(0,0,0," + drupalSettings.catalogplus.slideshowCaptionOpacity + ")");
+      //$(context).find('.tp-caption--transparent-background .tp-caption__text').once('mtSliderRevolutionBoxedWidthCaptionBG').css("backgroundColor", "rgba(0,0,0," + drupalSettings.catalogplus.slideshowCaptionOpacity + ")");
+      $(once('mtSliderRevolutionBoxedWidthCaptionBG', '.tp-caption--transparent-background .tp-caption__text', context)).css("backgroundColor", "rgba(0,0,0," + drupalSettings.catalogplus.slideshowCaptionOpacity + ")");
 
     }
   };
-})(jQuery, Drupal, drupalSettings);
+})(jQuery, Drupal, drupalSettings, once);

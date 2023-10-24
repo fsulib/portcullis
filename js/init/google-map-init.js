@@ -1,4 +1,4 @@
-(function ($, Drupal, drupalSettings) {
+(function ($, Drupal, drupalSettings, once) {
   Drupal.behaviors.mtGoogleMaps = {
     attach: function (context, settings) {
 
@@ -6,7 +6,8 @@
       var mapSelector = "." + mapSelectorClass;
 
       function initialize() {
-        $(context).find(mapSelector).once('mtGoogleMapsInit').each(function(index, item) {
+        //$(context).find(mapSelector).once('mtGoogleMapsInit').each(function(index, item) {
+        $(once('mtGoogleMapsInit', mapSelector, context)).each(function(index, item) {
           var map_locations_string = $(this).attr('data-attribute-mt-locations');
           var locations = JSON.parse(map_locations_string);
           var zoom = parseInt($(this).attr('data-attribute-mt-map-zoom'));
@@ -22,7 +23,7 @@
           var infowindow = new google.maps.InfoWindow();
           var marker, i;
 
-          for (i = 0; i < locations.length; i++) {  
+          for (i = 0; i < locations.length; i++) {
             marker = new google.maps.Marker({
               position: new google.maps.LatLng(locations[i][1], locations[i][2]),
               map: map,
@@ -66,4 +67,4 @@
 
     }
   };
-})(jQuery, Drupal, drupalSettings);
+})(jQuery, Drupal, drupalSettings, once);

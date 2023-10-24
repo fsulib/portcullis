@@ -1,4 +1,4 @@
-(function ($, Drupal, drupalSettings) {
+(function ($, Drupal, drupalSettings, once) {
   Drupal.behaviors.mtSliderRevolutionFullScreen = {
     attach: function (context, settings) {
       if (drupalSettings.catalogplus.sliderRevolutionFullScreenInit.slideshowFullScreenNavigationStyle == "bullets") {
@@ -9,7 +9,8 @@
         bulletsEnable = false;
       }
       if ($(".transparent-header-active").length>0) {
-        $(context).find('.slideshow-fullscreen .rev_slider').once('mtSliderRevolutionFullScreenInit').show().revolution({
+        //$(context).find('.slideshow-fullscreen .rev_slider').once('mtSliderRevolutionFullScreenInit').show().revolution({
+        $(once('mtSliderRevolutionFullScreenInit', '.slideshow-fullscreen .rev_slider', context)).show().revolution({
           sliderType:"standard",
           sliderLayout:"fullscreen",
           gridwidth: [1170,970,750,450],
@@ -78,7 +79,8 @@
           }
         });
       } else {
-        $(context).find('.slideshow-fullscreen .rev_slider').once('mtSliderRevolutionFullScreenInit').show().revolution({
+        //$(context).find('.slideshow-fullscreen .rev_slider').once('mtSliderRevolutionFullScreenInit').show().revolution({
+        $(once('mtSliderRevolutionFullScreenInit', '.slideshow-fullscreen .rev_slider', context)).show().revolution({
           sliderType:"standard",
           sliderLayout:"fullscreen",
           gridwidth: [1170,970,750,450],
@@ -148,11 +150,15 @@
         });
       }
 
-      $(context).find('.transparent-background').once('mtSliderRevolutionFullScreenBG').css("backgroundColor", "rgba(0,0,0," + drupalSettings.catalogplus.slideshowBackgroundOpacity + ")");
-      $(context).find('.banner').once('mtSliderRevolutionFullScreenBanner').css("padding", "0");
-      $(context).find('.tp-caption--transparent-background .tp-caption__title').once('mtSliderRevolutionFullScreenCaptionBG').css("backgroundColor", "rgba(0,0,0," + drupalSettings.catalogplus.slideshowCaptionOpacity + ")");
-      $(context).find('.tp-caption--transparent-background .tp-caption__text').once('mtSliderRevolutionFullScreenCaptionBG').css("backgroundColor", "rgba(0,0,0," + drupalSettings.catalogplus.slideshowCaptionOpacity + ")");
+      //$(context).find('.transparent-background').once('mtSliderRevolutionFullScreenBG').css("backgroundColor", "rgba(0,0,0," + drupalSettings.catalogplus.slideshowBackgroundOpacity + ")");
+      $(once('mtSliderRevolutionFullScreenBG', '.transparent-background', context)).css("backgroundColor", "rgba(0,0,0," + drupalSettings.catalogplus.slideshowBackgroundOpacity + ")");
+      //$(context).find('.banner').once('mtSliderRevolutionFullScreenBanner').css("padding", "0");
+      $(once('mtSliderRevolutionFullScreenBanner', '.banner', context)).css("padding", "0");
+      //$(context).find('.tp-caption--transparent-background .tp-caption__title').once('mtSliderRevolutionFullScreenCaptionBG').css("backgroundColor", "rgba(0,0,0," + drupalSettings.catalogplus.slideshowCaptionOpacity + ")");
+      $(once('mtSliderRevolutionFullScreenCaptionBG', '.tp-caption--transparent-background .tp-caption__title', context)).css("backgroundColor", "rgba(0,0,0," + drupalSettings.catalogplus.slideshowCaptionOpacity + ")");
+      //$(context).find('.tp-caption--transparent-background .tp-caption__text').once('mtSliderRevolutionFullScreenCaptionBG').css("backgroundColor", "rgba(0,0,0," + drupalSettings.catalogplus.slideshowCaptionOpacity + ")");
+      $(once('mtSliderRevolutionFullScreenCaptionBG', '.tp-caption--transparent-background .tp-caption__text', context)).css("backgroundColor", "rgba(0,0,0," + drupalSettings.catalogplus.slideshowCaptionOpacity + ")");
 
     }
   };
-})(jQuery, Drupal, drupalSettings);
+})(jQuery, Drupal, drupalSettings, once);

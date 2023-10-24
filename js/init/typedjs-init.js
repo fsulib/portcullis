@@ -1,7 +1,8 @@
-(function ($, Drupal, drupalSettings) {
+(function ($, Drupal, drupalSettings, once) {
   Drupal.behaviors.mtTypedjs = {
     attach: function (context, settings) {
-      $(context).find('.typed').once('mtTypedjsInit').each(function() {
+      //$(context).find('.typed').once('mtTypedjsInit').each(function() {
+      $(once('mtTypedjsInit', '.typed', context)).each(function() {
         var typed = new Typed(this, {
           stringsElement: '.typed-strings',
           loop: true,
@@ -12,4 +13,4 @@
       });
     }
   };
-})(jQuery, Drupal, drupalSettings);
+})(jQuery, Drupal, drupalSettings, once);

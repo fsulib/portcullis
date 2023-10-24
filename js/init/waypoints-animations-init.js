@@ -1,7 +1,8 @@
-(function ($, Drupal) {
+(function ($, Drupal, once) {
   Drupal.behaviors.mtWaypointsAnimations = {
     attach: function (context, settings) {
-      $("body:not(.path-admin) [data-animate-effect]", context).once('mtWaypointsAnimations').each(function() {
+      //$("body:not(.path-admin) [data-animate-effect]", context).once('mtWaypointsAnimations').each(function() {
+      $(once('mtWaypointsAnimations', "body:not(.path-admin) [data-animate-effect]", context)).each(function() {
         var thisObject = $(this);
         var animation = thisObject.attr("data-animate-effect");
         if(animation != "no-animation") {
@@ -19,4 +20,4 @@
       });
     }
   };
-})(jQuery, Drupal);
+})(jQuery, Drupal, once);
