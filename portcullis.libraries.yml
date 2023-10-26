@@ -802,6 +802,7 @@ local-stylesheets:
     js/custom/local-theme.js: {}
   dependencies:
     - core/jquery
+    - core/once
 
 #####################
 #   Color Schemes   #

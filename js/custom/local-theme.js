@@ -1,9 +1,10 @@
-(function ($, Drupal, drupalSettings) {
+(function ($, Drupal, drupalSettings, once) {
 
 
   Drupal.behaviors.portcullis = {
     attach: function (context, settings) {
-      $('a.display-advanced-search', context).once('toggle-search-form').each(function () {
+      //$('a.display-advanced-search', context).once('toggle-search-form').each(function () {
+      $(once('toggle-search-form', 'a.display-advanced-search', context)).each(function () {
         var toggleLink = $('a.display-advanced-search');
 
         toggleLink.on('click', function () {
@@ -49,4 +50,4 @@
   }
 
 
-})(jQuery, Drupal, drupalSettings);
+})(jQuery, Drupal, drupalSettings, once);
