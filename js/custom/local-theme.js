@@ -11,7 +11,7 @@
           $(".form-item-search-api-fulltext-1").toggle();
           $(".form-item-search-api-fulltext-2").toggle();
 
-          var searchType = $('a#toggle-advanced-search-form').text();
+          var searchType = $('a.display-advanced-search').text();
 
           if (searchType === 'Go to Advanced Search') {
             $('a.display-advanced-search').text('Go to Simple Search');
