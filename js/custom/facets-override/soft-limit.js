@@ -4,7 +4,7 @@
  * Overrides original file to always open soft-limited facet if there is an active item
  */
 
-(function ($) {
+(function ($, Drupal, drupalSettings, once) {
 
   'use strict';
 
@@ -30,7 +30,7 @@
    * @param {object} settings
    *   Settings.
    */
-  Drupal.facets.applySoftLimit = function (facet, limit, settings) {
+  Drupal.facets.applySoftLimit = function (facet, limit, settings, context) {
     var zero_based_limit = (limit - 1);
     var facet_id = facet;
     var facetsList = $('ul[data-drupal-facet-id="' + facet_id + '"]');
@@ -45,13 +45,15 @@
     // Hide facets over the limit.
     facetsList.each(function () {
       if ($(this).find('a.is-active').length === 0) {
-        $(this).children('li:gt(' + zero_based_limit + ')').once('applysoftlimit').hide();
+        var thisChildren = $(this).children('li:gt(' + zero_based_limit + ')');
+        $(once('applysoftlimit', thisChildren, context)).hide();
       }
 
     });
 
     // Add "Show more" / "Show less" links.
-    facetsList.once().filter(function () {
+    //facetsList.once().filter(function () {
+    $(once('add-links', facetsList, context)).filter(function () {
       return $(this).find('li').length > limit;
     }).each(function () {
       var facet = $(this);
@@ -77,4 +79,4 @@
     });
   };
 
-})(jQuery);
+})(jQuery, Drupal, drupalSettings, once);

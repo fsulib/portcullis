@@ -328,6 +328,7 @@ in-page-navigation:
   dependencies:
     - core/jquery
     - core/drupalSettings
+    - core/once
 
 slider-revolution:
   version: 5.4.8
