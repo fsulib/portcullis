@@ -50,27 +50,26 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
-      
+
       <div class="field__items">
         {% if content.field_number_of_participants.0 %}
           {{ content.field_number_of_participants.0 }}
         {% endif %}
-        
+
         {% if content.field_participant_type.0 %}
           {{ content.field_participant_type.0 }}
         {% endif %}
-        
-        (
-        {% if content.field_age_range['#title'] %}
-          {{ content.field_age_range['#title'] }}:
-        {% endif %}
-        
+
         {% if content.field_age_range.0 %}
-          {{ content.field_age_range.0 }}
+          ({{ content.field_age_range['#title'] }}:
         {% endif %}
-        )
+
+        {% if content.field_age_range.0 %}
+          {{ content.field_age_range.0 }})
+        {% endif %}
+
       </div>
-     
+
     {% endblock %}
   </div>
 {% endblock paragraph %}
