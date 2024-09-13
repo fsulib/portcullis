@@ -1024,9 +1024,13 @@ body.path-user div.block-add-project-button {
   padding-right: 20px;
 }
 
-div.user-project-list div.views-row {
-  border: 1px solid #cdcdcd;
-  padding: 10px 15px;
+div.user-project-list div.view-header hr {
+  border-top: 2px solid #ebebeb;
+  margin: 0px 15px 15px 0px;
+}
+
+div.user-project-list div.view-header a.ldbase-button {
+  margin-top: 0px;
 }
 
 div.user-project-list .font-awesome-icon {
@@ -1040,15 +1044,35 @@ div.user-project-list .ldbase-profile-project-link {
   margin-top: 0px;
 }
 
-div.eva-person-user-profile div.views-row {
-  border: 1px solid #cdcdcd;
-  padding: 15px;
-  float: left;
-  width: 100%;
+@media only screen and (min-width: 768px) {
+  div.eva-person-user-profile div.views-row {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-right: 15px;
+  }
 }
 
 div.eva-person-user-profile div.views-field-field-thumbnail {
   float: right;
+  margin-right: 15px;
+}
+
+div.view-my-favorites div.view-header hr,
+div.view-my-favorites div.view-empty hr{
+  border-top: 2px solid #ebebeb;
+  margin: 0px 15px 15px 0px;
+}
+
+div.view-contributions-on-dashboard div.view-header hr,
+div.view-contributions-on-dashboard div.view-empty hr{
+  border-top: 2px solid #ebebeb;
+  margin: 0px 15px 15px 0px;
+}
+
+div.view-my-messages div.view-header hr {
+  border-top: 2px solid #ebebeb;
+  margin: 0px 0px 15px 0px;
 }
 
 .col-12 .view-my-messages > .more-link a {
@@ -1060,6 +1084,11 @@ div.eva-person-user-profile div.views-field-field-thumbnail {
 
 a.message-status-unread {
   font-weight: bold;
+}
+
+.eva-person-user-profile header {
+  border-bottom: 2px solid #ebebeb;
+  margin: 0px 15px 15px 0px;
 }
 
 /* Layout styles for Mailbox page */
