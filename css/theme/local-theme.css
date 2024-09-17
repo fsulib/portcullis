@@ -1064,6 +1064,10 @@ div.view-my-favorites div.view-empty hr{
   margin: 0px 15px 15px 0px;
 }
 
+div.view-my-favorites div.view-content table.views-table {
+  padding-right: 10px;
+}
+
 div.view-contributions-on-dashboard div.view-header hr,
 div.view-contributions-on-dashboard div.view-empty hr{
   border-top: 2px solid #ebebeb;
