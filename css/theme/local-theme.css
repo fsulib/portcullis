@@ -1044,6 +1044,10 @@ div.user-project-list .ldbase-profile-project-link {
   margin-top: 0px;
 }
 
+div.user-project-list nav.pager {
+  padding-right:15px;
+}
+
 @media only screen and (min-width: 768px) {
   div.eva-person-user-profile div.views-row {
     float: left;
@@ -1072,6 +1076,10 @@ div.view-contributions-on-dashboard div.view-header hr,
 div.view-contributions-on-dashboard div.view-empty hr{
   border-top: 2px solid #ebebeb;
   margin: 0px 15px 15px 0px;
+}
+
+div.view-contributions-on-dashboard nav.pager {
+  padding-right: 15px;
 }
 
 div.view-my-messages div.view-header hr {
