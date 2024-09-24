@@ -1048,6 +1048,10 @@ div.user-project-list nav.pager {
   padding-right:15px;
 }
 
+div.user-project-list nav.pager li.pager__item > a {
+  border-width: 0;
+}
+
 @media only screen and (min-width: 768px) {
   div.eva-person-user-profile div.views-row {
     float: left;
@@ -1080,6 +1084,10 @@ div.view-contributions-on-dashboard div.view-empty hr{
 
 div.view-contributions-on-dashboard nav.pager {
   padding-right: 15px;
+}
+
+div.view-contributions-on-dashboard nav.pager li.pager__item > a {
+  border-width: 0;
 }
 
 div.view-my-messages div.view-header hr {
