@@ -1042,6 +1042,12 @@ div.user-project-list .font-awesome-icon {
 div.user-project-list .ldbase-profile-project-link {
   margin-left: 30px;
   margin-top: 0px;
+  font-weight: bold;
+}
+
+div.user-project-list ul.ldbase-profile-project-roles {
+  padding-inline-start: 30px;
+  margin-bottom: 0;
 }
 
 div.user-project-list nav.pager {
