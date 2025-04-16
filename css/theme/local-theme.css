@@ -1863,6 +1863,10 @@ a.tabledrag-handle .handle {
   text-decoration: none;
 }
 
+.project-hierarchy-order-form .tabledrag-toggle-weight-wrapper {
+  visibility: hidden;
+}
+
 /* browse vocabulary list styles */
 div.view-vocabulary-lists div.view-header h2 {
   margin-top: -0.75em;
