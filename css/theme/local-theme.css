@@ -745,6 +745,11 @@ div#project-admins-form-description {
   font-size: 16px;
 }
 
+p#manage-members-red-text {
+  color: red;
+  font-weight: bold;
+}
+
 form.webform-submission-ldbase-contact-form-form div.form-item-subject input:read-only {
   background-color: #555555;
   color: #ffffff;
@@ -1866,8 +1871,25 @@ a.tabledrag-handle .handle {
 .project-hierarchy-order-form .tabledrag-toggle-weight-wrapper {
   visibility: hidden;
 }
+.project-hierarchy-order-form th{
+  font-weight: bold;
+}
 
-/* browse vocabulary list styles */
+.project-hierarchy-order-form span.published {
+  background-color: lightgreen;
+  color: black;
+  font-weight: 500;
+  padding: 5px;
+}
+
+.project-hierarchy-order-form span.unpublished {
+  background-color: orangered;
+  color: white;
+  font-weight: 500;
+  padding: 5px;
+}
+
+  /* browse vocabulary list styles */
 div.view-vocabulary-lists div.view-header h2 {
   margin-top: -0.75em;
 }
