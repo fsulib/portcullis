@@ -1889,6 +1889,10 @@ a.tabledrag-handle .handle {
   padding: 5px;
 }
 
+.project-hierarchy-order-form span.hierarchy-form-return-link {
+  padding-left: 25px;
+}
+
   /* browse vocabulary list styles */
 div.view-vocabulary-lists div.view-header h2 {
   margin-top: -0.75em;
