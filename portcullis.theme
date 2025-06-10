@@ -1654,3 +1654,52 @@ function portcullis_theme_suggestions_image_formatter_alter(array &$suggestions,
     $suggestions[] = 'image_formatter__' . $entity->getEntityTypeId() . '__' . $entity->bundle() . '__' . $field_name;
   }
 }
+
+/**
+ * Implements hook_preprocess_HOOK().
+ * Changes URL for field in demographics paragraph.
+ */
+function portcullis_preprocess_paragraph__demographics(&$variables) {
+  $paragraph = $variables['elements']['#paragraph'];
+  if ($paragraph->getType() === 'demographics') {
+    if ($paragraph->hasField('field_participant_type') && !$paragraph->get('field_participant_type')->isEmpty()) {
+      $route_name = 'view.taxonomy_term.page_4';
+      $tid = $variables['elements']['field_participant_type'][0]['#options']['entity']->id();
+      $options = $variables['elements']['field_participant_type'][0]['#url']->getOptions();
+      $url = Url::fromRoute($route_name, ['arg_0' => $tid], $options);
+
+      $variables['content']['field_participant_type'][0]['#url'] = $url;
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ * Changes URL for field in grant_information paragraph.
+ */
+function portcullis_preprocess_paragraph__grant_information(&$variables) {
+  $paragraph = $variables['elements']['#paragraph'];
+  if ($paragraph->getType() === 'grant_information') {
+    if ($paragraph->hasField('field_funding_agency') && !$paragraph->get('field_funding_agency')->isEmpty()) {
+      $route_name = 'view.taxonomy_term.page_3';
+      $tid = $variables['elements']['field_funding_agency'][0]['#options']['entity']->id();
+      $options = $variables['elements']['field_funding_agency'][0]['#url']->getOptions();
+      $url = Url::fromRoute($route_name, ['arg_0' => $tid], $options);
+
+      $variables['content']['field_funding_agency'][0]['#url'] = $url;
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ * Changes URL for field in the file metadata paragraph.
+ */
+function portcullis_preprocess_field__paragraph__field_file_format(&$variables) {
+  $route_name = 'view.taxonomy_term.page_5';
+  $tid = $variables['element'][0]['#options']['entity']->id();
+  $options = $variables['element'][0]['#url']->getOptions();
+  $url = Url::fromRoute($route_name, ['arg_0' => $tid], $options);
+
+  $variables['items'][0]['content']['#url'] = $url;
+}
