@@ -202,6 +202,17 @@ function portcullis_preprocess_page_title(&$variables) {
     // Make sure the shortcut link is the first item in title_suffix.
     $variables['title_suffix']['add_or_remove_shortcut']['#weight'] = -100;
   }
+
+  // add class to person nodes that lack related drupal accounts
+  $node = \Drupal::routeMatch()->getParameter('node');
+  if ($node instanceof \Drupal\node\NodeInterface) {
+      $node_type = $node->getType();
+      if ($node_type === 'person') {
+          if (!$node->hasField('field_drupal_account_id') || !$node->get('field_drupal_account_id')->getValue()) {
+              $variables['title_attributes']['class'][] = 'contributor-is-not-a-user';
+          }
+      }
+  }
 }
 
 function portcullis_preprocess_page(&$variables) {
@@ -972,6 +983,7 @@ function portcullis_library_info_build() {
  * Implements hook_preprocess_HOOK() for node.html.twig.
  */
 function portcullis_preprocess_node(&$variables) {
+
   // Remove the "Add new comment" link on teasers or when the comment form is
   // displayed on the page.
   if ($variables['teaser'] || !empty($variables['content']['comments']['comment_form'])) {
@@ -985,6 +997,15 @@ function portcullis_preprocess_node(&$variables) {
     } else {
       $variables['comment_count'] = "0";
     }
+  }
+
+}
+
+function portcullis_preprocess_node__person(&$variables) {
+  $person_node = $variables['node'];
+  // if person node is a stub, without an associated user account, add notice.
+  if (!$person_node->hasField('field_drupal_account_id') || !$person_node->get('field_drupal_account_id')->getValue()) {
+    $variables['person_stub_notice']['#markup'] = '<div><p class="contributor-is-not-a-user">This name is listed as a contributor in LDbase but the person does not have an LDbase user account.</p></div>';
   }
 
 }
@@ -1681,12 +1702,15 @@ function portcullis_preprocess_paragraph__grant_information(&$variables) {
   $paragraph = $variables['elements']['#paragraph'];
   if ($paragraph->getType() === 'grant_information') {
     if ($paragraph->hasField('field_funding_agency') && !$paragraph->get('field_funding_agency')->isEmpty()) {
-      $route_name = 'view.taxonomy_term.page_3';
-      $tid = $variables['elements']['field_funding_agency'][0]['#options']['entity']->id();
-      $options = $variables['elements']['field_funding_agency'][0]['#url']->getOptions();
-      $url = Url::fromRoute($route_name, ['arg_0' => $tid], $options);
+      // make sure this isn't a plain text display
+      if (!array_key_exists('#plain_text', $variables['content']['field_funding_agency'][0])) {
+        $route_name = 'view.taxonomy_term.page_3';
+        $tid = $variables['elements']['field_funding_agency'][0]['#options']['entity']->id();
+        $options = $variables['elements']['field_funding_agency'][0]['#url']->getOptions();
+        $url = Url::fromRoute($route_name, ['arg_0' => $tid], $options);
 
-      $variables['content']['field_funding_agency'][0]['#url'] = $url;
+        $variables['content']['field_funding_agency'][0]['#url'] = $url;
+      }
     }
   }
 }
@@ -1703,3 +1727,18 @@ function portcullis_preprocess_field__paragraph__field_file_format(&$variables) 
 
   $variables['items'][0]['content']['#url'] = $url;
 }
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function portcullis_preprocess_field__field_related_persons(&$variables) {
+  if (!empty($variables['items'])) {
+    foreach ($variables['items'] as $delta => $item) {
+      $person_node = $item['content']['#entity'];
+      if (!$person_node->hasField('field_drupal_account_id') || !$person_node->get('field_drupal_account_id')->getValue()) {
+        $variables['items'][$delta]['content']['#attributes']['class'][] = 'contributor-is-not-a-user';
+      }
+    }
+  }
+}
+

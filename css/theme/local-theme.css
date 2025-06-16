@@ -667,6 +667,12 @@ div.form-item-harmonized-dataset label.option {
   padding-top: 15px;
 }
 
+a.contributor-is-not-a-user,
+h1.contributor-is-not-a-user.title.page-title{
+  color:black;
+  font-style: italic;
+}
+
 body.page-node-type-project h1.page-title{
   margin: 0;
 }
