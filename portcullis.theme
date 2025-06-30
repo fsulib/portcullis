@@ -11,6 +11,7 @@ use Drupal\file\Entity\File;
 use Drupal\image\Entity\ImageStyle;
 use Drupal\Component\Utility\Html;
 use Drupal\Core\Url;
+use Drupal\Core\Render\Markup;
 
 /**
  * Implements hook_preprocess_HOOK() for HTML document templates.
@@ -1005,7 +1006,7 @@ function portcullis_preprocess_node__person(&$variables) {
   $person_node = $variables['node'];
   // if person node is a stub, without an associated user account, add notice.
   if (!$person_node->hasField('field_drupal_account_id') || !$person_node->get('field_drupal_account_id')->getValue()) {
-    $variables['person_stub_notice']['#markup'] = '<div><p class="contributor-is-not-a-user">This name is listed as a contributor in LDbase but the person does not have an LDbase user account.</p></div>';
+    $variables['person_stub_notice']['#markup'] = '<div><p class="contributor-is-not-a-user messages messages--warning">This name is listed as a contributor in LDbase but the person does not have an LDbase user profile.</p></div>';
   }
 
 }
@@ -1737,7 +1738,52 @@ function portcullis_preprocess_field__field_related_persons(&$variables) {
       $person_node = $item['content']['#entity'];
       if (!$person_node->hasField('field_drupal_account_id') || !$person_node->get('field_drupal_account_id')->getValue()) {
         $variables['items'][$delta]['content']['#attributes']['class'][] = 'contributor-is-not-a-user';
+
+        $person_url = $variables['items'][$delta]['content']['#url'];
+        $person_title = $variables['items'][$delta]['content']['#title'];
+        $options = $person_url->getOptions();
+        $options['attributes']['title'] = $person_title . ' (No user profile)';
+        $person_url->setOPtions($options);
       }
+    }
+  }
+}
+
+function portcullis_preprocess_views_view_field(&$variables) {
+  $view = $variables['view'];
+  if ($view->id() == 'search') {
+    // authors, contributors, investigators
+    if ($variables['field']->field == 'field_related_persons_1') {
+      $node_storage = \Drupal::entityTypeManager()->getStorage('node');
+      $author_ids = $variables['field']->getValue($variables['row']);
+      $modified_output = '';
+      if (!empty($author_ids)) {
+        $counter = 1;
+        foreach ($author_ids as $id) {
+          $the_end = count($author_ids);
+          $author = $node_storage->load($id);
+          // check if the author has a related account
+          if ($author->hasField('field_drupal_account_id')) {
+            // if account create normal link
+            $author_uuid = $author->uuid();
+            $author_name = $author->getTitle();
+            if ($author->get('field_drupal_account_id')->getValue()) {
+              $modified_output .= '<a href="/persons/' . $author_uuid . '" hreflang="en">' . $author_name . '</a>';
+            }
+            else { // if no account create link with appropriate class and title
+              $modified_output .= '<a href="/persons/' . $author_uuid . '" title="' . $author_name . ' (No user profile)" class="contributor-is-not-a-user" hreflang="en">' . $author_name . '</a>';
+            }
+          }
+          if ($counter !== $the_end) {
+            $modified_output .= ', ';
+          }
+          $counter++;
+        }
+      }
+
+      // set output of field
+      $markup_output = Markup::create($modified_output);
+      $variables['output'] = $markup_output;
     }
   }
 }
