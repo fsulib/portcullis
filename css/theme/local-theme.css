@@ -1899,6 +1899,25 @@ a.tabledrag-handle .handle {
   padding-left: 25px;
 }
 
+.project-hierarchy-order-form tr.drag td{
+  background-color: #fe7 !important;
+}
+
+.project-hierarchy-order-form tr.drag-previous td{
+  background-color: #ffb !important;
+}
+
+.project-hierarchy-order-form abbr.tabledrag-changed {
+  font-size: large;
+  background-color: #eb8314;
+  color: #000;
+  padding: 5px;
+}
+
+.project-hierarchy-order-form div.indentation {
+  width: 40px;
+}
+
   /* browse vocabulary list styles */
 div.view-vocabulary-lists div.view-header h2 {
   margin-top: -0.75em;
