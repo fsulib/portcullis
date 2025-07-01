@@ -1763,7 +1763,7 @@ function portcullis_preprocess_views_view_field(&$variables) {
           $the_end = count($author_ids);
           $author = $node_storage->load($id);
           // check if the author has a related account
-          if ($author->hasField('field_drupal_account_id')) {
+          if (!empty($author) && $author->hasField('field_drupal_account_id')) {
             // if account create normal link
             $author_uuid = $author->uuid();
             $author_name = $author->getTitle();
