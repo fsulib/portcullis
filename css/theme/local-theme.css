@@ -673,6 +673,10 @@ h1.contributor-is-not-a-user.title.page-title{
   font-style: italic;
 }
 
+article.node--type-person p.contributor-is-not-a-user {
+  font-weight: bold;
+}
+
 body.page-node-type-project h1.page-title{
   margin: 0;
 }

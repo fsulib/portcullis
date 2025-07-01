@@ -1006,7 +1006,7 @@ function portcullis_preprocess_node__person(&$variables) {
   $person_node = $variables['node'];
   // if person node is a stub, without an associated user account, add notice.
   if (!$person_node->hasField('field_drupal_account_id') || !$person_node->get('field_drupal_account_id')->getValue()) {
-    $variables['person_stub_notice']['#markup'] = '<div><p class="contributor-is-not-a-user messages messages--warning">This name is listed as a contributor in LDbase but the person does not have an LDbase user profile.</p></div>';
+    $variables['person_stub_notice']['#markup'] = '<div><p class="contributor-is-not-a-user">This name is listed as a contributor in LDbase but the person does not have an LDbase profile.</p></div>';
   }
 
 }
@@ -1742,7 +1742,7 @@ function portcullis_preprocess_field__field_related_persons(&$variables) {
         $person_url = $variables['items'][$delta]['content']['#url'];
         $person_title = $variables['items'][$delta]['content']['#title'];
         $options = $person_url->getOptions();
-        $options['attributes']['title'] = $person_title . ' (No user profile)';
+        $options['attributes']['title'] = $person_title . ' (No LDbase profile)';
         $person_url->setOPtions($options);
       }
     }
@@ -1771,7 +1771,7 @@ function portcullis_preprocess_views_view_field(&$variables) {
               $modified_output .= '<a href="/persons/' . $author_uuid . '" hreflang="en">' . $author_name . '</a>';
             }
             else { // if no account create link with appropriate class and title
-              $modified_output .= '<a href="/persons/' . $author_uuid . '" title="' . $author_name . ' (No user profile)" class="contributor-is-not-a-user" hreflang="en">' . $author_name . '</a>';
+              $modified_output .= '<a href="/persons/' . $author_uuid . '" title="' . $author_name . ' (No LDbase profile)" class="contributor-is-not-a-user" hreflang="en">' . $author_name . '</a>';
             }
           }
           if ($counter !== $the_end) {
