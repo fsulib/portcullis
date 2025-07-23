@@ -1215,6 +1215,11 @@ input#edit-submit-search {
   float: right;
   margin-right: 10px;
   margin-bottom: 15px;
+  margin-top: 43px;
+}
+
+#views-exposed-form-search-page-1 .form--inline .form-actions {
+  clear: none;
 }
 
 #block-searchfacetparticipantageminimum,
