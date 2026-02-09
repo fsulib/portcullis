@@ -38,11 +38,11 @@
   $(".deactivate-link").removeAttr("href");
 
   // Change http to https in production
-  var ldbase_download_url = document.getElementsByClassName("ldbase-file-download")[0].href;
+  var ldbase_download_url = document.getElementsByClassName("ldbase-file-download")[0];
   if(typeof ldbase_download_url === 'undefined' ) {
     return;
   } else {
-    var parsed_url = new URL(ldbase_download_url);
+    var parsed_url = new URL(ldbase_download_url.href);
     if (parsed_url.hostname === 'ldbase.org' || parsed_url.hostname === 'test.ldbase.org') {
       parsed_url.protocol = 'https';
       $(".ldbase-file-download").attr('href', parsed_url.href);
