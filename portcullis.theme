@@ -164,6 +164,23 @@ function portcullis_preprocess_html(&$variables) {
     $variables['attributes']['class'][] = "slideout-mobile-menu-enabled";
   }
 
+  // more descriptive page titles for ADA Title II compliance
+  $drupal_route_match = \Drupal::routeMatch();
+  $node = $drupal_route_match->getParameter('node');
+  $route_name = $drupal_route_match->getRouteName();
+  if ($node instanceof \Drupal\node\NodeInterface) {
+    $metadata_types = ['project','dataset','document','code','person'];
+    $node_type = $node->getType();
+    if ($route_name === 'entity.node.canonical' && in_array($node_type, $metadata_types)) {
+      $variables['head_title']['title'] = 'Metadata for ' . ucfirst($node_type) . ': ' . $node->getTitle();
+    }
+  }
+  $user = \Drupal::routeMatch()->getParameter('user');
+  if ($user instanceof \Drupal\user\UserInterface) {
+    $variables['head_title']['title'] = 'My Dashboard';
+  }
+
+
 }
 
 function portcullis_preprocess_breadcrumb(&$variables){
