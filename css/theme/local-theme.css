@@ -87,6 +87,14 @@ div#block-portcullis-breadcrumbs nav.breadcrumb {
   padding: 0 20px;
 }
 
+.breadcrumb__item > span,
+.breadcrumb__item > a {
+  display: inline-block;
+  min-width: 44px;
+  min-height: 44px;
+  padding-top: 10px;
+}
+
 pre.ldbase {
   max-height: fit-content;
 }
@@ -102,6 +110,18 @@ ul.ui-autocomplete li.ui-menu-item {
 div.view-footer div.ldbase-view-current-page {
   text-align: center;
   padding: 0 0 20px 0;
+}
+
+div#subfooter p#subfooter-disclaimer a#contact-us,
+div#subfooter p#subfooter-sponsor a
+{
+  display: inline-block;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.eu-cookie-compliance-buttons button {
+  min-height: 44px;
 }
 
 /* Global Webform changes */
