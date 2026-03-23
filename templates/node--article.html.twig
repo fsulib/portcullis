@@ -50,17 +50,17 @@
             <ul>
               {% if pc_setting.share_links %}
                 <li class="facebook{{ (pc_setting.print_button) ? ' print-button-enabled' : '' }}">
-                  <a href="https://www.facebook.com/sharer/sharer.php?u={{ url('entity.node.canonical', {'node': node.id}) }}&t={{node.label | url_encode(true)}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                  <a href="https://www.facebook.com/sharer/sharer.php?u={{ url('entity.node.canonical', {'node': node.id}) }}&t={{node.label | url_encode(true)}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" aria-label="Share via Facebook">
                       <i class="fab fa-facebook"><span class="sr-only">facebook</span></i>
                   </a>
                 </li>
                 <li class="twitter{{ (pc_setting.print_button) ? ' print-button-enabled' : '' }}">
-                  <a href="http://twitter.com/share?text={{node.label | url_encode(true)}}&url={{ url('entity.node.canonical', {'node': node.id}) }}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                  <a href="http://twitter.com/share?text={{node.label | url_encode(true)}}&url={{ url('entity.node.canonical', {'node': node.id}) }}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" aria-label="Share via Twitter">
                       <i class="fab fa-twitter"><span class="sr-only">twitter</span></i>
                   </a>
                 </li>
                 <li class="email{{ (pc_setting.print_button) ? ' print-button-enabled' : '' }}">
-                  <a href="mailto:?Subject={{node.label | url_encode(true)}}&amp;Body={{ url('entity.node.canonical', {'node': node.id}) }}">
+                  <a href="mailto:?Subject={{node.label | url_encode(true)}}&amp;Body={{ url('entity.node.canonical', {'node': node.id}) }}" aria-label="Share via Email">
                       <i class="far fa-envelope"><span class="sr-only">envelope</span></i>
                   </a>
                 </li>
@@ -68,7 +68,7 @@
               {% if pc_setting.print_button %}
                 <li class="print{{ (pc_setting.share_links) ? ' share-links-enabled' : '' }}">
                   <div class="print">
-                    <a href="javascript:window.print()" class="print-button">
+                    <a href="javascript:window.print()" class="print-button" aria-label="Print this Article">
                       <i class="fas fa-print"><span class="sr-only">print</span></i>
                     </a>
                   </div>
@@ -87,23 +87,23 @@
             <ul>
               {% if pc_setting.share_links %}
                 <li class="facebook{{ (pc_setting.print_button) ? ' print-button-enabled' : '' }}">
-                  <a href="https://www.facebook.com/sharer/sharer.php?u={{ url('entity.node.canonical', {'node': node.id}) }}&t={{node.label | url_encode(true)}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                  <a href="https://www.facebook.com/sharer/sharer.php?u={{ url('entity.node.canonical', {'node': node.id}) }}&t={{node.label | url_encode(true)}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" aria-label="Share via Facebook">
                       <i class="fab fa-facebook"><span class="sr-only">facebook</span></i>
                   </a>
                 </li>
                 <li class="twitter{{ (pc_setting.print_button) ? ' print-button-enabled' : '' }}">
-                  <a href="http://twitter.com/share?text={{node.label | url_encode(true)}}&url={{ url('entity.node.canonical', {'node': node.id}) }}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                  <a href="http://twitter.com/share?text={{node.label | url_encode(true)}}&url={{ url('entity.node.canonical', {'node': node.id}) }}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" aria-label="Share via Twitter">
                       <i class="fab fa-twitter"><span class="sr-only">twitter</span></i>
                   </a>
                 </li>
                 <li class="email{{ (pc_setting.print_button) ? ' print-button-enabled' : '' }}">
-                  <a href="mailto:?Subject={{node.label | url_encode(true)}}&amp;Body={{ url('entity.node.canonical', {'node': node.id}) }}">
+                  <a href="mailto:?Subject={{node.label | url_encode(true)}}&amp;Body={{ url('entity.node.canonical', {'node': node.id}) }}" aria-label="Share via Email">
                       <i class="far fa-envelope"><span class="sr-only">envelope</span></i>
                   </a>
                 </li>
               {% endif %}
               {% if pc_setting.print_button %}
-                <li class="print{{ (pc_setting.share_links) ? ' share-links-enabled' : '' }}">
+                <li class="print{{ (pc_setting.share_links) ? ' share-links-enabled' : '' }}" aria-label="Print this Article">
                   <div class="print">
                     <a href="javascript:window.print()" class="print-button">
                       <i class="fas fa-print"><span class="sr-only">print</span></i>
