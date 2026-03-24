@@ -1982,6 +1982,8 @@ div.eu-cookie-compliance-message {
 }
 
 div.eu-cookie-compliance-message p {
+  font-size: 0.875em;
+  line-height: 1.5;
   font-weight: 200;
 }
 
