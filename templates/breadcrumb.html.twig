@@ -10,7 +10,7 @@
 {{ attach_library('portcullis/breadcrumb') }}
 {% if breadcrumb %}
   <nav class="breadcrumb" role="navigation" aria-labelledby="system-breadcrumb">
-    <h2 id="system-breadcrumb" class="visually-hidden">{{ 'Breadcrumb'|t }}</h2>
+    <span id="system-breadcrumb" class="visually-hidden">{{ 'Breadcrumb'|t }}</span>
     <ol class="breadcrumb__items">
     {% for key, item in breadcrumb %}
       <li class="breadcrumb__item">
