@@ -75,6 +75,18 @@ a.ldbase-button:hover {
   color: #000;
 }
 
+.messages--warning a {
+  display: inline-block;
+  min-height: 44px;
+  padding: 10px;
+  margin-left: 10px;
+  background-color: rgb(103, 30, 48);
+}
+
+.messages--warning a:hover {
+  color: #fff2db;
+}
+
 .header__container {
   padding: 10px 0;
 }
