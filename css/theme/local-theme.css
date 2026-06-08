@@ -1106,6 +1106,14 @@ div.user-project-list nav.pager li.pager__item > a {
   border-width: 0;
 }
 
+div.user-project-list-waiting-requests-alert{
+  position: relative;
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
+  color: #004085;
+  background-color: #cce5ff;
+}
+
 @media only screen and (min-width: 768px) {
   div.eva-person-user-profile div.views-row {
     float: left;
